@@ -1,7 +1,7 @@
 ﻿
 namespace Tivi
 {
-    partial class Form1
+    partial class ToDoListForm
     {
         /// <summary>
         /// Required designer variable.
@@ -29,13 +29,19 @@ namespace Tivi
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.SuspendLayout();
+            // 
+            // ToDoListForm
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "Form1";
+            this.ClientSize = new System.Drawing.Size(639, 450);
+            this.Name = "ToDoListForm";
+            this.Text = "Tivi";
+            this.ResumeLayout(false);
+
         }
 
         #endregion
     }
 }
-

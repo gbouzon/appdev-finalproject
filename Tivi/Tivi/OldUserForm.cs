@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Tivi
 {
-    public partial class Form1 : Form
+    public partial class OldUserForm : Form
     {
-        public Form1()
+        public OldUserForm()
         {
             InitializeComponent();
         }
