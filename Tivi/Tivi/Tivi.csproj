@@ -78,6 +78,21 @@
     <Compile Include="ToDoListForm.Designer.cs">
       <DependentUpon>ToDoListForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="UserControlBlank.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControlBlank.Designer.cs">
+      <DependentUpon>UserControlBlank.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControlDays.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControlDays.Designer.cs">
+      <DependentUpon>UserControlDays.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="CalendarForm.resx">
+      <DependentUpon>CalendarForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="HomeForm.resx">
       <DependentUpon>HomeForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -98,6 +113,12 @@
     </Compile>
     <EmbeddedResource Include="ToDoListForm.resx">
       <DependentUpon>ToDoListForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControlBlank.resx">
+      <DependentUpon>UserControlBlank.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControlDays.resx">
+      <DependentUpon>UserControlDays.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
