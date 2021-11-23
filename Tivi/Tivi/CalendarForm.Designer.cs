@@ -45,12 +45,12 @@ namespace Tivi
             // 
             this.dayContainer.Location = new System.Drawing.Point(64, 149);
             this.dayContainer.Name = "dayContainer";
-            this.dayContainer.Size = new System.Drawing.Size(1292, 700);
+            this.dayContainer.Size = new System.Drawing.Size(1292, 767);
             this.dayContainer.TabIndex = 0;
             // 
             // previousButton
             // 
-            this.previousButton.Location = new System.Drawing.Point(1068, 799);
+            this.previousButton.Location = new System.Drawing.Point(1072, 931);
             this.previousButton.Name = "previousButton";
             this.previousButton.Size = new System.Drawing.Size(117, 48);
             this.previousButton.TabIndex = 1;
@@ -59,7 +59,7 @@ namespace Tivi
             // 
             // nextButton
             // 
-            this.nextButton.Location = new System.Drawing.Point(1201, 799);
+            this.nextButton.Location = new System.Drawing.Point(1239, 931);
             this.nextButton.Name = "nextButton";
             this.nextButton.Size = new System.Drawing.Size(117, 48);
             this.nextButton.TabIndex = 2;
@@ -141,7 +141,7 @@ namespace Tivi
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1416, 869);
+            this.ClientSize = new System.Drawing.Size(1416, 1001);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
