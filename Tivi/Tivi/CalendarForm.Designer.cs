@@ -45,7 +45,7 @@ namespace Tivi
             // 
             this.dayContainer.Location = new System.Drawing.Point(64, 149);
             this.dayContainer.Name = "dayContainer";
-            this.dayContainer.Size = new System.Drawing.Size(1292, 620);
+            this.dayContainer.Size = new System.Drawing.Size(1292, 700);
             this.dayContainer.TabIndex = 0;
             // 
             // previousButton

@@ -14,8 +14,8 @@ namespace Tivi
     {
         
         private static readonly DateTime current = DateTime.Now;
-        private int month = current.Month;
-        private int year = current.Year;
+        private int month = Convert.ToInt32(current.Month);
+        private int year = Convert.ToInt32(current.Year);
 
         public CalendarForm()
         {
@@ -29,9 +29,6 @@ namespace Tivi
 
         private void DisplayDays(int displayYear, int displayMonth)
         {
-            month = current.Month;
-            year = current.Year;
-
             //first day of the month
             DateTime startOfMonth = new DateTime(displayYear, displayMonth, 1);
 
@@ -56,9 +53,22 @@ namespace Tivi
             }
         }
 
+        private void ClearCalendar()
+        {
+            dayContainer.Controls.Clear();
+        }
+
         private void nextButton_Click(object sender, EventArgs e)
         {
+            if (month == 12)
+            {
+                year++;
+                month = 0;
+            }
+
             month++;
+            ClearCalendar();
+            DisplayDays(year, month);
         }
     }
 }
