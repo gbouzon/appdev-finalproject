@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Globalization;
 
 namespace Tivi
 {
@@ -29,6 +30,10 @@ namespace Tivi
 
         private void DisplayDays(int displayYear, int displayMonth)
         {
+            //setting calendar title to Month YEAR format
+            String monthName = DateTimeFormatInfo.CurrentInfo.GetMonthName(displayMonth);
+            dateLabel.Text = monthName + " " + displayYear;
+
             //first day of the month
             DateTime startOfMonth = new DateTime(displayYear, displayMonth, 1);
 
@@ -67,6 +72,19 @@ namespace Tivi
             }
 
             month++;
+            ClearCalendar();
+            DisplayDays(year, month);
+        }
+
+        private void previousButton_Click(object sender, EventArgs e)
+        {
+            if (month == 1)
+            {
+                year--;
+                month = 13;
+            }
+
+            month--;
             ClearCalendar();
             DisplayDays(year, month);
         }

@@ -39,6 +39,7 @@ namespace Tivi
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
+            this.dateLabel = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // dayContainer
@@ -56,6 +57,7 @@ namespace Tivi
             this.previousButton.TabIndex = 1;
             this.previousButton.Text = "Previous";
             this.previousButton.UseVisualStyleBackColor = true;
+            this.previousButton.Click += new System.EventHandler(this.previousButton_Click);
             // 
             // nextButton
             // 
@@ -121,7 +123,7 @@ namespace Tivi
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(1035, 108);
+            this.label6.Location = new System.Drawing.Point(1022, 108);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(75, 25);
             this.label6.TabIndex = 8;
@@ -137,11 +139,22 @@ namespace Tivi
             this.label7.TabIndex = 9;
             this.label7.Text = "Saturday";
             // 
+            // dateLabel
+            // 
+            this.dateLabel.Font = new System.Drawing.Font("Verdana", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dateLabel.Location = new System.Drawing.Point(288, 35);
+            this.dateLabel.Name = "dateLabel";
+            this.dateLabel.Size = new System.Drawing.Size(823, 50);
+            this.dateLabel.TabIndex = 10;
+            this.dateLabel.Text = "MONTH YEAR";
+            this.dateLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // CalendarForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1416, 1001);
+            this.Controls.Add(this.dateLabel);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
@@ -174,5 +187,6 @@ namespace Tivi
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label dateLabel;
     }
 }
