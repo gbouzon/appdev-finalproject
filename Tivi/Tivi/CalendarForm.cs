@@ -65,6 +65,7 @@ namespace Tivi
 
         private void nextButton_Click(object sender, EventArgs e)
         {
+            //if it's december then we move on to next year and reset month to january
             if (month == 12)
             {
                 year++;
@@ -78,6 +79,7 @@ namespace Tivi
 
         private void previousButton_Click(object sender, EventArgs e)
         {
+            //if it's january then we go back to the previous year and reset month to december
             if (month == 1)
             {
                 year--;
