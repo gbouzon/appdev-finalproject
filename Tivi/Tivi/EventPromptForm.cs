@@ -14,6 +14,7 @@ namespace Tivi
 {
     public partial class EventPromptForm : Form
     {
+        //must be connected 
         private readonly CalendarDataSet calendarDataSet = new CalendarDataSet();
         CalendarDataSetTableAdapters.EventTableAdapter eventTableAdapter = new CalendarDataSetTableAdapters.EventTableAdapter();
         
