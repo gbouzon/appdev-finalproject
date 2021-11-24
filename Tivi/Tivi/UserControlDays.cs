@@ -26,5 +26,15 @@ namespace Tivi
         {
             daysLabel.Text = numDay + "";
         }
+
+        private void UserControlDays_MouseEnter(object sender, EventArgs e)
+        {
+            this.BackColor = Color.Green; //change this to user's favorite color later
+        }
+
+        private void UserControlDays_MouseLeave(object sender, EventArgs e)
+        {
+            this.BackColor = Color.White; //resetting once mouse unfocus
+        }
     }
 }
