@@ -50,7 +50,6 @@ namespace Tivi
             this.Controls.Add(this.daysLabel);
             this.Name = "UserControlDays";
             this.Size = new System.Drawing.Size(175, 120);
-            this.Load += new System.EventHandler(this.UserControlDays_Load);
             this.MouseEnter += new System.EventHandler(this.UserControlDays_MouseEnter);
             this.MouseLeave += new System.EventHandler(this.UserControlDays_MouseLeave);
             this.ResumeLayout(false);

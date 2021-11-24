@@ -17,11 +17,6 @@ namespace Tivi
             InitializeComponent();
         }
 
-        private void UserControlDays_Load(object sender, EventArgs e)
-        {
-
-        }
-
         public void Days(int numDay)
         {
             daysLabel.Text = numDay + "";
