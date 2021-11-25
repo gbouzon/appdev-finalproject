@@ -15,8 +15,8 @@ namespace Tivi
     public partial class EventPromptForm : Form
     {
         //must be connected 
-        private readonly CalendarDataSet calendarDataSet = new CalendarDataSet();
-        CalendarDataSetTableAdapters.EventTableAdapter eventTableAdapter = new CalendarDataSetTableAdapters.EventTableAdapter();
+        //private readonly CalendarDataSet calendarDataSet = new CalendarDataSet();
+        //CalendarDataSetTableAdapters.EventTableAdapter eventTableAdapter = new CalendarDataSetTableAdapters.EventTableAdapter();
         
         public EventPromptForm()
         {
@@ -30,13 +30,14 @@ namespace Tivi
 
         private void saveButton_Click(object sender, EventArgs e)
         {
-            //check this later: not updating db
+            /*check this later: not updating db
             CalendarDataSet.EventRow newRow = this.calendarDataSet.Event.NewEventRow();
             newRow.Description = eventTextBox.Text;
             newRow.Date = DateTime.ParseExact(dateTextBox.Text, "MM/dd/yyyy", CultureInfo.InvariantCulture);
             newRow.Type = eventGroupBox.Controls.OfType<RadioButton>().FirstOrDefault(button => button.Checked).Text;
             this.calendarDataSet.Event.Rows.Add(newRow);
             this.eventTableAdapter.Update(this.calendarDataSet.Event);
+            */
             MessageBox.Show("Saved", "Save Event", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
     }

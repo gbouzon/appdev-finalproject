@@ -174,6 +174,5 @@ C:\appdev-finalproject\Tivi\Tivi\obj\Debug\Tivi.UserControlBlank.resources
 C:\appdev-finalproject\Tivi\Tivi\obj\Debug\Tivi.UserControlDays.resources
 C:\appdev-finalproject\Tivi\Tivi\obj\Debug\Tivi.csproj.GenerateResource.cache
 C:\appdev-finalproject\Tivi\Tivi\obj\Debug\Tivi.csproj.CoreCompileInputs.cache
-C:\appdev-finalproject\Tivi\Tivi\obj\Debug\Tivi.csproj.CopyComplete
 C:\appdev-finalproject\Tivi\Tivi\obj\Debug\Tivi.exe
 C:\appdev-finalproject\Tivi\Tivi\obj\Debug\Tivi.pdb
