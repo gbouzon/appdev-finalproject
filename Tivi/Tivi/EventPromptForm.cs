@@ -8,16 +8,14 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Globalization;
-using Microsoft.Data.SqlClient;
+using MySql.Data.MySqlClient;
 
 namespace Tivi
 {
     public partial class EventPromptForm : Form
     {
-        //must be connected 
-        //private readonly CalendarDataSet calendarDataSet = new CalendarDataSet();
-        //CalendarDataSetTableAdapters.EventTableAdapter eventTableAdapter = new CalendarDataSetTableAdapters.EventTableAdapter();
-        
+        String connectionString = "datasource=127.0.0.1;port=3306;username=root;password=;database=tivi;";
+
         public EventPromptForm()
         {
             InitializeComponent();
@@ -30,15 +28,22 @@ namespace Tivi
 
         private void saveButton_Click(object sender, EventArgs e)
         {
-            /*check this later: not updating db
-            CalendarDataSet.EventRow newRow = this.calendarDataSet.Event.NewEventRow();
-            newRow.Description = eventTextBox.Text;
-            newRow.Date = DateTime.ParseExact(dateTextBox.Text, "MM/dd/yyyy", CultureInfo.InvariantCulture);
-            newRow.Type = eventGroupBox.Controls.OfType<RadioButton>().FirstOrDefault(button => button.Checked).Text;
-            this.calendarDataSet.Event.Rows.Add(newRow);
-            this.eventTableAdapter.Update(this.calendarDataSet.Event);
-            */
+            //test with phpmyadmin
+            //to be refactored later - do not touch pls and thank
+            MySqlConnection connection = new MySqlConnection(connectionString);
+            String query = "INSERT INTO event(description, date, type) values(?, ?, ?)";
+            connection.Open();
+            MySqlCommand command = connection.CreateCommand();
+            command.CommandText = query;
+            command.Parameters.AddWithValue("description", eventTextBox.Text);
+            command.Parameters.AddWithValue("date", DateTime.ParseExact(dateTextBox.Text, "MM/dd/yyyy", CultureInfo.InvariantCulture));
+            command.Parameters.AddWithValue("type", eventGroupBox.Controls.OfType<RadioButton>().FirstOrDefault(button => button.Checked).Text);
+            command.ExecuteNonQuery();
             MessageBox.Show("Saved", "Save Event", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            //make message box close automatically later
+            //think if we want to restart the db from scratch each time this runs
+            command.Dispose();
+            connection.Close();
         }
     }
 }

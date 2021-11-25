@@ -176,3 +176,4 @@ C:\appdev-finalproject\Tivi\Tivi\obj\Debug\Tivi.csproj.GenerateResource.cache
 C:\appdev-finalproject\Tivi\Tivi\obj\Debug\Tivi.csproj.CoreCompileInputs.cache
 C:\appdev-finalproject\Tivi\Tivi\obj\Debug\Tivi.exe
 C:\appdev-finalproject\Tivi\Tivi\obj\Debug\Tivi.pdb
+C:\appdev-finalproject\Tivi\Tivi\bin\Debug\MySql.Data.dll
