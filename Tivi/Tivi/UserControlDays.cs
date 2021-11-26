@@ -22,7 +22,7 @@ namespace Tivi
 
         public void Days(int numDay)
         {
-            if (numDay <= 9)
+            if (numDay < 10)
                 daysLabel.Text = "0" + numDay.ToString(); //to maintain format mm/dd/yyy
             else
                 daysLabel.Text = numDay.ToString();

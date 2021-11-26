@@ -95,8 +95,6 @@ C:\Users\ga\OneDrive\Desktop\School (2019-2023)\Fall 2021\Application Developmen
 C:\Users\ga\OneDrive\Desktop\School (2019-2023)\Fall 2021\Application Development\appdev-finalproject\Tivi\Tivi\bin\Debug\ru\Microsoft.Data.SqlClient.resources.dll
 C:\Users\ga\OneDrive\Desktop\School (2019-2023)\Fall 2021\Application Development\appdev-finalproject\Tivi\Tivi\bin\Debug\zh-Hans\Microsoft.Data.SqlClient.resources.dll
 C:\Users\ga\OneDrive\Desktop\School (2019-2023)\Fall 2021\Application Development\appdev-finalproject\Tivi\Tivi\bin\Debug\zh-Hant\Microsoft.Data.SqlClient.resources.dll
-C:\appdev-finalproject\Tivi\Tivi\bin\Debug\Calendar.mdf
-C:\appdev-finalproject\Tivi\Tivi\bin\Debug\Calendar_log.ldf
 C:\appdev-finalproject\Tivi\Tivi\bin\Debug\Tivi.exe.config
 C:\appdev-finalproject\Tivi\Tivi\bin\Debug\Tivi.exe
 C:\appdev-finalproject\Tivi\Tivi\bin\Debug\Tivi.pdb
