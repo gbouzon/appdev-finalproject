@@ -53,6 +53,7 @@ namespace Tivi
             this.eventRichTextBox.Location = new System.Drawing.Point(43, 37);
             this.eventRichTextBox.Name = "eventRichTextBox";
             this.eventRichTextBox.ReadOnly = true;
+            this.eventRichTextBox.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.None;
             this.eventRichTextBox.Size = new System.Drawing.Size(112, 71);
             this.eventRichTextBox.TabIndex = 1;
             this.eventRichTextBox.Text = "";

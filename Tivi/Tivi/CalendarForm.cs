@@ -59,16 +59,6 @@ namespace Tivi
             for (int i = 1; i <= days; i++)
             {
                 UserControlDays ucdays = new UserControlDays();
-
-                /*to create checkbox once event is created -> check db stuff first
-                Label ucLabel = (Label) ucdays.Controls.Find("daysLabel", true)[0];
-                CheckBox box = new CheckBox();
-                box.AutoSize = true;
-                box.Location = new Point(ucLabel.Location.X, ucLabel.Location.Y + 20);
-                ucdays.Controls.Add(box);
-                */
-                
-
                 ucdays.Days(i);
                 dayContainer.Controls.Add(ucdays);
             }

@@ -28,11 +28,12 @@ namespace Tivi
         private void UserControlDays_Load(object sender, EventArgs e)
         {
             //displaying all events/tasks on load
-           // if (!String.IsNullOrEmpty(this.daysLabel.Text))
-           // {
-                string dateStr = CalendarForm.static_year + "-" + CalendarForm.static_month + "-" + this.daysLabel.Text;
-                DisplayEvent(dateStr);
-           // }
+            string dateStr = CalendarForm.static_year + "-" + CalendarForm.static_month + "-" + this.daysLabel.Text;
+            DisplayEvent(dateStr);
+
+            //to create checkbox once event is created -> check db stuff first
+            
+                
         }
 
         public void Days(int numDay)
@@ -81,9 +82,28 @@ namespace Tivi
             if (reader.HasRows)
             {
                 while (reader.Read())
+                {
+                    string description = reader["description"].ToString();
+                    int counter = 0;
+
                     //avoid infinite loop with timer's tick
-                    if (!this.eventRichTextBox.Text.Contains(reader["description"].ToString()))
-                        eventRichTextBox.Text += reader["description"].ToString() + "\n";
+                    if (!this.eventRichTextBox.Text.Contains(description) && counter <= 4) //not allowing more than 4 entries per day
+                    {
+                        eventRichTextBox.Text += description + "\n";
+                        counter++;
+                    }
+
+                    //adding a checkbox for tasks
+                    if (reader["type"].ToString().Equals("Task"))
+                    {
+                        int lineNumber = Array.IndexOf(this.eventRichTextBox.Lines, description);
+                        CheckBox box = new CheckBox();
+                        box.AutoSize = true;
+                        box.Location = new Point(daysLabel.Location.X, this.eventRichTextBox.Location.Y + (lineNumber * 14));
+                        this.Controls.Add(box);
+                    }
+                }
+
             }
 
             reader.Dispose();
