@@ -39,7 +39,7 @@ namespace Tivi
 
             //inserting new row into database with info entered by user
             command.Parameters.AddWithValue("description", eventTextBox.Text);
-            command.Parameters.AddWithValue("date", DateTime.ParseExact(dateTextBox.Text, "MM/dd/yyyy", CultureInfo.InvariantCulture));
+            command.Parameters.AddWithValue("date", DateTime.ParseExact(dateTextBox.Text, "MM/dd/yyyy", CultureInfo.CurrentCulture));
             command.Parameters.AddWithValue("type", eventGroupBox.Controls.OfType<RadioButton>().FirstOrDefault(button => button.Checked).Text);
             command.ExecuteNonQuery();
 

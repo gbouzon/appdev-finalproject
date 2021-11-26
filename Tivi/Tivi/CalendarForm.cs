@@ -18,8 +18,7 @@ namespace Tivi
         private int month = Convert.ToInt32(current.Month);
         private int year = Convert.ToInt32(current.Year);
 
-        //test for eventprompt
-        public static int static_month, static_year;
+        public static string static_month, static_year;
 
         public CalendarForm()
         {
@@ -31,14 +30,15 @@ namespace Tivi
             DisplayDays(year, month);
         }
 
+
         private void DisplayDays(int displayYear, int displayMonth)
         {
             //setting calendar title to Month YEAR format
             String monthName = DateTimeFormatInfo.CurrentInfo.GetMonthName(displayMonth);
             dateLabel.Text = monthName + " " + displayYear;
 
-            static_month = displayMonth;
-            static_year = displayYear;
+            static_month = displayMonth.ToString("d2");
+            static_year = displayYear.ToString("d4");
 
             //first day of the month
             DateTime startOfMonth = new DateTime(displayYear, displayMonth, 1);
@@ -67,6 +67,7 @@ namespace Tivi
                 box.Location = new Point(ucLabel.Location.X, ucLabel.Location.Y + 20);
                 ucdays.Controls.Add(box);
                 */
+                
 
                 ucdays.Days(i);
                 dayContainer.Controls.Add(ucdays);
