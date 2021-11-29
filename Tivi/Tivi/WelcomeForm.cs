@@ -67,7 +67,11 @@ namespace Tivi
                     firstName = reader["first_name"].ToString();
                     lastName = reader["last_name"].ToString();
                     colour = reader["colour"].ToString();
-                    
+                    user = new User(email, firstName, lastName, colour);
+
+                    //means user already exists
+                    OldUserForm form = new OldUserForm(user);
+                    form.Show();
                     //new old form and then close this one
                     //old form will probably take a user as a parameter
 
@@ -81,7 +85,7 @@ namespace Tivi
                 }
 
                 //just to make sure info retrieval is on the up and up
-                MessageBox.Show($"first name: {firstName}, last name: {lastName}, colour: {colour}");
+                //MessageBox.Show($"first name: {firstName}, last name: {lastName}, colour: {colour}");
 
                 reader.Dispose();
                 command.Dispose();
