@@ -26,5 +26,11 @@ namespace Tivi
         {
 
         }
+
+        private void emailTextBox_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == (Int32) Keys.Enter)
+                MessageBox.Show("Enter Pressed");
+        }
     }
 }

@@ -23,7 +23,7 @@ namespace Tivi
 
             if (newTodo == "")
             {
-                MessageBox.Show("Please Input Some Text!");
+                MessageBox.Show("Please Input Some Text!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             else
             {

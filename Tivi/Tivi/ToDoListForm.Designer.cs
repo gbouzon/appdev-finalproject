@@ -147,7 +147,9 @@ namespace Tivi
             this.Controls.Add(this.textBox);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.titleLable);
+            this.MaximumSize = new System.Drawing.Size(474, 544);
             this.Name = "ToDoListForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Tivi";
             this.ResumeLayout(false);
             this.PerformLayout();
