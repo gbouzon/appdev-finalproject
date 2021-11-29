@@ -14,12 +14,19 @@ namespace Tivi
 {
     public partial class EventPromptForm : Form
     {
+        private User user;
         //from phpmyadmin
         String connectionString = "datasource=127.0.0.1;port=3306;username=root;password=;database=tivi;";
 
         public EventPromptForm()
         {
             InitializeComponent();
+        }
+
+        public EventPromptForm(User user)
+        {
+            InitializeComponent();
+            this.user = user; //deep copy later, fix copy constructor first
         }
 
         private void EventPromptForm_Load(object sender, EventArgs e)
@@ -32,7 +39,7 @@ namespace Tivi
             //to be refactored later - do not touch pls and thank
             //think if we want to restart the db from scratch each time this runs
             MySqlConnection connection = new MySqlConnection(connectionString);
-            String insertStatement = "INSERT INTO event(description, date, type) values(?, ?, ?)";
+            String insertStatement = "INSERT INTO event(description, date, type, user_email) values(?, ?, ?, ?)";
             connection.Open();
             MySqlCommand command = connection.CreateCommand();
             command.CommandText = insertStatement;
@@ -41,6 +48,7 @@ namespace Tivi
             command.Parameters.AddWithValue("description", eventTextBox.Text);
             command.Parameters.AddWithValue("date", DateTime.ParseExact(dateTextBox.Text, "MM/dd/yyyy", CultureInfo.CurrentCulture));
             command.Parameters.AddWithValue("type", eventGroupBox.Controls.OfType<RadioButton>().FirstOrDefault(button => button.Checked).Text);
+            command.Parameters.AddWithValue("user_email", user.Email);
             command.ExecuteNonQuery();
 
             MessageBox.Show("Saved", "Save Event", MessageBoxButtons.OK, MessageBoxIcon.Information);
