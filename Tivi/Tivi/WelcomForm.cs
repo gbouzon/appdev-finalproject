@@ -10,11 +10,21 @@ using System.Windows.Forms;
 
 namespace Tivi
 {
-    public partial class HomeForm : Form
+    public partial class WelcomeForm : Form
     {
-        public HomeForm()
+        public WelcomeForm()
         {
             InitializeComponent();
+        }
+
+        private void emailTextBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void WelcomeForm_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

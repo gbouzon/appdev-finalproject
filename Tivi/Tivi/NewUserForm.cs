@@ -16,5 +16,10 @@ namespace Tivi
         {
             InitializeComponent();
         }
+
+        private void lastNameLabel_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
