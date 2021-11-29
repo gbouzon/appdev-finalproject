@@ -34,7 +34,7 @@ namespace Tivi
             this.fnameLabel = new System.Windows.Forms.Label();
             this.fnameTextBox = new System.Windows.Forms.TextBox();
             this.lastNameLabel = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.lnameTextBox = new System.Windows.Forms.TextBox();
             this.colourLabel = new System.Windows.Forms.Label();
             this.createLabel = new System.Windows.Forms.Button();
             this.cancelButton = new System.Windows.Forms.Button();
@@ -68,6 +68,7 @@ namespace Tivi
             this.emailTextBox.Location = new System.Drawing.Point(223, 227);
             this.emailTextBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.emailTextBox.Name = "emailTextBox";
+            this.emailTextBox.ReadOnly = true;
             this.emailTextBox.Size = new System.Drawing.Size(367, 39);
             this.emailTextBox.TabIndex = 5;
             // 
@@ -104,15 +105,15 @@ namespace Tivi
             this.lastNameLabel.Text = "last name:";
             this.lastNameLabel.Click += new System.EventHandler(this.lastNameLabel_Click);
             // 
-            // textBox1
+            // lnameTextBox
             // 
-            this.textBox1.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.textBox1.Font = new System.Drawing.Font("Consolas", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(223, 167);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(367, 39);
-            this.textBox1.TabIndex = 9;
+            this.lnameTextBox.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.lnameTextBox.Font = new System.Drawing.Font("Consolas", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lnameTextBox.Location = new System.Drawing.Point(223, 167);
+            this.lnameTextBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.lnameTextBox.Name = "lnameTextBox";
+            this.lnameTextBox.Size = new System.Drawing.Size(367, 39);
+            this.lnameTextBox.TabIndex = 9;
             // 
             // colourLabel
             // 
@@ -135,6 +136,7 @@ namespace Tivi
             this.createLabel.TabIndex = 12;
             this.createLabel.Text = "Create Account";
             this.createLabel.UseVisualStyleBackColor = true;
+            this.createLabel.Click += new System.EventHandler(this.createLabel_Click);
             // 
             // cancelButton
             // 
@@ -167,6 +169,7 @@ namespace Tivi
             this.redButton.Size = new System.Drawing.Size(41, 36);
             this.redButton.TabIndex = 15;
             this.redButton.UseVisualStyleBackColor = false;
+            this.redButton.Click += new System.EventHandler(this.redButton_Click);
             // 
             // greenButton
             // 
@@ -177,6 +180,7 @@ namespace Tivi
             this.greenButton.Size = new System.Drawing.Size(41, 36);
             this.greenButton.TabIndex = 16;
             this.greenButton.UseVisualStyleBackColor = false;
+            this.greenButton.Click += new System.EventHandler(this.greenButton_Click);
             // 
             // blueButton
             // 
@@ -187,6 +191,7 @@ namespace Tivi
             this.blueButton.Size = new System.Drawing.Size(41, 36);
             this.blueButton.TabIndex = 17;
             this.blueButton.UseVisualStyleBackColor = false;
+            this.blueButton.Click += new System.EventHandler(this.blueButton_Click);
             // 
             // orangeButton
             // 
@@ -197,6 +202,7 @@ namespace Tivi
             this.orangeButton.Size = new System.Drawing.Size(41, 36);
             this.orangeButton.TabIndex = 19;
             this.orangeButton.UseVisualStyleBackColor = false;
+            this.orangeButton.Click += new System.EventHandler(this.orangeButton_Click);
             // 
             // purpleButton
             // 
@@ -207,6 +213,7 @@ namespace Tivi
             this.purpleButton.Size = new System.Drawing.Size(41, 36);
             this.purpleButton.TabIndex = 20;
             this.purpleButton.UseVisualStyleBackColor = false;
+            this.purpleButton.Click += new System.EventHandler(this.purpleButton_Click);
             // 
             // colourPanel
             // 
@@ -234,6 +241,7 @@ namespace Tivi
             this.yellowButton.Size = new System.Drawing.Size(41, 36);
             this.yellowButton.TabIndex = 22;
             this.yellowButton.UseVisualStyleBackColor = false;
+            this.yellowButton.Click += new System.EventHandler(this.yellowButton_Click);
             // 
             // pinkButton
             // 
@@ -244,6 +252,7 @@ namespace Tivi
             this.pinkButton.Size = new System.Drawing.Size(41, 36);
             this.pinkButton.TabIndex = 21;
             this.pinkButton.UseVisualStyleBackColor = false;
+            this.pinkButton.Click += new System.EventHandler(this.pinkButton_Click);
             // 
             // NewUserForm
             // 
@@ -256,7 +265,7 @@ namespace Tivi
             this.Controls.Add(this.createLabel);
             this.Controls.Add(this.colourLabel);
             this.Controls.Add(this.lastNameLabel);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.lnameTextBox);
             this.Controls.Add(this.fnameLabel);
             this.Controls.Add(this.fnameTextBox);
             this.Controls.Add(this.emailLabel);
@@ -278,7 +287,7 @@ namespace Tivi
         private System.Windows.Forms.Label fnameLabel;
         private System.Windows.Forms.TextBox fnameTextBox;
         private System.Windows.Forms.Label lastNameLabel;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox lnameTextBox;
         private System.Windows.Forms.Label colourLabel;
         private System.Windows.Forms.Button createLabel;
         private System.Windows.Forms.Button cancelButton;
