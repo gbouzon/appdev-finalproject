@@ -163,7 +163,6 @@ C:\appdev-finalproject\Tivi\Tivi\bin\Debug\zh-Hant\Microsoft.Data.SqlClient.reso
 C:\appdev-finalproject\Tivi\Tivi\obj\Debug\Tivi.csproj.AssemblyReference.cache
 C:\appdev-finalproject\Tivi\Tivi\obj\Debug\Tivi.CalendarForm.resources
 C:\appdev-finalproject\Tivi\Tivi\obj\Debug\Tivi.EventPromptForm.resources
-C:\appdev-finalproject\Tivi\Tivi\obj\Debug\Tivi.HomeForm.resources
 C:\appdev-finalproject\Tivi\Tivi\obj\Debug\Tivi.NewUserForm.resources
 C:\appdev-finalproject\Tivi\Tivi\obj\Debug\Tivi.OldUserForm.resources
 C:\appdev-finalproject\Tivi\Tivi\obj\Debug\Tivi.Properties.Resources.resources
@@ -174,7 +173,6 @@ C:\appdev-finalproject\Tivi\Tivi\obj\Debug\Tivi.csproj.GenerateResource.cache
 C:\appdev-finalproject\Tivi\Tivi\obj\Debug\Tivi.csproj.CoreCompileInputs.cache
 C:\appdev-finalproject\Tivi\Tivi\obj\Debug\Tivi.exe
 C:\appdev-finalproject\Tivi\Tivi\obj\Debug\Tivi.pdb
-C:\appdev-finalproject\Tivi\Tivi\bin\Debug\MySql.Data.dll
 C:\Users\25683\Desktop\app_dev_project\appdev-finalproject\Tivi\Tivi\bin\Debug\Tivi.exe.config
 C:\Users\25683\Desktop\app_dev_project\appdev-finalproject\Tivi\Tivi\bin\Debug\Tivi.exe
 C:\Users\25683\Desktop\app_dev_project\appdev-finalproject\Tivi\Tivi\bin\Debug\Tivi.pdb
@@ -255,3 +253,6 @@ C:\Users\25683\Desktop\app_dev_project\appdev-finalproject\Tivi\Tivi\obj\Debug\T
 C:\Users\25683\Desktop\app_dev_project\appdev-finalproject\Tivi\Tivi\obj\Debug\Tivi.csproj.CopyComplete
 C:\Users\25683\Desktop\app_dev_project\appdev-finalproject\Tivi\Tivi\obj\Debug\Tivi.exe
 C:\Users\25683\Desktop\app_dev_project\appdev-finalproject\Tivi\Tivi\obj\Debug\Tivi.pdb
+C:\appdev-finalproject\Tivi\Tivi\obj\Debug\Tivi.SchedulerForm.resources
+C:\appdev-finalproject\Tivi\Tivi\obj\Debug\Tivi.WelcomeForm.resources
+C:\appdev-finalproject\Tivi\Tivi\obj\Debug\Tivi.csproj.CopyComplete

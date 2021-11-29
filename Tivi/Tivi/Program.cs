@@ -16,7 +16,7 @@ namespace Tivi
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new CalendarForm());
+            Application.Run(new ToDoListForm());
         }
     }
 }

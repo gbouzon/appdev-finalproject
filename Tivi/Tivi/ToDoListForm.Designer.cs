@@ -46,9 +46,10 @@ namespace Tivi
             this.titleLable.BackColor = System.Drawing.Color.DarkSalmon;
             this.titleLable.Font = new System.Drawing.Font("Ink Free", 22F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.titleLable.ForeColor = System.Drawing.Color.White;
-            this.titleLable.Location = new System.Drawing.Point(3, 9);
+            this.titleLable.Location = new System.Drawing.Point(2, 8);
+            this.titleLable.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.titleLable.Name = "titleLable";
-            this.titleLable.Size = new System.Drawing.Size(605, 43);
+            this.titleLable.Size = new System.Drawing.Size(454, 37);
             this.titleLable.TabIndex = 0;
             this.titleLable.Text = "To Do List";
             // 
@@ -56,25 +57,28 @@ namespace Tivi
             // 
             this.label1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.label1.Font = new System.Drawing.Font("Ink Free", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(20, 88);
+            this.label1.Location = new System.Drawing.Point(15, 76);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(289, 33);
+            this.label1.Size = new System.Drawing.Size(290, 29);
             this.label1.TabIndex = 1;
             this.label1.Text = "Enter here your to-do\'s:";
             // 
             // textBox
             // 
-            this.textBox.Location = new System.Drawing.Point(20, 143);
+            this.textBox.Location = new System.Drawing.Point(15, 124);
+            this.textBox.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.textBox.Name = "textBox";
-            this.textBox.Size = new System.Drawing.Size(330, 25);
+            this.textBox.Size = new System.Drawing.Size(248, 20);
             this.textBox.TabIndex = 2;
             // 
             // checkedListBox
             // 
             this.checkedListBox.FormattingEnabled = true;
-            this.checkedListBox.Location = new System.Drawing.Point(20, 183);
+            this.checkedListBox.Location = new System.Drawing.Point(15, 159);
+            this.checkedListBox.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.checkedListBox.Name = "checkedListBox";
-            this.checkedListBox.Size = new System.Drawing.Size(508, 284);
+            this.checkedListBox.Size = new System.Drawing.Size(382, 244);
             this.checkedListBox.TabIndex = 3;
             // 
             // addButton
@@ -82,9 +86,10 @@ namespace Tivi
             this.addButton.BackColor = System.Drawing.Color.LightSalmon;
             this.addButton.Font = new System.Drawing.Font("Ink Free", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.addButton.ForeColor = System.Drawing.Color.White;
-            this.addButton.Location = new System.Drawing.Point(395, 132);
+            this.addButton.Location = new System.Drawing.Point(296, 114);
+            this.addButton.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.addButton.Name = "addButton";
-            this.addButton.Size = new System.Drawing.Size(133, 42);
+            this.addButton.Size = new System.Drawing.Size(100, 36);
             this.addButton.TabIndex = 4;
             this.addButton.Text = "ADD";
             this.addButton.UseVisualStyleBackColor = false;
@@ -95,9 +100,10 @@ namespace Tivi
             this.clearCheckedButton.BackColor = System.Drawing.Color.LightSalmon;
             this.clearCheckedButton.Font = new System.Drawing.Font("Ink Free", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.clearCheckedButton.ForeColor = System.Drawing.Color.White;
-            this.clearCheckedButton.Location = new System.Drawing.Point(39, 519);
+            this.clearCheckedButton.Location = new System.Drawing.Point(29, 450);
+            this.clearCheckedButton.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.clearCheckedButton.Name = "clearCheckedButton";
-            this.clearCheckedButton.Size = new System.Drawing.Size(189, 42);
+            this.clearCheckedButton.Size = new System.Drawing.Size(142, 36);
             this.clearCheckedButton.TabIndex = 6;
             this.clearCheckedButton.Text = "CLEAR CHECKED";
             this.clearCheckedButton.UseVisualStyleBackColor = false;
@@ -108,9 +114,10 @@ namespace Tivi
             this.clearAllButton.BackColor = System.Drawing.Color.LightSalmon;
             this.clearAllButton.Font = new System.Drawing.Font("Ink Free", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.clearAllButton.ForeColor = System.Drawing.Color.White;
-            this.clearAllButton.Location = new System.Drawing.Point(310, 519);
+            this.clearAllButton.Location = new System.Drawing.Point(232, 450);
+            this.clearAllButton.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.clearAllButton.Name = "clearAllButton";
-            this.clearAllButton.Size = new System.Drawing.Size(189, 42);
+            this.clearAllButton.Size = new System.Drawing.Size(142, 36);
             this.clearAllButton.TabIndex = 7;
             this.clearAllButton.Text = "CLEAR ALL";
             this.clearAllButton.UseVisualStyleBackColor = false;
@@ -119,18 +126,19 @@ namespace Tivi
             // label2
             // 
             this.label2.Font = new System.Drawing.Font("Ink Free", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(16, 483);
+            this.label2.Location = new System.Drawing.Point(12, 419);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(257, 25);
+            this.label2.Size = new System.Drawing.Size(193, 22);
             this.label2.TabIndex = 8;
             this.label2.Text = "Cleared 0 items";
             // 
             // ToDoListForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Snow;
-            this.ClientSize = new System.Drawing.Size(610, 583);
+            this.ClientSize = new System.Drawing.Size(458, 505);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.clearAllButton);
             this.Controls.Add(this.clearCheckedButton);
@@ -139,7 +147,6 @@ namespace Tivi
             this.Controls.Add(this.textBox);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.titleLable);
-            this.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.Name = "ToDoListForm";
             this.Text = "Tivi";
             this.ResumeLayout(false);
