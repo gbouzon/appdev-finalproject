@@ -199,23 +199,29 @@
     <Compile Include="EventPromptForm.Designer.cs">
       <DependentUpon>EventPromptForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="HomeForm.cs">
+    <Compile Include="OldUserForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="HomeForm.Designer.cs">
-      <DependentUpon>HomeForm.cs</DependentUpon>
+    <Compile Include="OldUserForm.Designer.cs">
+      <DependentUpon>OldUserForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SchedulerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SchedulerForm.Designer.cs">
+      <DependentUpon>SchedulerForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WelcomForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WelcomForm.Designer.cs">
+      <DependentUpon>WelcomForm.cs</DependentUpon>
     </Compile>
     <Compile Include="NewUserForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="NewUserForm.Designer.cs">
       <DependentUpon>NewUserForm.cs</DependentUpon>
-    </Compile>
-    <Compile Include="OldUserForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="OldUserForm.Designer.cs">
-      <DependentUpon>OldUserForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -243,14 +249,17 @@
     <EmbeddedResource Include="EventPromptForm.resx">
       <DependentUpon>EventPromptForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="HomeForm.resx">
-      <DependentUpon>HomeForm.cs</DependentUpon>
+    <EmbeddedResource Include="OldUserForm.resx">
+      <DependentUpon>OldUserForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SchedulerForm.resx">
+      <DependentUpon>SchedulerForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WelcomForm.resx">
+      <DependentUpon>WelcomForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="NewUserForm.resx">
       <DependentUpon>NewUserForm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="OldUserForm.resx">
-      <DependentUpon>OldUserForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

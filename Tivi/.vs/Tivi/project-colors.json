@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "b2424a2d-9a11-4bdb-846e-11fbb62d1106": {
+      "ProjectGuid": "b2424a2d-9a11-4bdb-846e-11fbb62d1106",
+      "DisplayName": "Tivi",
+      "ColorIndex": 0
+    }
+  },
+  "NextColorIndex": 1
+}
