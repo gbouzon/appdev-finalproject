@@ -8,7 +8,7 @@ using System.Drawing;
 
 namespace Tivi
 {
-    class User
+    public class User
     {
         //properties
         private string email;
