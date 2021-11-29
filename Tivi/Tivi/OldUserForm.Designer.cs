@@ -57,6 +57,7 @@
             this.calendarButton.TabIndex = 1;
             this.calendarButton.Text = "Calendar";
             this.calendarButton.UseVisualStyleBackColor = false;
+            this.calendarButton.Click += new System.EventHandler(this.calendarButton_Click);
             // 
             // toDoListButton
             // 
@@ -69,6 +70,7 @@
             this.toDoListButton.TabIndex = 2;
             this.toDoListButton.Text = "To Do List";
             this.toDoListButton.UseVisualStyleBackColor = false;
+            this.toDoListButton.Click += new System.EventHandler(this.toDoListButton_Click);
             // 
             // schedulerButton
             // 

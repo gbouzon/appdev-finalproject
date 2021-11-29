@@ -22,7 +22,7 @@ namespace Tivi
         public OldUserForm(User user)
         {
             InitializeComponent();
-            this.user = new User(user); //deep copy
+            this.user = user; //deep copy, fix copy constructor
         }
 
         private void OldUserForm_Load(object sender, EventArgs e)
@@ -32,13 +32,13 @@ namespace Tivi
 
         private void calendarButton_Click(object sender, EventArgs e)
         {
-            CalendarForm form = new CalendarForm();
+            CalendarForm form = new CalendarForm(this.user);
             form.Show();
         }
 
         private void toDoListButton_Click(object sender, EventArgs e)
         {
-            ToDoListForm form = new ToDoListForm();
+            ToDoListForm form = new ToDoListForm(this.user);
             form.Show();
         }
     }
