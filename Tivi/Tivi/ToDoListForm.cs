@@ -12,9 +12,16 @@ namespace Tivi
 {
     public partial class ToDoListForm : Form
     {
+        private User user;
         public ToDoListForm()
         {
             InitializeComponent();
+        }
+
+        public ToDoListForm(User user)
+        {
+            InitializeComponent();
+            this.user = user;
         }
 
         private void addButton_Click(object sender, EventArgs e)
