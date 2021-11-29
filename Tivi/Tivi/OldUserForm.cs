@@ -29,5 +29,17 @@ namespace Tivi
         {
             userLabel.Text = user.FirstName + "!";
         }
+
+        private void calendarButton_Click(object sender, EventArgs e)
+        {
+            CalendarForm form = new CalendarForm();
+            form.Show();
+        }
+
+        private void toDoListButton_Click(object sender, EventArgs e)
+        {
+            ToDoListForm form = new ToDoListForm();
+            form.Show();
+        }
     }
 }
