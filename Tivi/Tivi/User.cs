@@ -82,8 +82,5 @@ namespace Tivi
                 colour = (value != null && value != string.Empty) ? value : "Green";
             }
         }
-
-
-
     }
 }

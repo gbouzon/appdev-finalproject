@@ -211,11 +211,12 @@
     <Compile Include="SchedulerForm.Designer.cs">
       <DependentUpon>SchedulerForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="WelcomForm.cs">
+    <Compile Include="User.cs" />
+    <Compile Include="WelcomeForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="WelcomForm.Designer.cs">
-      <DependentUpon>WelcomForm.cs</DependentUpon>
+    <Compile Include="WelcomeForm.Designer.cs">
+      <DependentUpon>WelcomeForm.cs</DependentUpon>
     </Compile>
     <Compile Include="NewUserForm.cs">
       <SubType>Form</SubType>
@@ -255,8 +256,8 @@
     <EmbeddedResource Include="SchedulerForm.resx">
       <DependentUpon>SchedulerForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="WelcomForm.resx">
-      <DependentUpon>WelcomForm.cs</DependentUpon>
+    <EmbeddedResource Include="WelcomeForm.resx">
+      <DependentUpon>WelcomeForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="NewUserForm.resx">
       <DependentUpon>NewUserForm.cs</DependentUpon>
