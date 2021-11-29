@@ -32,7 +32,7 @@ namespace Tivi
         }
 
         //copy constructor
-        public User(User user) : this(user.email, user.firstName, user.lastName, user.colour) { }
+        public User(User user) : this(user.email, user.firstName, user.lastName, user.colour) { } //fix this shit, something isn't working
 
         //properties
 
