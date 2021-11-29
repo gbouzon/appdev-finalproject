@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Text.RegularExpressions;
+using System.Drawing;
 
 namespace Tivi
 {
@@ -15,7 +16,7 @@ namespace Tivi
         private string lastName;
         private string colour;
 
-        private static Regex EMAIL_REGEX = new Regex("^[a-zA-Z0-9](?!.*[-_.]{2})[a-zA-Z0-9-_.]{0,15}@[a-zA-Z_.]{2,24}((.qc)?.ca|.com(.(br|us|uk|ca))?|.net|.info|.org)$");
+        public static Regex EMAIL_REGEX = new Regex("^[a-zA-Z0-9](?!.*[-_.]{2})[a-zA-Z0-9-_.]{0,15}@[a-zA-Z_.]{2,24}((.qc)?.ca|.com(.(br|us|uk|ca))?|.net|.info|.org)$");
         //(rx.IsMatch(input)) -> RETURNS TRUE IF MATCH FOUND
 
         //default constructor
