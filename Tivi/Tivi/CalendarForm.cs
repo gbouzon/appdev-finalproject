@@ -13,7 +13,7 @@ namespace Tivi
 {
     public partial class CalendarForm : Form
     {
-        
+        private User user;
         private static readonly DateTime current = DateTime.Now;
         private int month = Convert.ToInt32(current.Month);
         private int year = Convert.ToInt32(current.Year);
@@ -23,6 +23,11 @@ namespace Tivi
         public CalendarForm()
         {
             InitializeComponent();
+        }
+        public CalendarForm(User user)
+        {
+            InitializeComponent();
+            this.user = user;
         }
 
         private void CalendarForm_Load(object sender, EventArgs e)
@@ -58,7 +63,7 @@ namespace Tivi
 
             for (int i = 1; i <= days; i++)
             {
-                UserControlDays ucdays = new UserControlDays();
+                UserControlDays ucdays = new UserControlDays(user);
                 ucdays.Days(i);
                 dayContainer.Controls.Add(ucdays);
             }
