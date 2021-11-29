@@ -14,6 +14,7 @@ namespace Tivi
 {
     public partial class UserControlDays : UserControl
     {
+        private User user;
         //from phpmyadmin
         String connectionString = "datasource=127.0.0.1;port=3306;username=root;password=;database=tivi;";
 
@@ -25,15 +26,17 @@ namespace Tivi
             InitializeComponent();
         }
 
+        public UserControlDays(User user)
+        {
+            InitializeComponent();
+            this.user = user; //deep copy, fix copy constructor
+        }
+
         private void UserControlDays_Load(object sender, EventArgs e)
         {
             //displaying all events/tasks on load
             string dateStr = CalendarForm.static_year + "-" + CalendarForm.static_month + "-" + this.daysLabel.Text;
-            DisplayEvent(dateStr);
-
-            //to create checkbox once event is created -> check db stuff first
-            
-                
+            DisplayEvent(dateStr);     
         }
 
         public void Days(int numDay)
@@ -60,15 +63,16 @@ namespace Tivi
         {
             timer1.Start();
             static_day = daysLabel.Text;
-            EventPromptForm eventForm = new EventPromptForm();
+            EventPromptForm eventForm = new EventPromptForm(this.user);
             eventForm.Show();
         }
 
         //displaying event in richtextbox
         private void DisplayEvent(string dateStr)
         {
-            String query = "SELECT * FROM event WHERE date = ?";
+            String query = "SELECT * FROM event WHERE date = ? AND user_email = ?";
             DateTime date = DateTime.ParseExact(dateStr, "yyyy-MM-dd", CultureInfo.CurrentCulture);
+            String email = user.Email;
 
             MySqlConnection connection = new MySqlConnection(connectionString);
             connection.Open();
@@ -76,6 +80,7 @@ namespace Tivi
             MySqlCommand command = connection.CreateCommand();
             command.CommandText = query;
             command.Parameters.AddWithValue("date", date);
+            command.Parameters.AddWithValue("user_email", email);
 
             MySqlDataReader reader = command.ExecuteReader();
 
