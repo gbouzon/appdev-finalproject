@@ -95,6 +95,8 @@ namespace Tivi
 
             command.Dispose();
             connection.Close();
+
+            //close form
             this.Close();
         }
     }
