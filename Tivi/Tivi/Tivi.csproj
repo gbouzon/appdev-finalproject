@@ -212,6 +212,9 @@
       <DependentUpon>SchedulerForm.cs</DependentUpon>
     </Compile>
     <Compile Include="User.cs" />
+    <Compile Include="UserControlLarge.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Include="WelcomeForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -255,6 +258,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="SchedulerForm.resx">
       <DependentUpon>SchedulerForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControlLarge.resx">
+      <DependentUpon>UserControlLarge.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="WelcomeForm.resx">
       <DependentUpon>WelcomeForm.cs</DependentUpon>

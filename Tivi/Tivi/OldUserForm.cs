@@ -41,5 +41,11 @@ namespace Tivi
             ToDoListForm form = new ToDoListForm(this.user);
             form.Show();
         }
+
+        private void schedulerButton_Click(object sender, EventArgs e)
+        {
+            SchedulerForm form = new SchedulerForm(this.user);
+            form.Show();
+        }
     }
 }
