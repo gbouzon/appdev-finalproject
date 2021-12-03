@@ -35,7 +35,7 @@ namespace Tivi
             }
             else
             {
-                checkedListBox.Items.Add($"{newTodo,-30} {date.ToLongDateString(),20}");
+                checkedListBox.Items.Add($"{newTodo,-40} {date.ToLongDateString(),20}");
                 textBox.Text = "";
                 newTodo = "";
                 
@@ -62,5 +62,7 @@ namespace Tivi
             
             label2.Text = "Cleared " + checkedItems + " items of a total of " + totalItems + " items";
         }
+
+      
     }
 }

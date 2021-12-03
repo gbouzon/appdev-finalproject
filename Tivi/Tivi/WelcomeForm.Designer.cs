@@ -38,10 +38,10 @@ namespace Tivi
             // 
             this.appName.AutoSize = true;
             this.appName.Font = new System.Drawing.Font("Consolas", 86.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.appName.Location = new System.Drawing.Point(152, 87);
+            this.appName.Location = new System.Drawing.Point(136, 81);
             this.appName.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.appName.Name = "appName";
-            this.appName.Size = new System.Drawing.Size(309, 135);
+            this.appName.Size = new System.Drawing.Size(386, 168);
             this.appName.TabIndex = 5;
             this.appName.Text = "TIVI";
             // 
@@ -49,10 +49,10 @@ namespace Tivi
             // 
             this.emailLabel.AutoSize = true;
             this.emailLabel.Font = new System.Drawing.Font("Consolas", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.emailLabel.Location = new System.Drawing.Point(71, 328);
+            this.emailLabel.Location = new System.Drawing.Point(80, 306);
             this.emailLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.emailLabel.Name = "emailLabel";
-            this.emailLabel.Size = new System.Drawing.Size(111, 34);
+            this.emailLabel.Size = new System.Drawing.Size(139, 43);
             this.emailLabel.TabIndex = 4;
             this.emailLabel.Text = "email:";
             // 
@@ -60,22 +60,22 @@ namespace Tivi
             // 
             this.emailTextBox.BackColor = System.Drawing.SystemColors.ControlLight;
             this.emailTextBox.Font = new System.Drawing.Font("Consolas", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.emailTextBox.Location = new System.Drawing.Point(186, 327);
-            this.emailTextBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.emailTextBox.Location = new System.Drawing.Point(204, 305);
+            this.emailTextBox.Margin = new System.Windows.Forms.Padding(2);
             this.emailTextBox.Name = "emailTextBox";
-            this.emailTextBox.Size = new System.Drawing.Size(303, 39);
+            this.emailTextBox.Size = new System.Drawing.Size(303, 47);
             this.emailTextBox.TabIndex = 3;
             this.emailTextBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.emailTextBox_KeyPress);
             // 
             // WelcomeForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(619, 440);
+            this.ClientSize = new System.Drawing.Size(617, 399);
             this.Controls.Add(this.appName);
             this.Controls.Add(this.emailLabel);
             this.Controls.Add(this.emailTextBox);
-            this.MaximumSize = new System.Drawing.Size(635, 479);
+            this.MaximumSize = new System.Drawing.Size(635, 446);
             this.Name = "WelcomeForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Welcome";
