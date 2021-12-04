@@ -9,7 +9,6 @@ namespace Tivi
 {
     public partial class UserControlLarge : UserControl
     {
-        private Label dayNumberLabel;
 
         public UserControlLarge()
         {
@@ -18,22 +17,14 @@ namespace Tivi
 
         private void InitializeComponent()
         {
-            this.dayNumberLabel = new System.Windows.Forms.Label();
             this.SuspendLayout();
-            // 
-            // dayNumberLabel
-            // 
-            this.dayNumberLabel.Font = new System.Drawing.Font("Consolas", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dayNumberLabel.Location = new System.Drawing.Point(18, 14);
-            this.dayNumberLabel.Name = "dayNumberLabel";
-            this.dayNumberLabel.Size = new System.Drawing.Size(42, 43);
-            this.dayNumberLabel.TabIndex = 0;
             // 
             // UserControlLarge
             // 
-            this.Controls.Add(this.dayNumberLabel);
+            this.BackColor = System.Drawing.Color.Bisque;
+            this.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.Name = "UserControlLarge";
-            this.Size = new System.Drawing.Size(214, 224);
+            this.Size = new System.Drawing.Size(210, 220);
             this.ResumeLayout(false);
 
         }
