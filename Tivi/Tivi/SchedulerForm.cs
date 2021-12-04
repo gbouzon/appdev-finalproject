@@ -24,7 +24,12 @@ namespace Tivi
         }
         private void SchedulerForm_Load(object sender, EventArgs e)
         {
-              
+            for (int i = 1; i <= 24; i++)
+            {
+                UserControlLarge boxUserControl = new UserControlLarge();
+                schedulerFlowLayoutPanel.Controls.Add(boxUserControl);
+            }
+
 
             // IF SUNDAY THEN GENERATE THE DATES (going forward)
             if (datetime.DayOfWeek == DayOfWeek.Sunday)
@@ -73,7 +78,6 @@ namespace Tivi
             thursdayDate.Text = "" + nextSunday.AddDays(4).Date;
             fridayDate.Text = "" + nextSunday.AddDays(5).Date;
             saturdayDate.Text = "" + nextSunday.AddDays(6).Date;
-
             datetime = nextSunday;
            
   
@@ -86,7 +90,7 @@ namespace Tivi
             DateTime prevSunday = prevMonday.AddDays(6);
 
             DateTime initial = prevSunday;
-            String[] dateLabels = new string[] { mondayDate.Text, tuesdayDate.Text, wednesdayDate.Text, thursdayDate.Text, fridayDate.Text, saturdayDate.Text, sundayDate.Text };
+    
             sundayDate.Text = "" + initial.Date;
             mondayDate.Text = "" + initial.AddDays(1).Date;
             tuesdayDate.Text = "" + initial.AddDays(2).Date;
@@ -95,6 +99,10 @@ namespace Tivi
             fridayDate.Text = "" + initial.AddDays(5).Date;
             saturdayDate.Text = "" + initial.AddDays(6).Date;
             datetime = prevSunday;
+        }
+
+        private void panel23_Paint(object sender, PaintEventArgs e)
+        {
         }
     }
 }
