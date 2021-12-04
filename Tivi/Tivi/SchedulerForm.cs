@@ -1,11 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Tivi
@@ -14,6 +7,7 @@ namespace Tivi
     {
         DateTime datetime = DateTime.Now;
         private User user;
+        private int weekNum;
         public SchedulerForm()
         {
             InitializeComponent();
@@ -24,12 +18,7 @@ namespace Tivi
         }
         private void SchedulerForm_Load(object sender, EventArgs e)
         {
-            for (int i = 1; i <= 24; i++)
-            {
-                UserControlLarge boxUserControl = new UserControlLarge();
-                schedulerFlowLayoutPanel.Controls.Add(boxUserControl);
-            }
-
+            addUserControls();
 
             // IF SUNDAY THEN GENERATE THE DATES (going forward)
             if (datetime.DayOfWeek == DayOfWeek.Sunday)
@@ -68,6 +57,9 @@ namespace Tivi
         // get next week 
         private void nextButton_Click(object sender, EventArgs e)
         {
+            clearScheduler();
+            if (schedulerFlowLayoutPanel.Controls.Count == 0)
+                addUserControls();
             // start from previous sunday to next sunday
             DateTime nextSunday = datetime.AddDays(7 - (int)datetime.DayOfWeek);
 
@@ -79,18 +71,21 @@ namespace Tivi
             fridayDate.Text = "" + nextSunday.AddDays(5).Date;
             saturdayDate.Text = "" + nextSunday.AddDays(6).Date;
             datetime = nextSunday;
-           
-  
+
         }
 
         private void previousButton_Click(object sender, EventArgs e)
         {
+            if (schedulerFlowLayoutPanel.Controls.Count == 0)
+                addUserControls();
+            // else do nothing
+
             int dayInWeek = (int)datetime.DayOfWeek;
             DateTime prevMonday = datetime.AddDays(-(((dayInWeek + 6) % 7) + 7));
             DateTime prevSunday = prevMonday.AddDays(6);
 
             DateTime initial = prevSunday;
-    
+
             sundayDate.Text = "" + initial.Date;
             mondayDate.Text = "" + initial.AddDays(1).Date;
             tuesdayDate.Text = "" + initial.AddDays(2).Date;
@@ -101,8 +96,161 @@ namespace Tivi
             datetime = prevSunday;
         }
 
-        private void panel23_Paint(object sender, PaintEventArgs e)
+        private void addUserControls()
         {
+            for (int i = 1; i <= 24; i++)
+            {
+                UserControlLarge boxUserControl = new UserControlLarge();
+                schedulerFlowLayoutPanel.Controls.Add(boxUserControl);
+            }
         }
+
+
+        private void clearAllButton_Click(object sender, EventArgs e)
+        {
+            schedulerFlowLayoutPanel.Controls.Clear();
+            addUserControls();
+        }
+
+
+        private void clearScheduler()
+        {
+        
+            schedulerFlowLayoutPanel.Controls.Clear();
+        }
+
+
     }
 }
+
+/*
+// mornings of the week
+private void morningSundayUC_Load(object sender, EventArgs e)
+{
+    SchedulerEventForm morningSun = new SchedulerEventForm();
+    morningSun.Show();
+}
+
+private void morningMondayUC_Load(object sender, EventArgs e)
+{
+    SchedulerEventForm morningMon = new SchedulerEventForm();
+    morningMon.Show();
+}
+
+private void morningTuesdayUC_Load(object sender, EventArgs e)
+{
+    SchedulerEventForm morningTues = new SchedulerEventForm();
+    morningTues.Show();
+}
+
+private void morningWednesdayUC_Load(object sender, EventArgs e)
+{
+    SchedulerEventForm morningWed = new SchedulerEventForm();
+    morningWed.Show();
+}
+
+private void morningThursdayUC_Load(object sender, EventArgs e)
+{
+    SchedulerEventForm morningThurs = new SchedulerEventForm();
+    morningThurs.Show();
+}
+
+private void morningFridayUC_Load(object sender, EventArgs e)
+{
+    SchedulerEventForm morningFri = new SchedulerEventForm();
+    morningFri.Show();
+}
+
+private void morningSaturdayUC_Load(object sender, EventArgs e)
+{
+    SchedulerEventForm morningSat = new SchedulerEventForm();
+    morningSat.Show();
+}
+
+private void afternoonSundayUC_Load(object sender, EventArgs e)
+{
+    SchedulerEventForm afternoonSun = new SchedulerEventForm();
+    afternoonSun.Show();
+}
+
+private void afternoonMondayUC_Load(object sender, EventArgs e)
+{
+    SchedulerEventForm afternoonMon = new SchedulerEventForm();
+    afternoonMon.Show();
+}
+
+private void afternoonTuesdayUC_Load(object sender, EventArgs e)
+{
+    SchedulerEventForm afternoonTues = new SchedulerEventForm();
+    afternoonTues.Show();
+}
+
+private void wednesdayAfternoonUC_Load(object sender, EventArgs e)
+{
+    SchedulerEventForm afternoonWed = new SchedulerEventForm();
+    afternoonWed.Show();
+}
+
+private void thursdayAfternoonUC_Load(object sender, EventArgs e)
+{
+    SchedulerEventForm afternoonThurs = new SchedulerEventForm();
+    afternoonThurs.Show();
+}
+
+private void afternoonFridayUC_Load(object sender, EventArgs e)
+{
+    SchedulerEventForm afternoonFri = new SchedulerEventForm();
+    afternoonFri.Show();
+}
+
+private void afternoonSaturdayUC_Load(object sender, EventArgs e)
+{
+    SchedulerEventForm afternoonSat = new SchedulerEventForm();
+    afternoonSat.Show();
+}
+
+
+private void eveningSundayUC_Load(object sender, EventArgs e)
+{
+    SchedulerEventForm eveningSun = new SchedulerEventForm();
+    eveningSun.Show();
+}
+
+private void eveningMondayUC_Load(object sender, EventArgs e)
+{
+    SchedulerEventForm eveningMon = new SchedulerEventForm();
+    eveningMon.Show();
+}
+
+private void eveningTuesdayUC_Load(object sender, EventArgs e)
+{
+    SchedulerEventForm eveningTues = new SchedulerEventForm();
+    eveningTues.Show();
+}
+
+private void eveningWednesdayUC_Load(object sender, EventArgs e)
+{
+    SchedulerEventForm eveningWed = new SchedulerEventForm();
+    eveningWed.Show();
+}
+
+private void eveningThursdayUC_Load(object sender, EventArgs e)
+{
+    SchedulerEventForm eveningThurs = new SchedulerEventForm();
+    eveningThurs.Show();
+}
+
+private void eveningFridayUC_Load(object sender, EventArgs e)
+{
+    SchedulerEventForm eveningFri = new SchedulerEventForm();
+    eveningFri.Show();
+}
+
+private void eveningSaturdayUC_Load(object sender, EventArgs e)
+{
+    SchedulerEventForm eveningSat = new SchedulerEventForm();
+    eveningSat.Show();
+}
+
+
+*/

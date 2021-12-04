@@ -39,9 +39,10 @@ namespace Tivi
             // 
             this.daysLabel.AutoSize = true;
             this.daysLabel.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.daysLabel.Location = new System.Drawing.Point(17, 9);
+            this.daysLabel.Location = new System.Drawing.Point(13, 7);
+            this.daysLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.daysLabel.Name = "daysLabel";
-            this.daysLabel.Size = new System.Drawing.Size(38, 25);
+            this.daysLabel.Size = new System.Drawing.Size(28, 18);
             this.daysLabel.TabIndex = 0;
             this.daysLabel.Text = "00";
             // 
@@ -50,11 +51,12 @@ namespace Tivi
             this.eventRichTextBox.BackColor = System.Drawing.Color.White;
             this.eventRichTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.eventRichTextBox.Cursor = System.Windows.Forms.Cursors.Default;
-            this.eventRichTextBox.Location = new System.Drawing.Point(43, 37);
+            this.eventRichTextBox.Location = new System.Drawing.Point(32, 30);
+            this.eventRichTextBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.eventRichTextBox.Name = "eventRichTextBox";
             this.eventRichTextBox.ReadOnly = true;
             this.eventRichTextBox.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.None;
-            this.eventRichTextBox.Size = new System.Drawing.Size(112, 67);
+            this.eventRichTextBox.Size = new System.Drawing.Size(84, 54);
             this.eventRichTextBox.TabIndex = 1;
             this.eventRichTextBox.Text = "";
             this.eventRichTextBox.MouseEnter += new System.EventHandler(this.UserControlDays_MouseEnter);
@@ -66,13 +68,14 @@ namespace Tivi
             // 
             // UserControlDays
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.Controls.Add(this.eventRichTextBox);
             this.Controls.Add(this.daysLabel);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "UserControlDays";
-            this.Size = new System.Drawing.Size(175, 120);
+            this.Size = new System.Drawing.Size(131, 98);
             this.Load += new System.EventHandler(this.UserControlDays_Load);
             this.Click += new System.EventHandler(this.UserControlDays_Click);
             this.MouseEnter += new System.EventHandler(this.UserControlDays_MouseEnter);

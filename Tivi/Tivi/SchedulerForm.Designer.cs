@@ -29,9 +29,6 @@
         private void InitializeComponent()
         {
             this.schedulerFlowLayoutPanel = new System.Windows.Forms.FlowLayoutPanel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
             this.mondayLabel = new System.Windows.Forms.Label();
             this.tuesdayLabel = new System.Windows.Forms.Label();
             this.wednesdayLabel = new System.Windows.Forms.Label();
@@ -49,6 +46,10 @@
             this.fridayDate = new System.Windows.Forms.Label();
             this.saturdayDate = new System.Windows.Forms.Label();
             this.weeklySchedulerLabel = new System.Windows.Forms.Label();
+            this.clearAllButton = new System.Windows.Forms.Button();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // schedulerFlowLayoutPanel
@@ -56,38 +57,8 @@
             this.schedulerFlowLayoutPanel.BackColor = System.Drawing.SystemColors.WindowFrame;
             this.schedulerFlowLayoutPanel.Location = new System.Drawing.Point(158, 174);
             this.schedulerFlowLayoutPanel.Name = "schedulerFlowLayoutPanel";
-            this.schedulerFlowLayoutPanel.Size = new System.Drawing.Size(1513, 681);
+            this.schedulerFlowLayoutPanel.Size = new System.Drawing.Size(1522, 681);
             this.schedulerFlowLayoutPanel.TabIndex = 0;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(72, 278);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(80, 22);
-            this.label1.TabIndex = 19;
-            this.label1.Text = "Morning";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(55, 491);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(100, 22);
-            this.label2.TabIndex = 20;
-            this.label2.Text = "Afternoon";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(72, 737);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(80, 22);
-            this.label3.TabIndex = 21;
-            this.label3.Text = "Evening";
             // 
             // mondayLabel
             // 
@@ -248,11 +219,52 @@
             this.weeklySchedulerLabel.TabIndex = 38;
             this.weeklySchedulerLabel.Text = "Weekly Scheduler";
             // 
+            // clearAllButton
+            // 
+            this.clearAllButton.Font = new System.Drawing.Font("Candara", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.clearAllButton.Location = new System.Drawing.Point(158, 885);
+            this.clearAllButton.Name = "clearAllButton";
+            this.clearAllButton.Size = new System.Drawing.Size(126, 54);
+            this.clearAllButton.TabIndex = 39;
+            this.clearAllButton.Text = "Clear All";
+            this.clearAllButton.UseVisualStyleBackColor = true;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(72, 737);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(80, 22);
+            this.label3.TabIndex = 21;
+            this.label3.Text = "Evening";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(55, 491);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(100, 22);
+            this.label2.TabIndex = 20;
+            this.label2.Text = "Afternoon";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(72, 278);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(80, 22);
+            this.label1.TabIndex = 19;
+            this.label1.Text = "Morning";
+            // 
             // SchedulerForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1785, 973);
+            this.Controls.Add(this.clearAllButton);
             this.Controls.Add(this.weeklySchedulerLabel);
             this.Controls.Add(this.saturdayDate);
             this.Controls.Add(this.fridayDate);
@@ -286,9 +298,6 @@
         #endregion
 
         private System.Windows.Forms.FlowLayoutPanel schedulerFlowLayoutPanel;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label mondayLabel;
         private System.Windows.Forms.Label tuesdayLabel;
         private System.Windows.Forms.Label wednesdayLabel;
@@ -306,5 +315,9 @@
         private System.Windows.Forms.Label fridayDate;
         private System.Windows.Forms.Label saturdayDate;
         private System.Windows.Forms.Label weeklySchedulerLabel;
+        private System.Windows.Forms.Button clearAllButton;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label1;
     }
 }
