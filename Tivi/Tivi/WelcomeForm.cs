@@ -28,7 +28,7 @@ namespace Tivi
         {
             String email = emailTextBox.Text;
 
-            if (!User.EMAIL_REGEX.IsMatch(email))
+            if (!User.EMAIL_REGEX.IsMatch(email)) //check if this is really needed?
                 MessageBox.Show("Please enter a valid email!", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
         }
 
@@ -48,7 +48,6 @@ namespace Tivi
             {
                 if (User.EMAIL_REGEX.IsMatch(email))
                 {
-
                     String query = "SELECT * FROM user WHERE email = ?";
 
                     MySqlConnection connection = new MySqlConnection(connectionString);
