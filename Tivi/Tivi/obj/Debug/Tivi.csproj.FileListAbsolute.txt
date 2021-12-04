@@ -423,3 +423,4 @@ C:\Users\25683\Desktop\appdev-finalproject\Tivi\Tivi\obj\Debug\Tivi.csproj.CoreC
 C:\Users\25683\Desktop\appdev-finalproject\Tivi\Tivi\obj\Debug\Tivi.csproj.CopyComplete
 C:\Users\25683\Desktop\appdev-finalproject\Tivi\Tivi\obj\Debug\Tivi.exe
 C:\Users\25683\Desktop\appdev-finalproject\Tivi\Tivi\obj\Debug\Tivi.pdb
+C:\appdev-finalproject\Tivi\Tivi\obj\Debug\Tivi.UserControlLarge.resources
