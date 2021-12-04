@@ -36,8 +36,6 @@ namespace Tivi
 
         private void saveButton_Click(object sender, EventArgs e)
         {
-            //to be refactored later - do not touch pls and thank
-            //think if we want to restart the db from scratch each time this runs
             MySqlConnection connection = new MySqlConnection(connectionString);
             String insertStatement = "INSERT INTO event(description, date, type, user_email) values(?, ?, ?, ?)";
             connection.Open();
