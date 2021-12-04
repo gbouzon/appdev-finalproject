@@ -28,7 +28,7 @@ namespace Tivi
         {
             String email = emailTextBox.Text;
 
-            if (!User.EMAIL_REGEX.IsMatch(email))
+            if (!User.EMAIL_REGEX.IsMatch(email)) //check if this is really needed?
                 MessageBox.Show("Please enter a valid email!", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
         }
 
@@ -46,52 +46,52 @@ namespace Tivi
 
             if (e.KeyChar == (Int32)Keys.Enter)
             {
-  
-                if (!User.EMAIL_REGEX.IsMatch(email))
-                    MessageBox.Show("Please enter a valid email!", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-
-                String query = "SELECT * FROM user WHERE email = ?";
-
-                MySqlConnection connection = new MySqlConnection(connectionString);
-                connection.Open();
-
-                MySqlCommand command = connection.CreateCommand();
-                command.CommandText = query;
-                command.Parameters.AddWithValue("email", email);
-
-                MySqlDataReader reader = command.ExecuteReader();
-
-                if (reader.HasRows)
+                if (User.EMAIL_REGEX.IsMatch(email))
                 {
-                    reader.Read(); //there will only be one row because email is primary key
-                    firstName = reader["first_name"].ToString();
-                    lastName = reader["last_name"].ToString();
-                    colour = reader["colour"].ToString();
-                    user = new User(email, firstName, lastName, colour);
+                    String query = "SELECT * FROM user WHERE email = ?";
 
-                    //means user already exists
-                    OldUserForm form = new OldUserForm(user);
-                    form.Show();
-                    //new old form and then close this one
-                    //old form will probably take a user as a parameter
+                    MySqlConnection connection = new MySqlConnection(connectionString);
+                    connection.Open();
 
+                    MySqlCommand command = connection.CreateCommand();
+                    command.CommandText = query;
+                    command.Parameters.AddWithValue("email", email);
+
+                    MySqlDataReader reader = command.ExecuteReader();
+
+                    if (reader.HasRows)
+                    {
+                        reader.Read(); //there will only be one row because email is primary key
+                        firstName = reader["first_name"].ToString();
+                        lastName = reader["last_name"].ToString();
+                        colour = reader["colour"].ToString();
+                        user = new User(email, firstName, lastName, colour);
+
+                        //means user already exists
+                        OldUserForm form = new OldUserForm(user);
+                        form.Show();
+                        //new old form and then close this one
+                        //old form will probably take a user as a parameter
+
+                    }
+                    else
+                    {
+                        //if no user is found
+                        NewUserForm form = new NewUserForm(email);
+                        form.Show();
+                        //this.Close() -> releases resources before we manage to create new one, figure it out later
+                    }
+
+                    //just to make sure info retrieval is on the up and up
+                    //MessageBox.Show($"first name: {firstName}, last name: {lastName}, colour: {colour}");
+
+                    reader.Dispose();
+                    command.Dispose();
+                    connection.Close();
                 }
                 else
-                {
-                    //if no user is found
-                    NewUserForm form = new NewUserForm(email);
-                    form.Show();
-                    //this.Close() -> releases resources before we manage to create new one, figure it out later
-                }
-
-                //just to make sure info retrieval is on the up and up
-                //MessageBox.Show($"first name: {firstName}, last name: {lastName}, colour: {colour}");
-
-                reader.Dispose();
-                command.Dispose();
-                connection.Close();
-            }
-
+                    MessageBox.Show("Please enter a valid email!", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }        
         }
     }
 }

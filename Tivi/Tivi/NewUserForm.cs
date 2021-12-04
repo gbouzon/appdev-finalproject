@@ -31,11 +31,6 @@ namespace Tivi
             emailTextBox.Text = email; //so that the email entered in previous page is automatically entered
         }
 
-        private void lastNameLabel_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void redButton_Click(object sender, EventArgs e)
         {
             colour = "Red";
@@ -71,7 +66,7 @@ namespace Tivi
             colour = "Yellow";
         }
 
-        private void createLabel_Click(object sender, EventArgs e)
+        private void createButton_Click(object sender, EventArgs e)
         {
             user = new User(emailTextBox.Text, fnameTextBox.Text, lnameTextBox.Text, colour);
 
@@ -97,6 +92,11 @@ namespace Tivi
             connection.Close();
 
             //close form
+            this.Close();
+        }
+
+        private void cancelButton_Click(object sender, EventArgs e)
+        {
             this.Close();
         }
     }

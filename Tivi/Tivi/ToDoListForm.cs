@@ -26,6 +26,7 @@ namespace Tivi
 
         private void addButton_Click(object sender, EventArgs e)
         {
+            DateTime date = dateTimePicker.Value;
             string newTodo = textBox.Text;
 
             if (newTodo == "")
@@ -34,17 +35,17 @@ namespace Tivi
             }
             else
             {
-                checkedListBox.Items.Add(newTodo);
+                checkedListBox.Items.Add($"{newTodo,-40} {date.ToLongDateString(),20}");
                 textBox.Text = "";
                 newTodo = "";
-                //textBox.SelectAll();
+                
             }
         }
 
         private void clearAllButton_Click(object sender, EventArgs e)
         {
             checkedListBox.Items.Clear();
-            //textBox.SelectAll();
+            
             label2.Text = "Cleared all items";
         }
 
@@ -58,8 +59,10 @@ namespace Tivi
                 checkedListBox.Items.Remove(checkedListBox.CheckedItems[0]);
             }
 
-            //textBox.SelectAll();
+            
             label2.Text = "Cleared " + checkedItems + " items of a total of " + totalItems + " items";
         }
+
+      
     }
 }
