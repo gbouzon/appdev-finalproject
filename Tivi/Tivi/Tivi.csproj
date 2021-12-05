@@ -217,6 +217,18 @@
     <Compile Include="SchedulerForm.Designer.cs">
       <DependentUpon>SchedulerForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="StopWatchForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StopWatchForm.Designer.cs">
+      <DependentUpon>StopWatchForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TimerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TimerForm.Designer.cs">
+      <DependentUpon>TimerForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="User.cs" />
     <Compile Include="UserControlLarge.cs">
       <SubType>UserControl</SubType>
@@ -267,6 +279,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="SchedulerForm.resx">
       <DependentUpon>SchedulerForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StopWatchForm.resx">
+      <DependentUpon>StopWatchForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserControlLarge.resx">
       <DependentUpon>UserControlLarge.cs</DependentUpon>

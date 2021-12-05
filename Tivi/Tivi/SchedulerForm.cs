@@ -7,7 +7,7 @@ namespace Tivi
     {
         DateTime datetime = DateTime.Now;
         private User user;
-        private int weekNum;
+
         public SchedulerForm()
         {
             InitializeComponent();
@@ -20,7 +20,7 @@ namespace Tivi
         {
             addUserControls();
 
-            // IF SUNDAY THEN GENERATE THE DATES (going forward)
+            // The week starts with Sunday -> IF SUNDAY THEN GENERATE THE DATES (going forward)
             if (datetime.DayOfWeek == DayOfWeek.Sunday)
             {
                 sundayDate.Text = "" + datetime.Date;
@@ -33,7 +33,7 @@ namespace Tivi
 
             }
 
-            // IF NOT SUNDAY THEN GET PREVIOUS SUNDAY and then add dates going forward
+            // If the week does not start with Sunday, get previous Sunday and then add dates going forward
             else
             {
                 int dayInWeek = (int)datetime.DayOfWeek;
@@ -74,11 +74,12 @@ namespace Tivi
 
         }
 
+        // if the previous button is clicked
         private void previousButton_Click(object sender, EventArgs e)
         {
+            // adding user controls? Do I add user controls all the time?
             if (schedulerFlowLayoutPanel.Controls.Count == 0)
                 addUserControls();
-            // else do nothing
 
             int dayInWeek = (int)datetime.DayOfWeek;
             DateTime prevMonday = datetime.AddDays(-(((dayInWeek + 6) % 7) + 7));
@@ -96,26 +97,26 @@ namespace Tivi
             datetime = prevSunday;
         }
 
+        // adds 24 user controls in the container
         private void addUserControls()
         {
             for (int i = 1; i <= 24; i++)
             {
-                UserControlLarge boxUserControl = new UserControlLarge();
+                UserControlLarge boxUserControl = new UserControlLarge();    // UserControl is named UserControlLarge
                 schedulerFlowLayoutPanel.Controls.Add(boxUserControl);
             }
         }
 
-
+        // Should I KEEP THIS?
         private void clearAllButton_Click(object sender, EventArgs e)
         {
             schedulerFlowLayoutPanel.Controls.Clear();
             addUserControls();
         }
 
-
+        // removes all the UserControls
         private void clearScheduler()
         {
-        
             schedulerFlowLayoutPanel.Controls.Clear();
         }
 
@@ -123,7 +124,7 @@ namespace Tivi
     }
 }
 
-/*
+/*USELESS PIECE OF SHITS these following codes :')
 // mornings of the week
 private void morningSundayUC_Load(object sender, EventArgs e)
 {
