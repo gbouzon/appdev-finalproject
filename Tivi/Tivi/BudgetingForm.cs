@@ -250,6 +250,11 @@ namespace Tivi
             }
 
         }
+
+        private void pieChart_Click(object sender, EventArgs e)
+        {
+
+        }
     }
     class Product
     {
