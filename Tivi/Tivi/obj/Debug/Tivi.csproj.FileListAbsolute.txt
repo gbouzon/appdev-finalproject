@@ -339,8 +339,6 @@ C:\Users\Chilka\Desktop\Projects\appdev-finalproject\Tivi\Tivi\obj\Debug\Tivi.cs
 C:\Users\Chilka\Desktop\Projects\appdev-finalproject\Tivi\Tivi\obj\Debug\Tivi.exe
 C:\Users\Chilka\Desktop\Projects\appdev-finalproject\Tivi\Tivi\obj\Debug\Tivi.pdb
 C:\Users\Chilka\Desktop\Projects\appdev-finalproject\Tivi\Tivi\obj\Debug\Tivi.UserControlLarge.resources
-<<<<<<< HEAD
-=======
 C:\Users\Chilka\Desktop\Projects\appdev-finalproject\Tivi\Tivi\obj\Debug\Tivi.UserControlLargeBlank.resources
 C:\Users\25683\Desktop\appdev-finalproject\Tivi\Tivi\bin\Debug\Tivi.exe.config
 C:\Users\25683\Desktop\appdev-finalproject\Tivi\Tivi\bin\Debug\Tivi.exe
@@ -425,6 +423,5 @@ C:\Users\25683\Desktop\appdev-finalproject\Tivi\Tivi\obj\Debug\Tivi.csproj.CopyC
 C:\Users\25683\Desktop\appdev-finalproject\Tivi\Tivi\obj\Debug\Tivi.exe
 C:\Users\25683\Desktop\appdev-finalproject\Tivi\Tivi\obj\Debug\Tivi.pdb
 C:\appdev-finalproject\Tivi\Tivi\obj\Debug\Tivi.UserControlLarge.resources
->>>>>>> 85a8454f9c4d11956618313fe9e888af0dec5809
 C:\Users\Chilka\Desktop\Projects\appdev-finalproject\Tivi\Tivi\obj\Debug\Tivi.SchedulerEventForm.resources
 C:\Users\Chilka\Desktop\Projects\appdev-finalproject\Tivi\Tivi\obj\Debug\Tivi.StopWatchForm.resources
