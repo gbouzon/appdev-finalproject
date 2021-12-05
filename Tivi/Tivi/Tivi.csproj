@@ -346,6 +346,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="ToDoListForm.resx">
       <DependentUpon>ToDoListForm.cs</DependentUpon>
@@ -381,6 +382,21 @@
       <ProductName>.NET Framework 3.5 SP1</ProductName>
       <Install>false</Install>
     </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\calendar.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\first_page_bg.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\schedule.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tivi.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\to-do.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="..\packages\Microsoft.Data.SqlClient.SNI.4.0.0\build\net46\Microsoft.Data.SqlClient.SNI.targets" Condition="Exists('..\packages\Microsoft.Data.SqlClient.SNI.4.0.0\build\net46\Microsoft.Data.SqlClient.SNI.targets')" />

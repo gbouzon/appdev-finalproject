@@ -29,6 +29,7 @@ namespace Tivi
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CalendarForm));
             this.dayContainer = new System.Windows.Forms.FlowLayoutPanel();
             this.previousButton = new System.Windows.Forms.Button();
             this.nextButton = new System.Windows.Forms.Button();
@@ -45,19 +46,19 @@ namespace Tivi
             // dayContainer
             // 
             this.dayContainer.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.dayContainer.Location = new System.Drawing.Point(48, 121);
-            this.dayContainer.Margin = new System.Windows.Forms.Padding(2);
+            this.dayContainer.Location = new System.Drawing.Point(64, 140);
+            this.dayContainer.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dayContainer.Name = "dayContainer";
-            this.dayContainer.Size = new System.Drawing.Size(969, 623);
+            this.dayContainer.Size = new System.Drawing.Size(1292, 719);
             this.dayContainer.TabIndex = 0;
             // 
             // previousButton
             // 
             this.previousButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.previousButton.Location = new System.Drawing.Point(804, 756);
-            this.previousButton.Margin = new System.Windows.Forms.Padding(2);
+            this.previousButton.Location = new System.Drawing.Point(1072, 872);
+            this.previousButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.previousButton.Name = "previousButton";
-            this.previousButton.Size = new System.Drawing.Size(88, 39);
+            this.previousButton.Size = new System.Drawing.Size(117, 45);
             this.previousButton.TabIndex = 1;
             this.previousButton.Text = "Previous";
             this.previousButton.UseVisualStyleBackColor = true;
@@ -66,10 +67,10 @@ namespace Tivi
             // nextButton
             // 
             this.nextButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.nextButton.Location = new System.Drawing.Point(929, 756);
-            this.nextButton.Margin = new System.Windows.Forms.Padding(2);
+            this.nextButton.Location = new System.Drawing.Point(1239, 872);
+            this.nextButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.nextButton.Name = "nextButton";
-            this.nextButton.Size = new System.Drawing.Size(88, 39);
+            this.nextButton.Size = new System.Drawing.Size(117, 45);
             this.nextButton.TabIndex = 2;
             this.nextButton.Text = "Next";
             this.nextButton.UseVisualStyleBackColor = true;
@@ -82,10 +83,9 @@ namespace Tivi
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(76, 88);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Location = new System.Drawing.Point(101, 102);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(67, 18);
+            this.label1.Size = new System.Drawing.Size(88, 25);
             this.label1.TabIndex = 3;
             this.label1.Text = "Sunday";
             // 
@@ -96,10 +96,9 @@ namespace Tivi
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(617, 88);
-            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label2.Location = new System.Drawing.Point(823, 102);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(82, 18);
+            this.label2.Size = new System.Drawing.Size(105, 25);
             this.label2.TabIndex = 4;
             this.label2.Text = "Thursday";
             // 
@@ -110,10 +109,9 @@ namespace Tivi
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(470, 88);
-            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label3.Location = new System.Drawing.Point(627, 102);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(102, 18);
+            this.label3.Size = new System.Drawing.Size(126, 25);
             this.label3.TabIndex = 5;
             this.label3.Text = "Wednesday";
             // 
@@ -124,10 +122,9 @@ namespace Tivi
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(345, 88);
-            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label4.Location = new System.Drawing.Point(460, 102);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(74, 18);
+            this.label4.Size = new System.Drawing.Size(93, 25);
             this.label4.TabIndex = 6;
             this.label4.Text = "Tuesday";
             // 
@@ -138,10 +135,9 @@ namespace Tivi
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(217, 88);
-            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label5.Location = new System.Drawing.Point(289, 102);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(70, 18);
+            this.label5.Size = new System.Drawing.Size(90, 25);
             this.label5.TabIndex = 7;
             this.label5.Text = "Monday";
             // 
@@ -152,10 +148,9 @@ namespace Tivi
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(766, 88);
-            this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label6.Location = new System.Drawing.Point(1021, 102);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(57, 18);
+            this.label6.Size = new System.Drawing.Size(75, 25);
             this.label6.TabIndex = 8;
             this.label6.Text = "Friday";
             // 
@@ -164,10 +159,9 @@ namespace Tivi
             this.label7.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(886, 88);
-            this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label7.Location = new System.Drawing.Point(1181, 102);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(80, 18);
+            this.label7.Size = new System.Drawing.Size(104, 25);
             this.label7.TabIndex = 9;
             this.label7.Text = "Saturday";
             // 
@@ -177,19 +171,18 @@ namespace Tivi
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.dateLabel.Font = new System.Drawing.Font("Verdana", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateLabel.Location = new System.Drawing.Point(216, 28);
-            this.dateLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.dateLabel.Location = new System.Drawing.Point(288, 32);
             this.dateLabel.Name = "dateLabel";
-            this.dateLabel.Size = new System.Drawing.Size(617, 41);
+            this.dateLabel.Size = new System.Drawing.Size(823, 47);
             this.dateLabel.TabIndex = 10;
             this.dateLabel.Text = "MONTH YEAR";
             this.dateLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // CalendarForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1062, 813);
+            this.ClientSize = new System.Drawing.Size(1413, 929);
             this.Controls.Add(this.dateLabel);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
@@ -202,9 +195,10 @@ namespace Tivi
             this.Controls.Add(this.previousButton);
             this.Controls.Add(this.dayContainer);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
-            this.Margin = new System.Windows.Forms.Padding(2);
-            this.MaximumSize = new System.Drawing.Size(1082, 856);
-            this.MinimumSize = new System.Drawing.Size(1082, 856);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.MaximumSize = new System.Drawing.Size(1435, 980);
+            this.MinimumSize = new System.Drawing.Size(1435, 980);
             this.Name = "CalendarForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Calendar";
