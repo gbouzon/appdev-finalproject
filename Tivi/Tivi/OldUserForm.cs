@@ -53,5 +53,17 @@ namespace Tivi
             BudgetingForm form = new BudgetingForm(this.user);
             form.Show();
         }
+
+        private void timerButton_Click(object sender, EventArgs e)
+        {
+            CountdownForm form = new CountdownForm();
+            form.Show();
+        }
+
+        private void stopWatchButton_Click(object sender, EventArgs e)
+        {
+            StopWatchForm form = new StopWatchForm();
+            form.Show();
+        }
     }
 }

@@ -236,6 +236,12 @@
     <Compile Include="CalendarForm.Designer.cs">
       <DependentUpon>CalendarForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Countdown.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Countdown.Designer.cs">
+      <DependentUpon>Countdown.cs</DependentUpon>
+    </Compile>
     <Compile Include="EventPromptForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -265,12 +271,6 @@
     </Compile>
     <Compile Include="StopWatchForm.Designer.cs">
       <DependentUpon>StopWatchForm.cs</DependentUpon>
-    </Compile>
-    <Compile Include="TimerForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="TimerForm.Designer.cs">
-      <DependentUpon>TimerForm.cs</DependentUpon>
     </Compile>
     <Compile Include="User.cs" />
     <Compile Include="UserControlLarge.cs">
@@ -313,6 +313,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="CalendarForm.resx">
       <DependentUpon>CalendarForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Countdown.resx">
+      <DependentUpon>Countdown.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="EventPromptForm.resx">
       <DependentUpon>EventPromptForm.cs</DependentUpon>
@@ -397,6 +400,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\to-do.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pomodoro.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pomodorotechnique.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="..\packages\Microsoft.Data.SqlClient.SNI.4.0.0\build\net46\Microsoft.Data.SqlClient.SNI.targets" Condition="Exists('..\packages\Microsoft.Data.SqlClient.SNI.4.0.0\build\net46\Microsoft.Data.SqlClient.SNI.targets')" />
