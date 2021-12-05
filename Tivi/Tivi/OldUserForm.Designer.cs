@@ -132,6 +132,7 @@
             this.budgetingButton.TabIndex = 7;
             this.budgetingButton.Text = "Budgeting";
             this.budgetingButton.UseVisualStyleBackColor = false;
+            this.budgetingButton.Click += new System.EventHandler(this.budgetingButton_Click);
             // 
             // OldUserForm
             // 

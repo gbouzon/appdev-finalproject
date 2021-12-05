@@ -47,5 +47,11 @@ namespace Tivi
             SchedulerForm form = new SchedulerForm(this.user);
             form.Show();
         }
+
+        private void budgetingButton_Click(object sender, EventArgs e)
+        {
+            BudgetingForm form = new BudgetingForm(this.user);
+            form.Show();
+        }
     }
 }
