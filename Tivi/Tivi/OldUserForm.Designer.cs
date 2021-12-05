@@ -28,6 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
+            Syncfusion.Windows.Forms.Tools.DigitalClockRenderer digitalClockRenderer1 = new Syncfusion.Windows.Forms.Tools.DigitalClockRenderer();
+            Syncfusion.Windows.Forms.Tools.ClockRenderer clockRenderer1 = new Syncfusion.Windows.Forms.Tools.ClockRenderer();
             this.welcomeLabel = new System.Windows.Forms.Label();
             this.calendarButton = new System.Windows.Forms.Button();
             this.toDoListButton = new System.Windows.Forms.Button();
@@ -36,6 +38,7 @@
             this.timerButton = new System.Windows.Forms.Button();
             this.stopWatchButton = new System.Windows.Forms.Button();
             this.budgetingButton = new System.Windows.Forms.Button();
+            this.clock1 = new Syncfusion.Windows.Forms.Tools.Clock();
             this.SuspendLayout();
             // 
             // welcomeLabel
@@ -53,7 +56,7 @@
             // 
             this.calendarButton.BackColor = System.Drawing.SystemColors.AppWorkspace;
             this.calendarButton.Font = new System.Drawing.Font("Consolas", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.calendarButton.Location = new System.Drawing.Point(24, 85);
+            this.calendarButton.Location = new System.Drawing.Point(171, 122);
             this.calendarButton.Margin = new System.Windows.Forms.Padding(2);
             this.calendarButton.Name = "calendarButton";
             this.calendarButton.Size = new System.Drawing.Size(200, 89);
@@ -66,7 +69,7 @@
             // 
             this.toDoListButton.BackColor = System.Drawing.SystemColors.AppWorkspace;
             this.toDoListButton.Font = new System.Drawing.Font("Consolas", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.toDoListButton.Location = new System.Drawing.Point(24, 193);
+            this.toDoListButton.Location = new System.Drawing.Point(171, 230);
             this.toDoListButton.Margin = new System.Windows.Forms.Padding(2);
             this.toDoListButton.Name = "toDoListButton";
             this.toDoListButton.Size = new System.Drawing.Size(200, 90);
@@ -79,7 +82,7 @@
             // 
             this.schedulerButton.BackColor = System.Drawing.SystemColors.AppWorkspace;
             this.schedulerButton.Font = new System.Drawing.Font("Consolas", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.schedulerButton.Location = new System.Drawing.Point(267, 85);
+            this.schedulerButton.Location = new System.Drawing.Point(434, 122);
             this.schedulerButton.Margin = new System.Windows.Forms.Padding(2);
             this.schedulerButton.Name = "schedulerButton";
             this.schedulerButton.Size = new System.Drawing.Size(200, 89);
@@ -101,7 +104,7 @@
             // 
             this.timerButton.BackColor = System.Drawing.SystemColors.AppWorkspace;
             this.timerButton.Font = new System.Drawing.Font("Consolas", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.timerButton.Location = new System.Drawing.Point(267, 197);
+            this.timerButton.Location = new System.Drawing.Point(434, 343);
             this.timerButton.Margin = new System.Windows.Forms.Padding(2);
             this.timerButton.Name = "timerButton";
             this.timerButton.Size = new System.Drawing.Size(200, 86);
@@ -113,7 +116,7 @@
             // 
             this.stopWatchButton.BackColor = System.Drawing.SystemColors.AppWorkspace;
             this.stopWatchButton.Font = new System.Drawing.Font("Consolas", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.stopWatchButton.Location = new System.Drawing.Point(24, 306);
+            this.stopWatchButton.Location = new System.Drawing.Point(171, 343);
             this.stopWatchButton.Margin = new System.Windows.Forms.Padding(2);
             this.stopWatchButton.Name = "stopWatchButton";
             this.stopWatchButton.Size = new System.Drawing.Size(200, 86);
@@ -125,7 +128,7 @@
             // 
             this.budgetingButton.BackColor = System.Drawing.SystemColors.AppWorkspace;
             this.budgetingButton.Font = new System.Drawing.Font("Consolas", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.budgetingButton.Location = new System.Drawing.Point(267, 306);
+            this.budgetingButton.Location = new System.Drawing.Point(434, 234);
             this.budgetingButton.Margin = new System.Windows.Forms.Padding(2);
             this.budgetingButton.Name = "budgetingButton";
             this.budgetingButton.Size = new System.Drawing.Size(200, 86);
@@ -134,11 +137,39 @@
             this.budgetingButton.UseVisualStyleBackColor = false;
             this.budgetingButton.Click += new System.EventHandler(this.budgetingButton_Click);
             // 
+            // clock1
+            // 
+            this.clock1.BackgroundColor = System.Drawing.SystemColors.ActiveBorder;
+            this.clock1.BeforeTouchSize = new System.Drawing.Size(196, 98);
+            this.clock1.ClockFormat = "HH:mm:ss";
+            this.clock1.ClockFrame = Syncfusion.Windows.Forms.Tools.ClockFrames.SquareFrame;
+            this.clock1.ClockShape = Syncfusion.Windows.Forms.Tools.ClockShapes.Rectangle;
+            this.clock1.ClockType = Syncfusion.Windows.Forms.Tools.ClockTypes.Digital;
+            this.clock1.CurrentDateTime = new System.DateTime(2021, 12, 4, 23, 50, 27, 763);
+            this.clock1.CustomTime = new System.DateTime(2021, 12, 4, 23, 50, 27, 763);
+            this.clock1.DigitalRenderer = digitalClockRenderer1;
+            this.clock1.DisplayDates = true;
+            this.clock1.Location = new System.Drawing.Point(661, 12);
+            this.clock1.MinimumSize = new System.Drawing.Size(75, 75);
+            this.clock1.Name = "clock1";
+            this.clock1.Now = new System.DateTime(((long)(0)));
+            this.clock1.Remainder = new System.DateTime(2021, 12, 4, 23, 50, 27, 759);
+            this.clock1.Renderer = clockRenderer1;
+            this.clock1.ShowAMorPM = true;
+            this.clock1.ShowClockFrame = false;
+            this.clock1.ShowCustomTimeClock = false;
+            this.clock1.ShowHourDesignator = true;
+            this.clock1.Size = new System.Drawing.Size(196, 98);
+            this.clock1.StopTimer = false;
+            this.clock1.TabIndex = 8;
+            this.clock1.Text = "clock1";
+            // 
             // OldUserForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(537, 435);
+            this.ClientSize = new System.Drawing.Size(869, 470);
+            this.Controls.Add(this.clock1);
             this.Controls.Add(this.budgetingButton);
             this.Controls.Add(this.stopWatchButton);
             this.Controls.Add(this.timerButton);
@@ -148,7 +179,6 @@
             this.Controls.Add(this.calendarButton);
             this.Controls.Add(this.welcomeLabel);
             this.Margin = new System.Windows.Forms.Padding(2);
-            this.MaximumSize = new System.Drawing.Size(553, 474);
             this.Name = "OldUserForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "OldUserForm";
@@ -168,5 +198,6 @@
         private System.Windows.Forms.Button timerButton;
         private System.Windows.Forms.Button stopWatchButton;
         private System.Windows.Forms.Button budgetingButton;
+        private Syncfusion.Windows.Forms.Tools.Clock clock1;
     }
 }
