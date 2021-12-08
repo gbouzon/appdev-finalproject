@@ -28,6 +28,7 @@ namespace Tivi
         {
             InitializeComponent();
             this.user = user;
+            this.BackColor = ColorTranslator.FromHtml(user.Colour);
         }
 
         private void CalendarForm_Load(object sender, EventArgs e)

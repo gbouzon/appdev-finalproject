@@ -35,6 +35,7 @@ namespace Tivi
             hours = 0;
             milliseconds = 0;
             this.user = user;
+            this.BackColor = ColorTranslator.FromHtml(user.Colour);
         }
 
         private void stopWatchTimer_Tick(object sender, EventArgs e)

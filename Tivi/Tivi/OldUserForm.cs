@@ -23,6 +23,7 @@ namespace Tivi
         {
             InitializeComponent();
             this.user = user; //deep copy, fix copy constructor
+            this.BackColor = ColorTranslator.FromHtml(user.Colour);
         }
 
         private void OldUserForm_Load(object sender, EventArgs e)

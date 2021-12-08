@@ -23,6 +23,7 @@ namespace Tivi
         {
             InitializeComponent();
             this.user = user;
+            this.BackColor = ColorTranslator.FromHtml(user.Colour);
         }
 
         private void CountdownForm_Load(object sender, EventArgs e)

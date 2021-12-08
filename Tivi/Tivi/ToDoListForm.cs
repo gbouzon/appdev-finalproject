@@ -26,6 +26,7 @@ namespace Tivi
         {
             InitializeComponent();
             this.user = user;
+            this.BackColor = ColorTranslator.FromHtml(user.Colour);
             LoadTasks();
         }
 
