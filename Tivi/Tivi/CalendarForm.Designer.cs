@@ -41,18 +41,15 @@ namespace Tivi
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.dateLabel = new System.Windows.Forms.Label();
-
             this.returnToMainMenu = new System.Windows.Forms.Button();
-
             this.menuButton = new System.Windows.Forms.Button();
-
             this.SuspendLayout();
             // 
             // dayContainer
             // 
             this.dayContainer.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.dayContainer.Location = new System.Drawing.Point(48, 121);
-            this.dayContainer.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dayContainer.Margin = new System.Windows.Forms.Padding(2);
             this.dayContainer.Name = "dayContainer";
             this.dayContainer.Size = new System.Drawing.Size(969, 623);
             this.dayContainer.TabIndex = 0;
@@ -61,7 +58,7 @@ namespace Tivi
             // 
             this.previousButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.previousButton.Location = new System.Drawing.Point(804, 756);
-            this.previousButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.previousButton.Margin = new System.Windows.Forms.Padding(2);
             this.previousButton.Name = "previousButton";
             this.previousButton.Size = new System.Drawing.Size(88, 39);
             this.previousButton.TabIndex = 1;
@@ -73,7 +70,7 @@ namespace Tivi
             // 
             this.nextButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.nextButton.Location = new System.Drawing.Point(929, 756);
-            this.nextButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.nextButton.Margin = new System.Windows.Forms.Padding(2);
             this.nextButton.Name = "nextButton";
             this.nextButton.Size = new System.Drawing.Size(88, 39);
             this.nextButton.TabIndex = 2;
@@ -199,7 +196,8 @@ namespace Tivi
             this.returnToMainMenu.TabIndex = 29;
             this.returnToMainMenu.Text = "Back To Main Menu";
             this.returnToMainMenu.UseVisualStyleBackColor = true;
-
+            this.returnToMainMenu.Click += new System.EventHandler(this.returnToMainMenu_Click);
+            // 
             // menuButton
             // 
             this.menuButton.Location = new System.Drawing.Point(55, 761);
@@ -209,14 +207,12 @@ namespace Tivi
             this.menuButton.Text = "Main Menu";
             this.menuButton.UseVisualStyleBackColor = true;
             this.menuButton.Click += new System.EventHandler(this.menuButton_Click);
-
             // 
             // CalendarForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1061, 812);
-
             this.Controls.Add(this.returnToMainMenu);
             this.Controls.Add(this.menuButton);
             this.Controls.Add(this.dateLabel);
@@ -232,7 +228,7 @@ namespace Tivi
             this.Controls.Add(this.dayContainer);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.MaximumSize = new System.Drawing.Size(1081, 855);
             this.MinimumSize = new System.Drawing.Size(1081, 855);
             this.Name = "CalendarForm";

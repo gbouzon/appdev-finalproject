@@ -32,12 +32,10 @@
             this.welcomeLabel = new System.Windows.Forms.Label();
             this.calendarButton = new System.Windows.Forms.Button();
             this.toDoListButton = new System.Windows.Forms.Button();
-            this.schedulerButton = new System.Windows.Forms.Button();
             this.userLabel = new System.Windows.Forms.Label();
             this.timerButton = new System.Windows.Forms.Button();
             this.stopWatchButton = new System.Windows.Forms.Button();
             this.budgetingButton = new System.Windows.Forms.Button();
-            this.calculatorButton = new System.Windows.Forms.Button();
             this.noteButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
@@ -78,19 +76,6 @@
             this.toDoListButton.UseVisualStyleBackColor = false;
             this.toDoListButton.Click += new System.EventHandler(this.toDoListButton_Click);
             // 
-            // schedulerButton
-            // 
-            this.schedulerButton.BackColor = System.Drawing.SystemColors.AppWorkspace;
-            this.schedulerButton.Font = new System.Drawing.Font("Consolas", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.schedulerButton.Location = new System.Drawing.Point(376, 110);
-            this.schedulerButton.Margin = new System.Windows.Forms.Padding(2);
-            this.schedulerButton.Name = "schedulerButton";
-            this.schedulerButton.Size = new System.Drawing.Size(211, 89);
-            this.schedulerButton.TabIndex = 3;
-            this.schedulerButton.Text = "Scheduler";
-            this.schedulerButton.UseVisualStyleBackColor = false;
-            this.schedulerButton.Click += new System.EventHandler(this.schedulerButton_Click);
-            // 
             // userLabel
             // 
             this.userLabel.AutoSize = true;
@@ -104,7 +89,7 @@
             // 
             this.timerButton.BackColor = System.Drawing.SystemColors.AppWorkspace;
             this.timerButton.Font = new System.Drawing.Font("Consolas", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.timerButton.Location = new System.Drawing.Point(376, 354);
+            this.timerButton.Location = new System.Drawing.Point(376, 236);
             this.timerButton.Margin = new System.Windows.Forms.Padding(2);
             this.timerButton.Name = "timerButton";
             this.timerButton.Size = new System.Drawing.Size(211, 86);
@@ -130,7 +115,7 @@
             // 
             this.budgetingButton.BackColor = System.Drawing.SystemColors.AppWorkspace;
             this.budgetingButton.Font = new System.Drawing.Font("Consolas", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.budgetingButton.Location = new System.Drawing.Point(376, 236);
+            this.budgetingButton.Location = new System.Drawing.Point(376, 113);
             this.budgetingButton.Margin = new System.Windows.Forms.Padding(2);
             this.budgetingButton.Name = "budgetingButton";
             this.budgetingButton.Size = new System.Drawing.Size(211, 86);
@@ -139,43 +124,29 @@
             this.budgetingButton.UseVisualStyleBackColor = false;
             this.budgetingButton.Click += new System.EventHandler(this.budgetingButton_Click);
             // 
-            // calculatorButton
-            // 
-            this.calculatorButton.BackColor = System.Drawing.SystemColors.AppWorkspace;
-            this.calculatorButton.Font = new System.Drawing.Font("Consolas", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.calculatorButton.Location = new System.Drawing.Point(80, 477);
-            this.calculatorButton.Margin = new System.Windows.Forms.Padding(2);
-            this.calculatorButton.Name = "calculatorButton";
-            this.calculatorButton.Size = new System.Drawing.Size(213, 89);
-            this.calculatorButton.TabIndex = 8;
-            this.calculatorButton.Text = "Calculator";
-            this.calculatorButton.UseVisualStyleBackColor = false;
-            this.calculatorButton.Click += new System.EventHandler(this.calculatorButton_Click);
-            // 
             // noteButton
             // 
             this.noteButton.BackColor = System.Drawing.SystemColors.AppWorkspace;
             this.noteButton.Font = new System.Drawing.Font("Consolas", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.noteButton.Location = new System.Drawing.Point(374, 477);
+            this.noteButton.Location = new System.Drawing.Point(374, 353);
             this.noteButton.Margin = new System.Windows.Forms.Padding(2);
             this.noteButton.Name = "noteButton";
             this.noteButton.Size = new System.Drawing.Size(213, 89);
             this.noteButton.TabIndex = 9;
             this.noteButton.Text = "Notes";
             this.noteButton.UseVisualStyleBackColor = false;
+            this.noteButton.Click += new System.EventHandler(this.noteButton_Click);
             // 
             // OldUserForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(781, 629);
+            this.ClientSize = new System.Drawing.Size(657, 511);
             this.Controls.Add(this.noteButton);
-            this.Controls.Add(this.calculatorButton);
             this.Controls.Add(this.budgetingButton);
             this.Controls.Add(this.stopWatchButton);
             this.Controls.Add(this.timerButton);
             this.Controls.Add(this.userLabel);
-            this.Controls.Add(this.schedulerButton);
             this.Controls.Add(this.toDoListButton);
             this.Controls.Add(this.calendarButton);
             this.Controls.Add(this.welcomeLabel);
@@ -183,7 +154,7 @@
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "OldUserForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "OldUserForm";
+            this.Text = "Welcome Back!";
             this.Load += new System.EventHandler(this.OldUserForm_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -195,12 +166,10 @@
         private System.Windows.Forms.Label welcomeLabel;
         private System.Windows.Forms.Button calendarButton;
         private System.Windows.Forms.Button toDoListButton;
-        private System.Windows.Forms.Button schedulerButton;
         private System.Windows.Forms.Label userLabel;
         private System.Windows.Forms.Button timerButton;
         private System.Windows.Forms.Button stopWatchButton;
         private System.Windows.Forms.Button budgetingButton;
-        private System.Windows.Forms.Button calculatorButton;
         private System.Windows.Forms.Button noteButton;
     }
 }

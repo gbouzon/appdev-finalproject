@@ -46,14 +46,6 @@ namespace Tivi
             this.Close();
         }
 
-        private void schedulerButton_Click(object sender, EventArgs e)
-        {
-            SchedulerForm form = new SchedulerForm(this.user);
-            this.Hide();
-            form.ShowDialog();
-            this.Close();
-        }
-
         private void budgetingButton_Click(object sender, EventArgs e)
         {
             BudgetingForm form = new BudgetingForm(this.user);
@@ -64,7 +56,7 @@ namespace Tivi
 
         private void timerButton_Click(object sender, EventArgs e)
         {
-            CountdownForm form = new CountdownForm();
+            CountdownForm form = new CountdownForm(this.user);
             this.Hide();
             form.ShowDialog();
             this.Close();
@@ -72,16 +64,18 @@ namespace Tivi
 
         private void stopWatchButton_Click(object sender, EventArgs e)
         {
-            StopWatchForm form = new StopWatchForm();
+            StopWatchForm form = new StopWatchForm(this.user);
             this.Hide();
             form.ShowDialog();
             this.Close();
         }
 
-        private void calculatorButton_Click(object sender, EventArgs e)
+        private void noteButton_Click(object sender, EventArgs e)
         {
-            CalculatorForm form = new CalculatorForm();
-            form.Show();
+            Notepad form = new Notepad(); //not yet implemented nor designed
+            //this.Hide();
+            form.ShowDialog();
+            //this.Close(); -> no way to go back for now
         }
     }
 }

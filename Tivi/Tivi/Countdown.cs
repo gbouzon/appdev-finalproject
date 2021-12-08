@@ -13,9 +13,16 @@ namespace Tivi
     public partial class CountdownForm : Form
     {
         private int totalSeconds;
+        User user;
         public CountdownForm()
         {
             InitializeComponent();
+        }
+
+        public CountdownForm(User user)
+        {
+            InitializeComponent();
+            this.user = user;
         }
 
         private void CountdownForm_Load(object sender, EventArgs e)
@@ -70,6 +77,14 @@ namespace Tivi
                 MessageBox.Show("Time's up!");
             }
 
+        }
+
+        private void returnToMainMenu_Click(object sender, EventArgs e)
+        {
+            OldUserForm form = new OldUserForm(this.user);
+            this.Hide();
+            form.ShowDialog();
+            this.Close();
         }
     }
 }

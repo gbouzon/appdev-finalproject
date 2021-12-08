@@ -88,7 +88,15 @@ namespace Tivi
             DisplayDays(year, month);
         }
 
-        private void menuButton_Click(object sender, EventArgs e)
+        private void menuButton_Click(object sender, EventArgs e) //figure out what happened to this later
+        {
+            OldUserForm form = new OldUserForm(this.user);
+            this.Hide();
+            form.ShowDialog();
+            this.Close();
+        }
+
+        private void returnToMainMenu_Click(object sender, EventArgs e)
         {
             OldUserForm form = new OldUserForm(this.user);
             this.Hide();

@@ -12,6 +12,7 @@ namespace Tivi
 {
     public partial class StopWatchForm : Form
     {
+        User user;
         private int seconds;
         private int minutes;
         private int hours;
@@ -24,7 +25,16 @@ namespace Tivi
             minutes = 0;
             hours = 0;
             milliseconds = 0;
+        }
 
+        public StopWatchForm(User user)
+        {
+            InitializeComponent();
+            seconds = 0;
+            minutes = 0;
+            hours = 0;
+            milliseconds = 0;
+            this.user = user;
         }
 
         private void stopWatchTimer_Tick(object sender, EventArgs e)
@@ -89,6 +99,14 @@ namespace Tivi
         private void pauseButton_Click(object sender, EventArgs e)
         {
             stopWatchTimer.Stop();
+        }
+
+        private void returnToMainMenuButton_Click(object sender, EventArgs e)
+        {
+            OldUserForm form = new OldUserForm(this.user);
+            this.Hide();
+            form.ShowDialog();
+            this.Close();
         }
     }
 }

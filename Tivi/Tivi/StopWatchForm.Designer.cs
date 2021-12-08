@@ -40,6 +40,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.millisecondsLabel = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.returnToMainMenuButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // secondsLabel
@@ -157,11 +158,22 @@
             this.label2.TabIndex = 9;
             this.label2.Text = ":";
             // 
+            // returnToMainMenuButton
+            // 
+            this.returnToMainMenuButton.Location = new System.Drawing.Point(259, 213);
+            this.returnToMainMenuButton.Name = "returnToMainMenuButton";
+            this.returnToMainMenuButton.Size = new System.Drawing.Size(202, 46);
+            this.returnToMainMenuButton.TabIndex = 10;
+            this.returnToMainMenuButton.Text = "Back To Main Menu";
+            this.returnToMainMenuButton.UseVisualStyleBackColor = true;
+            this.returnToMainMenuButton.Click += new System.EventHandler(this.returnToMainMenuButton_Click);
+            // 
             // StopWatchForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(754, 232);
+            this.ClientSize = new System.Drawing.Size(754, 271);
+            this.Controls.Add(this.returnToMainMenuButton);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.millisecondsLabel);
             this.Controls.Add(this.label1);
@@ -192,5 +204,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label millisecondsLabel;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Button returnToMainMenuButton;
     }
 }
