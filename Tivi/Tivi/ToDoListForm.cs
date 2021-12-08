@@ -141,7 +141,7 @@ namespace Tivi
                         MessageBox.Show(System.Text.RegularExpressions.Regex.Replace(item.ToString(), @"\s+", ""));
                         MessageBox.Show(description);
                         if (System.Text.RegularExpressions.Regex.Replace(description, @"\s+", "").Equals(System.Text.RegularExpressions.Regex.Replace(item.ToString(), @"\s+", "")))
-                            DeleteFromDatabase(reader["task_id"].ToString())
+                            DeleteFromDatabase(reader["task_id"].ToString());
                     }
                 }
 

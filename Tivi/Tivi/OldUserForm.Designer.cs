@@ -56,11 +56,7 @@
             // 
             this.calendarButton.BackColor = System.Drawing.SystemColors.AppWorkspace;
             this.calendarButton.Font = new System.Drawing.Font("Consolas", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-<<<<<<< HEAD
-            this.calendarButton.Location = new System.Drawing.Point(145, 109);
-=======
             this.calendarButton.Location = new System.Drawing.Point(80, 110);
->>>>>>> c0fbaa0a687e5100b8638d60ca80c4a3422d7ed5
             this.calendarButton.Margin = new System.Windows.Forms.Padding(2);
             this.calendarButton.Name = "calendarButton";
             this.calendarButton.Size = new System.Drawing.Size(213, 89);
@@ -73,11 +69,7 @@
             // 
             this.toDoListButton.BackColor = System.Drawing.SystemColors.AppWorkspace;
             this.toDoListButton.Font = new System.Drawing.Font("Consolas", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-<<<<<<< HEAD
-            this.toDoListButton.Location = new System.Drawing.Point(145, 217);
-=======
             this.toDoListButton.Location = new System.Drawing.Point(80, 232);
->>>>>>> c0fbaa0a687e5100b8638d60ca80c4a3422d7ed5
             this.toDoListButton.Margin = new System.Windows.Forms.Padding(2);
             this.toDoListButton.Name = "toDoListButton";
             this.toDoListButton.Size = new System.Drawing.Size(213, 90);
@@ -90,11 +82,7 @@
             // 
             this.schedulerButton.BackColor = System.Drawing.SystemColors.AppWorkspace;
             this.schedulerButton.Font = new System.Drawing.Font("Consolas", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-<<<<<<< HEAD
-            this.schedulerButton.Location = new System.Drawing.Point(408, 109);
-=======
             this.schedulerButton.Location = new System.Drawing.Point(376, 110);
->>>>>>> c0fbaa0a687e5100b8638d60ca80c4a3422d7ed5
             this.schedulerButton.Margin = new System.Windows.Forms.Padding(2);
             this.schedulerButton.Name = "schedulerButton";
             this.schedulerButton.Size = new System.Drawing.Size(211, 89);
@@ -109,7 +97,6 @@
             this.userLabel.Font = new System.Drawing.Font("Consolas", 27F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.userLabel.Location = new System.Drawing.Point(280, 32);
             this.userLabel.Name = "userLabel";
-
             this.userLabel.Size = new System.Drawing.Size(0, 42);
             this.userLabel.TabIndex = 4;
             // 
@@ -117,11 +104,7 @@
             // 
             this.timerButton.BackColor = System.Drawing.SystemColors.AppWorkspace;
             this.timerButton.Font = new System.Drawing.Font("Consolas", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-<<<<<<< HEAD
-            this.timerButton.Location = new System.Drawing.Point(408, 330);
-=======
             this.timerButton.Location = new System.Drawing.Point(376, 354);
->>>>>>> c0fbaa0a687e5100b8638d60ca80c4a3422d7ed5
             this.timerButton.Margin = new System.Windows.Forms.Padding(2);
             this.timerButton.Name = "timerButton";
             this.timerButton.Size = new System.Drawing.Size(211, 86);
@@ -134,11 +117,7 @@
             // 
             this.stopWatchButton.BackColor = System.Drawing.SystemColors.AppWorkspace;
             this.stopWatchButton.Font = new System.Drawing.Font("Consolas", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-<<<<<<< HEAD
-            this.stopWatchButton.Location = new System.Drawing.Point(145, 330);
-=======
             this.stopWatchButton.Location = new System.Drawing.Point(80, 354);
->>>>>>> c0fbaa0a687e5100b8638d60ca80c4a3422d7ed5
             this.stopWatchButton.Margin = new System.Windows.Forms.Padding(2);
             this.stopWatchButton.Name = "stopWatchButton";
             this.stopWatchButton.Size = new System.Drawing.Size(213, 86);
@@ -151,11 +130,7 @@
             // 
             this.budgetingButton.BackColor = System.Drawing.SystemColors.AppWorkspace;
             this.budgetingButton.Font = new System.Drawing.Font("Consolas", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-<<<<<<< HEAD
-            this.budgetingButton.Location = new System.Drawing.Point(408, 221);
-=======
             this.budgetingButton.Location = new System.Drawing.Point(376, 236);
->>>>>>> c0fbaa0a687e5100b8638d60ca80c4a3422d7ed5
             this.budgetingButton.Margin = new System.Windows.Forms.Padding(2);
             this.budgetingButton.Name = "budgetingButton";
             this.budgetingButton.Size = new System.Drawing.Size(211, 86);
@@ -168,7 +143,7 @@
             // 
             this.calculatorButton.BackColor = System.Drawing.SystemColors.AppWorkspace;
             this.calculatorButton.Font = new System.Drawing.Font("Consolas", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.calculatorButton.Location = new System.Drawing.Point(145, 440);
+            this.calculatorButton.Location = new System.Drawing.Point(80, 477);
             this.calculatorButton.Margin = new System.Windows.Forms.Padding(2);
             this.calculatorButton.Name = "calculatorButton";
             this.calculatorButton.Size = new System.Drawing.Size(213, 89);
@@ -181,7 +156,7 @@
             // 
             this.noteButton.BackColor = System.Drawing.SystemColors.AppWorkspace;
             this.noteButton.Font = new System.Drawing.Font("Consolas", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.noteButton.Location = new System.Drawing.Point(406, 440);
+            this.noteButton.Location = new System.Drawing.Point(374, 477);
             this.noteButton.Margin = new System.Windows.Forms.Padding(2);
             this.noteButton.Name = "noteButton";
             this.noteButton.Size = new System.Drawing.Size(213, 89);
@@ -193,13 +168,9 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-<<<<<<< HEAD
-            this.ClientSize = new System.Drawing.Size(756, 566);
+            this.ClientSize = new System.Drawing.Size(781, 629);
             this.Controls.Add(this.noteButton);
             this.Controls.Add(this.calculatorButton);
-=======
-            this.ClientSize = new System.Drawing.Size(661, 470);
->>>>>>> c0fbaa0a687e5100b8638d60ca80c4a3422d7ed5
             this.Controls.Add(this.budgetingButton);
             this.Controls.Add(this.stopWatchButton);
             this.Controls.Add(this.timerButton);
