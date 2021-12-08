@@ -43,7 +43,7 @@
             // 
             this.welcomeLabel.AutoSize = true;
             this.welcomeLabel.Font = new System.Drawing.Font("Consolas", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.welcomeLabel.Location = new System.Drawing.Point(16, 17);
+            this.welcomeLabel.Location = new System.Drawing.Point(16, 32);
             this.welcomeLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.welcomeLabel.Name = "welcomeLabel";
             this.welcomeLabel.Size = new System.Drawing.Size(259, 43);
@@ -54,7 +54,7 @@
             // 
             this.calendarButton.BackColor = System.Drawing.SystemColors.AppWorkspace;
             this.calendarButton.Font = new System.Drawing.Font("Consolas", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.calendarButton.Location = new System.Drawing.Point(171, 122);
+            this.calendarButton.Location = new System.Drawing.Point(80, 110);
             this.calendarButton.Margin = new System.Windows.Forms.Padding(2);
             this.calendarButton.Name = "calendarButton";
             this.calendarButton.Size = new System.Drawing.Size(200, 89);
@@ -67,7 +67,7 @@
             // 
             this.toDoListButton.BackColor = System.Drawing.SystemColors.AppWorkspace;
             this.toDoListButton.Font = new System.Drawing.Font("Consolas", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.toDoListButton.Location = new System.Drawing.Point(171, 230);
+            this.toDoListButton.Location = new System.Drawing.Point(80, 232);
             this.toDoListButton.Margin = new System.Windows.Forms.Padding(2);
             this.toDoListButton.Name = "toDoListButton";
             this.toDoListButton.Size = new System.Drawing.Size(200, 90);
@@ -80,7 +80,7 @@
             // 
             this.schedulerButton.BackColor = System.Drawing.SystemColors.AppWorkspace;
             this.schedulerButton.Font = new System.Drawing.Font("Consolas", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.schedulerButton.Location = new System.Drawing.Point(434, 122);
+            this.schedulerButton.Location = new System.Drawing.Point(376, 110);
             this.schedulerButton.Margin = new System.Windows.Forms.Padding(2);
             this.schedulerButton.Name = "schedulerButton";
             this.schedulerButton.Size = new System.Drawing.Size(200, 89);
@@ -93,8 +93,9 @@
             // 
             this.userLabel.AutoSize = true;
             this.userLabel.Font = new System.Drawing.Font("Consolas", 27F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.userLabel.Location = new System.Drawing.Point(280, 18);
+            this.userLabel.Location = new System.Drawing.Point(280, 32);
             this.userLabel.Name = "userLabel";
+
             this.userLabel.Size = new System.Drawing.Size(0, 42);
             this.userLabel.TabIndex = 4;
             // 
@@ -102,7 +103,7 @@
             // 
             this.timerButton.BackColor = System.Drawing.SystemColors.AppWorkspace;
             this.timerButton.Font = new System.Drawing.Font("Consolas", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.timerButton.Location = new System.Drawing.Point(434, 343);
+            this.timerButton.Location = new System.Drawing.Point(376, 354);
             this.timerButton.Margin = new System.Windows.Forms.Padding(2);
             this.timerButton.Name = "timerButton";
             this.timerButton.Size = new System.Drawing.Size(200, 86);
@@ -115,7 +116,7 @@
             // 
             this.stopWatchButton.BackColor = System.Drawing.SystemColors.AppWorkspace;
             this.stopWatchButton.Font = new System.Drawing.Font("Consolas", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.stopWatchButton.Location = new System.Drawing.Point(171, 343);
+            this.stopWatchButton.Location = new System.Drawing.Point(80, 354);
             this.stopWatchButton.Margin = new System.Windows.Forms.Padding(2);
             this.stopWatchButton.Name = "stopWatchButton";
             this.stopWatchButton.Size = new System.Drawing.Size(200, 86);
@@ -128,7 +129,7 @@
             // 
             this.budgetingButton.BackColor = System.Drawing.SystemColors.AppWorkspace;
             this.budgetingButton.Font = new System.Drawing.Font("Consolas", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.budgetingButton.Location = new System.Drawing.Point(434, 234);
+            this.budgetingButton.Location = new System.Drawing.Point(376, 236);
             this.budgetingButton.Margin = new System.Windows.Forms.Padding(2);
             this.budgetingButton.Name = "budgetingButton";
             this.budgetingButton.Size = new System.Drawing.Size(200, 86);
@@ -141,7 +142,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(869, 470);
+            this.ClientSize = new System.Drawing.Size(661, 470);
             this.Controls.Add(this.budgetingButton);
             this.Controls.Add(this.stopWatchButton);
             this.Controls.Add(this.timerButton);
