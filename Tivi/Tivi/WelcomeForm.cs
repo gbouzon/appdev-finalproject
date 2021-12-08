@@ -24,18 +24,9 @@ namespace Tivi
             InitializeComponent();
         }
 
-        private void emailTextBox_TextChanged(object sender, EventArgs e)
-        {
-            String email = emailTextBox.Text;
+        private void emailTextBox_TextChanged(object sender, EventArgs e) {}
 
-            if (!User.EMAIL_REGEX.IsMatch(email)) //check if this is really needed?
-                MessageBox.Show("Please enter a valid email!", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-        }
-
-        private void WelcomeForm_Load(object sender, EventArgs e)
-        {
-
-        }
+        private void WelcomeForm_Load(object sender, EventArgs e) {}
 
         private void emailTextBox_KeyPress(object sender, KeyPressEventArgs e)
         {
@@ -69,17 +60,18 @@ namespace Tivi
 
                         //means user already exists
                         OldUserForm form = new OldUserForm(user);
-                        form.Show();
-                        //new old form and then close this one
-                        //old form will probably take a user as a parameter
-
+                        this.Hide();
+                        form.ShowDialog();
+                        this.Close();
                     }
+
                     else
                     {
                         //if no user is found
                         NewUserForm form = new NewUserForm(email);
-                        form.Show();
-                        //this.Close() -> releases resources before we manage to create new one, figure it out later
+                        this.Hide();
+                        form.ShowDialog();
+                        this.Close();
                     }
 
                     //just to make sure info retrieval is on the up and up

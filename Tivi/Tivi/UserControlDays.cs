@@ -64,7 +64,7 @@ namespace Tivi
             timer1.Start();
             static_day = daysLabel.Text;
             EventPromptForm eventForm = new EventPromptForm(this.user);
-            eventForm.Show();
+            eventForm.ShowDialog();
         }
 
         //displaying event in richtextbox
