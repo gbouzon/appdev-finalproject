@@ -24,10 +24,10 @@ namespace Tivi
         {
             InitializeComponent();
             this.user = user;
-            // Sets all the error labels to blank on startup
+            // Sets the error label to blank on startup
             costErrorLabel.Text = "";
             nameErrorLabel.Text = "";
-            radioButtonError.Text = "";
+            radioButtonErrorLabel.Text = "";
 
             // Sets the default for the text labels
             billsTotalLbl.Text = "Bills: ";
@@ -79,7 +79,7 @@ namespace Tivi
         // Adds a filled out Product object when all the entries are valid
         private void addDataButton_Click(object sender, EventArgs e)
         {
-            if (nameTextBox.Text == "")
+            if (nameTextBox.Text.Length == 0)
             {
                 nameErrorLabel.Text = "Not a valid name";
                 nameIsGood = false;
@@ -108,7 +108,7 @@ namespace Tivi
                 if (item.Checked)
                 {
                     genreIsGood = true;
-                    radioButtonError.Text = "";
+                    radioButtonErrorLabel.Text = "";
                 }
             }
 
@@ -138,12 +138,8 @@ namespace Tivi
             // Display errors for radiobuttons
             else if (genreIsGood == false)
             {
-                radioButtonError.Text = "Pleae select a category";
+                radioButtonErrorLabel.Text = "Please select a category";
 
-            }
-            else
-            {
-                Console.WriteLine("I fucked up with the programming logic somehow");
             }
             
         }
@@ -155,7 +151,7 @@ namespace Tivi
             {
                 if (item.Checked)
                 {
-                    radioButtonError.Text = "";
+                    radioButtonErrorLabel.Text = "";
                     return item.Text;
                 }
                
@@ -177,33 +173,34 @@ namespace Tivi
             // Assignes the total cost for each category
             foreach (Product i in productList)
             {
-                if (i.GetDescription() == "Auto")
+                if (i.GetDescription() == "Transportation")
                 {
                     autoCost = autoCost + i.GetPrice();
                 }
-                else if (i.GetDescription() == "Bills")
+                if (i.GetDescription() == "Bills")
                 {
                     billCost = billCost + i.GetPrice();
                 }
-                else if (i.GetDescription() == "Food")
+                if (i.GetDescription() == "Food")
                 {
-                    foodCost = foodCost + i.GetPrice(); 
+                    foodCost = foodCost + i.GetPrice();
                 }
-                else if (i.GetDescription() == "Entertainment")
+                if (i.GetDescription() == "Entertainment")
                 {
                     entertainmentCost = entertainmentCost + i.GetPrice();
                 }
-                else if (i.GetDescription() == "Investments")
+                if (i.GetDescription() == "Investments")
                 {
-                    investmentCost = investmentCost + i.GetPrice(); 
+                    investmentCost = investmentCost + i.GetPrice();
                 }
-                else
+                if (i.GetDescription() == "Miscellaneous")
                 {
-                    miscellaneousCost = miscellaneousCost + i.GetPrice();   
+                    miscellaneousCost = miscellaneousCost + i.GetPrice();
                 }
+            }
 
                 // Sums all the costs up
-                sumOfAll = autoCost + billCost + foodCost + entertainmentCost + investmentCost +miscellaneousCost;
+                sumOfAll = autoCost + billCost + foodCost + entertainmentCost + investmentCost + miscellaneousCost;
 
                 DisplayProducts(productList, outputBox);
 
@@ -247,11 +244,36 @@ namespace Tivi
                     miscTotalLbl.Text = String.Format("Miscellaneuous: ${0:0.00} ({1:0.00}%)", miscellaneousCost, (miscellaneousCost / sumOfAll) * 100);
                 }
 
-            }
+            
 
         }
 
         private void pieChart_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void errorLabel_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void returnToMainMenu_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void costErrorLabel_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void nameErrorLabel_Click(object sender, EventArgs e)
         {
 
         }

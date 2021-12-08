@@ -65,5 +65,11 @@ namespace Tivi
             StopWatchForm form = new StopWatchForm();
             form.Show();
         }
+
+        private void calculatorButton_Click(object sender, EventArgs e)
+        {
+            CalculatorForm form = new CalculatorForm();
+            form.Show();
+        }
     }
 }

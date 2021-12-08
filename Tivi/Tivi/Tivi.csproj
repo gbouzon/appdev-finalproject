@@ -230,6 +230,18 @@
     <Compile Include="BudgetingForm.Designer.cs">
       <DependentUpon>BudgetingForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="CalculatorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CalculatorForm.Designer.cs">
+      <DependentUpon>CalculatorForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CalculatorUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CalculatorUserControl.Designer.cs">
+      <DependentUpon>CalculatorUserControl.cs</DependentUpon>
+    </Compile>
     <Compile Include="CalendarForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -310,6 +322,12 @@
     </Compile>
     <EmbeddedResource Include="BudgetingForm.resx">
       <DependentUpon>BudgetingForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CalculatorForm.resx">
+      <DependentUpon>CalculatorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CalculatorUserControl.resx">
+      <DependentUpon>CalculatorUserControl.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="CalendarForm.resx">
       <DependentUpon>CalendarForm.cs</DependentUpon>

@@ -38,8 +38,8 @@
             this.stopWatchTimer = new System.Windows.Forms.Timer(this.components);
             this.colonLabel = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.microSecondsLabel = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
+            this.millisecondsLabel = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // secondsLabel
@@ -47,7 +47,7 @@
             this.secondsLabel.AutoSize = true;
             this.secondsLabel.Font = new System.Drawing.Font("Candara", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.secondsLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.secondsLabel.Location = new System.Drawing.Point(56, 34);
+            this.secondsLabel.Location = new System.Drawing.Point(404, 34);
             this.secondsLabel.Name = "secondsLabel";
             this.secondsLabel.Size = new System.Drawing.Size(101, 78);
             this.secondsLabel.TabIndex = 0;
@@ -58,7 +58,7 @@
             this.minutesLabel.AutoSize = true;
             this.minutesLabel.Font = new System.Drawing.Font("Candara", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.minutesLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.minutesLabel.Location = new System.Drawing.Point(207, 34);
+            this.minutesLabel.Location = new System.Drawing.Point(246, 34);
             this.minutesLabel.Name = "minutesLabel";
             this.minutesLabel.Size = new System.Drawing.Size(101, 78);
             this.minutesLabel.TabIndex = 1;
@@ -69,7 +69,7 @@
             this.hoursLabel.AutoSize = true;
             this.hoursLabel.Font = new System.Drawing.Font("Candara", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.hoursLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.hoursLabel.Location = new System.Drawing.Point(343, 34);
+            this.hoursLabel.Location = new System.Drawing.Point(84, 34);
             this.hoursLabel.Name = "hoursLabel";
             this.hoursLabel.Size = new System.Drawing.Size(101, 78);
             this.hoursLabel.TabIndex = 2;
@@ -78,7 +78,7 @@
             // startButton
             // 
             this.startButton.Font = new System.Drawing.Font("Candara", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.startButton.Location = new System.Drawing.Point(69, 127);
+            this.startButton.Location = new System.Drawing.Point(119, 134);
             this.startButton.Name = "startButton";
             this.startButton.Size = new System.Drawing.Size(121, 49);
             this.startButton.TabIndex = 3;
@@ -89,7 +89,7 @@
             // pauseButton
             // 
             this.pauseButton.Font = new System.Drawing.Font("Candara", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.pauseButton.Location = new System.Drawing.Point(253, 127);
+            this.pauseButton.Location = new System.Drawing.Point(303, 134);
             this.pauseButton.Name = "pauseButton";
             this.pauseButton.Size = new System.Drawing.Size(121, 49);
             this.pauseButton.TabIndex = 4;
@@ -100,7 +100,7 @@
             // stopButton
             // 
             this.stopButton.Font = new System.Drawing.Font("Candara", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.stopButton.Location = new System.Drawing.Point(437, 127);
+            this.stopButton.Location = new System.Drawing.Point(487, 134);
             this.stopButton.Name = "stopButton";
             this.stopButton.Size = new System.Drawing.Size(121, 49);
             this.stopButton.TabIndex = 5;
@@ -110,6 +110,7 @@
             // 
             // stopWatchTimer
             // 
+            this.stopWatchTimer.Interval = 1300;
             this.stopWatchTimer.Tick += new System.EventHandler(this.stopWatchTimer_Tick);
             // 
             // colonLabel
@@ -117,7 +118,7 @@
             this.colonLabel.AutoSize = true;
             this.colonLabel.Font = new System.Drawing.Font("Candara", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.colonLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.colonLabel.Location = new System.Drawing.Point(301, 34);
+            this.colonLabel.Location = new System.Drawing.Point(340, 34);
             this.colonLabel.Name = "colonLabel";
             this.colonLabel.Size = new System.Drawing.Size(49, 78);
             this.colonLabel.TabIndex = 6;
@@ -128,41 +129,41 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Candara", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.label1.Location = new System.Drawing.Point(152, 34);
+            this.label1.Location = new System.Drawing.Point(191, 34);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(49, 78);
             this.label1.TabIndex = 7;
             this.label1.Text = ":";
             // 
-            // microSecondsLabel
+            // millisecondsLabel
             // 
-            this.microSecondsLabel.AutoSize = true;
-            this.microSecondsLabel.Font = new System.Drawing.Font("Candara", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.microSecondsLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.microSecondsLabel.Location = new System.Drawing.Point(484, 34);
-            this.microSecondsLabel.Name = "microSecondsLabel";
-            this.microSecondsLabel.Size = new System.Drawing.Size(101, 78);
-            this.microSecondsLabel.TabIndex = 8;
-            this.microSecondsLabel.Text = "00";
+            this.millisecondsLabel.AutoSize = true;
+            this.millisecondsLabel.Font = new System.Drawing.Font("Candara", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.millisecondsLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.millisecondsLabel.Location = new System.Drawing.Point(573, 34);
+            this.millisecondsLabel.Name = "millisecondsLabel";
+            this.millisecondsLabel.Size = new System.Drawing.Size(101, 78);
+            this.millisecondsLabel.TabIndex = 8;
+            this.millisecondsLabel.Text = "00";
             // 
-            // label3
+            // label2
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Candara", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.label3.Location = new System.Drawing.Point(438, 34);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(49, 78);
-            this.label3.TabIndex = 9;
-            this.label3.Text = ":";
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Candara", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.label2.Location = new System.Drawing.Point(526, 34);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(49, 78);
+            this.label2.TabIndex = 9;
+            this.label2.Text = ":";
             // 
             // StopWatchForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(642, 214);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.microSecondsLabel);
+            this.ClientSize = new System.Drawing.Size(754, 232);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.millisecondsLabel);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.colonLabel);
             this.Controls.Add(this.stopButton);
@@ -189,7 +190,7 @@
         private System.Windows.Forms.Timer stopWatchTimer;
         private System.Windows.Forms.Label colonLabel;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label microSecondsLabel;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label millisecondsLabel;
+        private System.Windows.Forms.Label label2;
     }
 }

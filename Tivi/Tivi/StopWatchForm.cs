@@ -15,7 +15,7 @@ namespace Tivi
         private int seconds;
         private int minutes;
         private int hours;
-        private int microseconds;
+        private int milliseconds;
 
         public StopWatchForm()
         {
@@ -23,20 +23,19 @@ namespace Tivi
             seconds = 0;
             minutes = 0;
             hours = 0;
-            microseconds = 0;
+            milliseconds = 0;
 
         }
 
         private void stopWatchTimer_Tick(object sender, EventArgs e)
         {
             seconds++;
+            milliseconds++;
 
-            microseconds++;
-
-            if (microseconds > 9)
+            if (milliseconds > 9)
             {
                 seconds++;
-                microseconds = 0;
+                milliseconds = 0;
             }
 
             if (seconds > 59)
@@ -44,6 +43,7 @@ namespace Tivi
                 minutes++;
                 seconds = 0;
             }
+           
             if (minutes > 59)
             {
                 hours++;
@@ -53,7 +53,7 @@ namespace Tivi
             hoursLabel.Text = appendZero(hours);
             minutesLabel.Text = appendZero(minutes);
             secondsLabel.Text = appendZero(seconds);
-            microSecondsLabel.Text = appendZero(microseconds);
+            millisecondsLabel.Text = appendZero(milliseconds);
         }
 
         private void startButton_Click(object sender, EventArgs e)
@@ -71,7 +71,6 @@ namespace Tivi
             hoursLabel.Text = appendZero(hours);
             minutesLabel.Text = appendZero(minutes);
             secondsLabel.Text = appendZero(seconds);
-            microSecondsLabel.Text = appendZero(microseconds);
         }
 
         private string appendZero(double str)

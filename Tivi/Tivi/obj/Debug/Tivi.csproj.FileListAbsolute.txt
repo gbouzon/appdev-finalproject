@@ -475,3 +475,5 @@ C:\Users\Chilka\Desktop\Projects\appdev-finalproject\Tivi\Tivi\bin\Debug\Syncfus
 C:\Users\Chilka\Desktop\Projects\appdev-finalproject\Tivi\Tivi\bin\Debug\Syncfusion.Tools.Base.xml
 C:\Users\Chilka\Desktop\Projects\appdev-finalproject\Tivi\Tivi\bin\Debug\Syncfusion.Tools.Windows.xml
 C:\Users\Chilka\Desktop\Projects\appdev-finalproject\Tivi\Tivi\obj\Debug\Tivi.CountdownForm.resources
+C:\Users\Chilka\Desktop\Projects\appdev-finalproject\Tivi\Tivi\obj\Debug\Tivi.CalculatorUserControl.resources
+C:\Users\Chilka\Desktop\Projects\appdev-finalproject\Tivi\Tivi\obj\Debug\Tivi.CalculatorForm.resources
