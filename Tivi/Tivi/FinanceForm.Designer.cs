@@ -1,6 +1,6 @@
 ﻿namespace Tivi
 {
-    partial class BudgetingForm
+    partial class FinanceForm
     {
         /// <summary>
         /// Required designer variable.
@@ -264,7 +264,7 @@
             this.panel1.Controls.Add(this.billsTotalLbl);
             this.panel1.Location = new System.Drawing.Point(50, 374);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(520, 422);
+            this.panel1.Size = new System.Drawing.Size(526, 422);
             this.panel1.TabIndex = 31;
             // 
             // miscTotalLbl
@@ -288,7 +288,7 @@
             // entertainmentTotalLbl
             // 
             this.entertainmentTotalLbl.AutoSize = true;
-            this.entertainmentTotalLbl.Location = new System.Drawing.Point(9, 215);
+            this.entertainmentTotalLbl.Location = new System.Drawing.Point(9, 214);
             this.entertainmentTotalLbl.Name = "entertainmentTotalLbl";
             this.entertainmentTotalLbl.Size = new System.Drawing.Size(81, 13);
             this.entertainmentTotalLbl.TabIndex = 3;
@@ -297,16 +297,16 @@
             // autoTotalLbl
             // 
             this.autoTotalLbl.AutoSize = true;
-            this.autoTotalLbl.Location = new System.Drawing.Point(12, 136);
+            this.autoTotalLbl.Location = new System.Drawing.Point(9, 144);
             this.autoTotalLbl.Name = "autoTotalLbl";
-            this.autoTotalLbl.Size = new System.Drawing.Size(35, 13);
+            this.autoTotalLbl.Size = new System.Drawing.Size(81, 13);
             this.autoTotalLbl.TabIndex = 2;
-            this.autoTotalLbl.Text = "Auto :";
+            this.autoTotalLbl.Text = "Transportation :";
             // 
             // foodTotalLbl
             // 
             this.foodTotalLbl.AutoSize = true;
-            this.foodTotalLbl.Location = new System.Drawing.Point(11, 74);
+            this.foodTotalLbl.Location = new System.Drawing.Point(11, 79);
             this.foodTotalLbl.Name = "foodTotalLbl";
             this.foodTotalLbl.Size = new System.Drawing.Size(40, 13);
             this.foodTotalLbl.TabIndex = 1;
@@ -359,7 +359,6 @@
             this.nameErrorLabel.Name = "nameErrorLabel";
             this.nameErrorLabel.Size = new System.Drawing.Size(205, 42);
             this.nameErrorLabel.TabIndex = 38;
-            this.nameErrorLabel.Click += new System.EventHandler(this.nameErrorLabel_Click);
             // 
             // costErrorLabel
             // 
@@ -369,7 +368,6 @@
             this.costErrorLabel.Name = "costErrorLabel";
             this.costErrorLabel.Size = new System.Drawing.Size(205, 45);
             this.costErrorLabel.TabIndex = 37;
-            this.costErrorLabel.Click += new System.EventHandler(this.costErrorLabel_Click);
             // 
             // calculatorUserControl1
             // 
@@ -380,7 +378,7 @@
             this.calculatorUserControl1.Size = new System.Drawing.Size(341, 412);
             this.calculatorUserControl1.TabIndex = 33;
             // 
-            // BudgetingForm
+            // FinanceForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -393,10 +391,9 @@
             this.Controls.Add(this.outputBox);
             this.Controls.Add(this.returnToMainMenu);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.Name = "BudgetingForm";
+            this.Name = "FinanceForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Budgeting";
-            this.Load += new System.EventHandler(this.BudgetingForm_Load);
+            this.Text = "Finance";
             this.panel4.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();

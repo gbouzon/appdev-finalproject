@@ -224,11 +224,11 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BudgetingForm.cs">
+    <Compile Include="FinanceForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="BudgetingForm.Designer.cs">
-      <DependentUpon>BudgetingForm.cs</DependentUpon>
+    <Compile Include="FinanceForm.Designer.cs">
+      <DependentUpon>FinanceForm.cs</DependentUpon>
     </Compile>
     <Compile Include="CalculatorForm.cs">
       <SubType>Form</SubType>
@@ -311,8 +311,8 @@
     <Compile Include="UserControlDays.Designer.cs">
       <DependentUpon>UserControlDays.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="BudgetingForm.resx">
-      <DependentUpon>BudgetingForm.cs</DependentUpon>
+    <EmbeddedResource Include="FinanceForm.resx">
+      <DependentUpon>FinanceForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="CalculatorForm.resx">
       <DependentUpon>CalculatorForm.cs</DependentUpon>

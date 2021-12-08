@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace Tivi
 {
-    public partial class BudgetingForm : Form
+    public partial class FinanceForm : Form
     {
         private User user;
         // List to hold all the information about the entries
@@ -20,7 +20,7 @@ namespace Tivi
         bool nameIsGood = false;
         bool costIsGood = false;
         bool genreIsGood = false;   
-        public BudgetingForm(User user)
+        public FinanceForm(User user)
         {
             InitializeComponent();
             this.user = user;
@@ -33,7 +33,7 @@ namespace Tivi
             // Sets the default for the text labels
             billsTotalLbl.Text = "Bills: ";
             foodTotalLbl.Text = "Food: ";
-            autoTotalLbl.Text = "Auto: ";
+            autoTotalLbl.Text = "Transportation: ";
             entertainmentTotalLbl.Text = "Entertainment: ";
             investmentTotalLbl.Text = "Investments: ";
             miscTotalLbl.Text = "Misc: ";
@@ -44,12 +44,12 @@ namespace Tivi
             pieChart.Series["s1"].IsValueShownAsLabel = true;
             pieChart.Series["s1"].Points.AddXY("Bills", "1");
             pieChart.Series["s1"].Points.AddXY("Food", "1");
-            pieChart.Series["s1"].Points.AddXY("Auto", "1");
+            pieChart.Series["s1"].Points.AddXY("Transportation", "1");
             pieChart.Series["s1"].Points.AddXY("Entertainment", "1");
             pieChart.Series["s1"].Points.AddXY("Investments", "1");
             pieChart.Series["s1"].Points.AddXY("Miscellaneous", "1");
 
-            this.Text = "Cost Evaluater";
+            this.Text = "Finance";
         }
 
         private void BudgetingForm_Load(object sender, EventArgs e)
@@ -65,11 +65,11 @@ namespace Tivi
             formattedString2 = String.Format("{0,-25}-{1,-40}-{2,-20}", "Name", "Description", "Price");
 
             outputBox.AppendText("Costs      " + DateTime.Now.ToString("MM/dd/yyyy hh:mm tt") + Environment.NewLine);
-            outputBox.AppendText("=============================" + Environment.NewLine);
+            outputBox.AppendText("==============================================================" + Environment.NewLine);
 
             foreach (Product i in productList)
             {
-                outputBox.AppendText(String.Format("{0,-25}-{1,-40}${2,-20:0.00}", i.GetName(), i.GetDescription(), i.GetPrice()) + Environment.NewLine);   
+                outputBox.AppendText(String.Format("{0, -25}-{1, -40}${2, -20:0.00}", i.GetName(), i.GetDescription(), i.GetPrice()) + Environment.NewLine);   
 
             }
 
@@ -235,35 +235,18 @@ namespace Tivi
                 }
                 if (investmentCost != 0)
                 {
-                    pieChart.Series["s1"].Points.AddXY("Auto", Convert.ToString(investmentCost));
+                    pieChart.Series["s1"].Points.AddXY("Investment", Convert.ToString(investmentCost));
                     investmentTotalLbl.Text = String.Format("Investments: ${0:0.00} ({1:0.00}%)", investmentCost, (investmentCost / sumOfAll) * 100);
                 }
 
                 if (miscellaneousCost != 0)
                 {
-                    pieChart.Series["s1"].Points.AddXY("Auto", Convert.ToString(miscellaneousCost));
+                    pieChart.Series["s1"].Points.AddXY("Miscellaneuous", Convert.ToString(miscellaneousCost));
                     miscTotalLbl.Text = String.Format("Miscellaneuous: ${0:0.00} ({1:0.00}%)", miscellaneousCost, (miscellaneousCost / sumOfAll) * 100);
                 }
-
             
-
         }
-
-        private void pieChart_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void errorLabel_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
+     
         private void returnToMainMenu_Click(object sender, EventArgs e)
         {
             OldUserForm form = new OldUserForm(this.user);
@@ -272,27 +255,21 @@ namespace Tivi
             this.Close();
         }
 
-        private void costErrorLabel_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void nameErrorLabel_Click(object sender, EventArgs e)
-        {
-
-        }
+      
     }
     class Product
     {
         private string name;
         private string description;
         private double price;
+        private DateTime currentDateTime;
 
         public Product(string productName, string productDescription, double productPrice)
         {
             name = productName;
             description = productDescription;
             price = productPrice;
+            currentDateTime = DateTime.Now;
         }
 
         public string GetName()
@@ -309,5 +286,11 @@ namespace Tivi
         {
            return price;
         }
+
+        public DateTime GetCurrentDateTime()
+        {
+            return currentDateTime;
+        }
+        
     }
 }

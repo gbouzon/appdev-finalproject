@@ -13,93 +13,26 @@ namespace Tivi
     public partial class StopWatchForm : Form
     {
         User user;
-        private int seconds;
-        private int minutes;
-        private int hours;
-        private int milliseconds;
-
-        public StopWatchForm()
-        {
-            InitializeComponent();
-            seconds = 0;
-            minutes = 0;
-            hours = 0;
-            milliseconds = 0;
-        }
+        private int x;
+        System.Diagnostics.Stopwatch stopwatch = new System.Diagnostics.Stopwatch();
 
         public StopWatchForm(User user)
         {
             InitializeComponent();
-            seconds = 0;
-            minutes = 0;
-            hours = 0;
-            milliseconds = 0;
             this.user = user;
             this.BackColor = ColorTranslator.FromHtml(user.Colour);
         }
 
         private void stopWatchTimer_Tick(object sender, EventArgs e)
         {
-            seconds++;
-            milliseconds++;
-
-            if (milliseconds > 9)
-            {
-                seconds++;
-                milliseconds = 0;
-            }
-
-            if (seconds > 59)
-            {
-                minutes++;
-                seconds = 0;
-            }
-           
-            if (minutes > 59)
-            {
-                hours++;
-                minutes = 0;
-            }
-
-            hoursLabel.Text = appendZero(hours);
-            minutesLabel.Text = appendZero(minutes);
-            secondsLabel.Text = appendZero(seconds);
-            millisecondsLabel.Text = appendZero(milliseconds);
+            TimeSpan Elapsed = stopwatch.Elapsed;
+            lbl_time.Text = "Timer : " + string.Format("{0:00}:{1:00}:{2:00}:{3:00}", Math.Floor(Elapsed.TotalHours), Elapsed.Minutes, Elapsed.Seconds, Elapsed.Milliseconds);
         }
 
-        private void startButton_Click(object sender, EventArgs e)
+        private void btn_start_Click(object sender, EventArgs e)
         {
             stopWatchTimer.Start();
-        }
-
-        private void stopButton_Click(object sender, EventArgs e)
-        {
-            stopWatchTimer.Stop();
-            seconds = 0;
-            minutes = 0;
-            hours = 0;
-
-            hoursLabel.Text = appendZero(hours);
-            minutesLabel.Text = appendZero(minutes);
-            secondsLabel.Text = appendZero(seconds);
-        }
-
-        private string appendZero(double str)
-        {
-            if (str <= 9)
-            {
-                return "0" + str;
-            }
-            else
-            {
-                return str.ToString();
-            }
-
-        }
-
-        private void pauseButton_Click(object sender, EventArgs e)
-        {
-            stopWatchTimer.Stop();
+            stopwatch.Start();
         }
 
         private void returnToMainMenuButton_Click(object sender, EventArgs e)
@@ -108,6 +41,26 @@ namespace Tivi
             this.Hide();
             form.ShowDialog();
             this.Close();
+        }
+
+        private void btn_capture_Click(object sender, EventArgs e)
+        {
+            x += 1;
+            listBox1.Items.Add( x + "-" + lbl_time.Text);
+        }
+
+        private void btn_reset_Click(object sender, EventArgs e)
+        {
+            stopwatch.Reset();
+            lbl_time.Text = "Timer : 0:00:00:000";
+            listBox1.Items.Clear();
+            x = 0;
+        }
+
+        private void btn_stop_Click(object sender, EventArgs e)
+        {
+            stopWatchTimer.Stop();
+            stopwatch.Stop();
         }
     }
 }

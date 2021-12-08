@@ -49,7 +49,7 @@ namespace Tivi
 
         private void budgetingButton_Click(object sender, EventArgs e)
         {
-            BudgetingForm form = new BudgetingForm(this.user);
+            FinanceForm form = new FinanceForm(this.user);
             this.Hide();
             form.ShowDialog();
             this.Close();
