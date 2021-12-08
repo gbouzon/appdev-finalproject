@@ -44,9 +44,10 @@
             // 
             this.welcomeLabel.AutoSize = true;
             this.welcomeLabel.Font = new System.Drawing.Font("Consolas", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.welcomeLabel.Location = new System.Drawing.Point(21, 37);
+            this.welcomeLabel.Location = new System.Drawing.Point(16, 32);
+            this.welcomeLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.welcomeLabel.Name = "welcomeLabel";
-            this.welcomeLabel.Size = new System.Drawing.Size(336, 55);
+            this.welcomeLabel.Size = new System.Drawing.Size(259, 43);
             this.welcomeLabel.TabIndex = 0;
             this.welcomeLabel.Text = "Welcome back";
             // 
@@ -54,10 +55,10 @@
             // 
             this.calendarButton.BackColor = System.Drawing.SystemColors.Control;
             this.calendarButton.Font = new System.Drawing.Font("Consolas", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.calendarButton.Location = new System.Drawing.Point(107, 127);
-            this.calendarButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.calendarButton.Location = new System.Drawing.Point(80, 110);
+            this.calendarButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.calendarButton.Name = "calendarButton";
-            this.calendarButton.Size = new System.Drawing.Size(284, 103);
+            this.calendarButton.Size = new System.Drawing.Size(213, 89);
             this.calendarButton.TabIndex = 1;
             this.calendarButton.Text = "Calendar";
             this.calendarButton.UseVisualStyleBackColor = false;
@@ -67,10 +68,10 @@
             // 
             this.toDoListButton.BackColor = System.Drawing.SystemColors.Control;
             this.toDoListButton.Font = new System.Drawing.Font("Consolas", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.toDoListButton.Location = new System.Drawing.Point(107, 268);
-            this.toDoListButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.toDoListButton.Location = new System.Drawing.Point(80, 232);
+            this.toDoListButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.toDoListButton.Name = "toDoListButton";
-            this.toDoListButton.Size = new System.Drawing.Size(284, 104);
+            this.toDoListButton.Size = new System.Drawing.Size(213, 90);
             this.toDoListButton.TabIndex = 2;
             this.toDoListButton.Text = "To Do List";
             this.toDoListButton.UseVisualStyleBackColor = false;
@@ -80,20 +81,19 @@
             // 
             this.userLabel.AutoSize = true;
             this.userLabel.Font = new System.Drawing.Font("Consolas", 27F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.userLabel.Location = new System.Drawing.Point(373, 37);
-            this.userLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.userLabel.Location = new System.Drawing.Point(280, 32);
             this.userLabel.Name = "userLabel";
-            this.userLabel.Size = new System.Drawing.Size(0, 52);
+            this.userLabel.Size = new System.Drawing.Size(0, 42);
             this.userLabel.TabIndex = 4;
             // 
             // timerButton
             // 
             this.timerButton.BackColor = System.Drawing.SystemColors.Control;
             this.timerButton.Font = new System.Drawing.Font("Consolas", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.timerButton.Location = new System.Drawing.Point(501, 272);
-            this.timerButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.timerButton.Location = new System.Drawing.Point(376, 236);
+            this.timerButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.timerButton.Name = "timerButton";
-            this.timerButton.Size = new System.Drawing.Size(281, 99);
+            this.timerButton.Size = new System.Drawing.Size(211, 86);
             this.timerButton.TabIndex = 5;
             this.timerButton.Text = "Countdown Timer";
             this.timerButton.UseVisualStyleBackColor = false;
@@ -103,10 +103,10 @@
             // 
             this.stopWatchButton.BackColor = System.Drawing.SystemColors.Control;
             this.stopWatchButton.Font = new System.Drawing.Font("Consolas", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.stopWatchButton.Location = new System.Drawing.Point(107, 408);
-            this.stopWatchButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.stopWatchButton.Location = new System.Drawing.Point(80, 354);
+            this.stopWatchButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.stopWatchButton.Name = "stopWatchButton";
-            this.stopWatchButton.Size = new System.Drawing.Size(284, 99);
+            this.stopWatchButton.Size = new System.Drawing.Size(213, 86);
             this.stopWatchButton.TabIndex = 6;
             this.stopWatchButton.Text = "StopWatch";
             this.stopWatchButton.UseVisualStyleBackColor = false;
@@ -116,12 +116,12 @@
             // 
             this.budgetingButton.BackColor = System.Drawing.SystemColors.Control;
             this.budgetingButton.Font = new System.Drawing.Font("Consolas", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.budgetingButton.Location = new System.Drawing.Point(501, 130);
-            this.budgetingButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.budgetingButton.Location = new System.Drawing.Point(376, 113);
+            this.budgetingButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.budgetingButton.Name = "budgetingButton";
-            this.budgetingButton.Size = new System.Drawing.Size(281, 99);
+            this.budgetingButton.Size = new System.Drawing.Size(211, 86);
             this.budgetingButton.TabIndex = 7;
-            this.budgetingButton.Text = "Budgeting";
+            this.budgetingButton.Text = "Finance";
             this.budgetingButton.UseVisualStyleBackColor = false;
             this.budgetingButton.Click += new System.EventHandler(this.budgetingButton_Click);
             // 
@@ -129,10 +129,10 @@
             // 
             this.noteButton.BackColor = System.Drawing.SystemColors.Control;
             this.noteButton.Font = new System.Drawing.Font("Consolas", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.noteButton.Location = new System.Drawing.Point(499, 407);
-            this.noteButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.noteButton.Location = new System.Drawing.Point(374, 353);
+            this.noteButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.noteButton.Name = "noteButton";
-            this.noteButton.Size = new System.Drawing.Size(284, 103);
+            this.noteButton.Size = new System.Drawing.Size(213, 89);
             this.noteButton.TabIndex = 9;
             this.noteButton.Text = "Notes";
             this.noteButton.UseVisualStyleBackColor = false;
@@ -142,10 +142,10 @@
             // 
             this.returnToMainMenuButton.BackColor = System.Drawing.SystemColors.Control;
             this.returnToMainMenuButton.Font = new System.Drawing.Font("Consolas", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.returnToMainMenuButton.Location = new System.Drawing.Point(288, 552);
-            this.returnToMainMenuButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.returnToMainMenuButton.Location = new System.Drawing.Point(216, 478);
+            this.returnToMainMenuButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.returnToMainMenuButton.Name = "returnToMainMenuButton";
-            this.returnToMainMenuButton.Size = new System.Drawing.Size(284, 103);
+            this.returnToMainMenuButton.Size = new System.Drawing.Size(213, 89);
             this.returnToMainMenuButton.TabIndex = 10;
             this.returnToMainMenuButton.Text = "Back";
             this.returnToMainMenuButton.UseVisualStyleBackColor = false;
@@ -153,9 +153,9 @@
             // 
             // OldUserForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(876, 677);
+            this.ClientSize = new System.Drawing.Size(657, 587);
             this.Controls.Add(this.returnToMainMenuButton);
             this.Controls.Add(this.noteButton);
             this.Controls.Add(this.budgetingButton);
@@ -166,7 +166,7 @@
             this.Controls.Add(this.calendarButton);
             this.Controls.Add(this.welcomeLabel);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "OldUserForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Welcome Back!";
