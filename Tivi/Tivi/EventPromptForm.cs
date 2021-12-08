@@ -36,24 +36,32 @@ namespace Tivi
 
         private void saveButton_Click(object sender, EventArgs e)
         {
-            MySqlConnection connection = new MySqlConnection(connectionString);
-            String insertStatement = "INSERT INTO event(description, date, type, user_email) values(?, ?, ?, ?)";
-            connection.Open();
-            MySqlCommand command = connection.CreateCommand();
-            command.CommandText = insertStatement;
+            if(eventTextBox.Text == "")
+            {
+                MessageBox.Show("Please Input Some Text!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            else
+            {
+                MySqlConnection connection = new MySqlConnection(connectionString);
+                String insertStatement = "INSERT INTO event(description, date, type, user_email) values(?, ?, ?, ?)";
+                connection.Open();
+                MySqlCommand command = connection.CreateCommand();
+                command.CommandText = insertStatement;
 
-            //inserting new row into database with info entered by user
-            command.Parameters.AddWithValue("description", eventTextBox.Text);
-            command.Parameters.AddWithValue("date", DateTime.ParseExact(dateTextBox.Text, "MM/dd/yyyy", CultureInfo.CurrentCulture));
-            command.Parameters.AddWithValue("type", eventGroupBox.Controls.OfType<RadioButton>().FirstOrDefault(button => button.Checked).Text);
-            command.Parameters.AddWithValue("user_email", user.Email);
-            command.ExecuteNonQuery();
+                //inserting new row into database with info entered by user
+                command.Parameters.AddWithValue("description", eventTextBox.Text);
+                command.Parameters.AddWithValue("date", DateTime.ParseExact(dateTextBox.Text, "MM/dd/yyyy", CultureInfo.CurrentCulture));
+                command.Parameters.AddWithValue("type", eventGroupBox.Controls.OfType<RadioButton>().FirstOrDefault(button => button.Checked).Text);
+                command.Parameters.AddWithValue("user_email", user.Email);
+                command.ExecuteNonQuery();
 
-            MessageBox.Show("Saved", "Save Event", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("Saved", "Save Event", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                command.Dispose();
+                connection.Close();
+                this.Close();
+            }
             
-            command.Dispose();
-            connection.Close();
-            this.Close();
         }
     }
 }

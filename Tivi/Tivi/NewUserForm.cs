@@ -33,17 +33,17 @@ namespace Tivi
 
         private void redButton_Click(object sender, EventArgs e)
         {
-            colour = "Red";
+            colour = "IndianRed";
         }
 
         private void greenButton_Click(object sender, EventArgs e)
         {
-            colour = "Green";
+            colour = "LightGreen";
         }
 
         private void blueButton_Click(object sender, EventArgs e)
         {
-            colour = "Blue";
+            colour = "LightCyan";
         }
 
         private void orangeButton_Click(object sender, EventArgs e)
@@ -53,17 +53,17 @@ namespace Tivi
 
         private void purpleButton_Click(object sender, EventArgs e)
         {
-            colour = "Purple";
+            colour = "Lavender";
         }
 
         private void pinkButton_Click(object sender, EventArgs e)
         {
-            colour = "Pink";
+            colour = "LightPink";
         }
 
         private void yellowButton_Click(object sender, EventArgs e)
         {
-            colour = "Yellow";
+            colour = "PapayaWhip";
         }
 
         private void createButton_Click(object sender, EventArgs e)

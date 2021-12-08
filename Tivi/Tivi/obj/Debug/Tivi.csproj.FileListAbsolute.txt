@@ -408,8 +408,6 @@ C:\Users\25683\Desktop\appdev-finalproject\Tivi\Tivi\obj\Debug\Tivi.csproj.Assem
 C:\Users\25683\Desktop\appdev-finalproject\Tivi\Tivi\obj\Debug\Tivi.CalendarForm.resources
 C:\Users\25683\Desktop\appdev-finalproject\Tivi\Tivi\obj\Debug\Tivi.EventPromptForm.resources
 C:\Users\25683\Desktop\appdev-finalproject\Tivi\Tivi\obj\Debug\Tivi.OldUserForm.resources
-C:\Users\25683\Desktop\appdev-finalproject\Tivi\Tivi\obj\Debug\Tivi.SchedulerForm.resources
-C:\Users\25683\Desktop\appdev-finalproject\Tivi\Tivi\obj\Debug\Tivi.UserControlLarge.resources
 C:\Users\25683\Desktop\appdev-finalproject\Tivi\Tivi\obj\Debug\Tivi.WelcomeForm.resources
 C:\Users\25683\Desktop\appdev-finalproject\Tivi\Tivi\obj\Debug\Tivi.NewUserForm.resources
 C:\Users\25683\Desktop\appdev-finalproject\Tivi\Tivi\obj\Debug\Tivi.Properties.Resources.resources
@@ -449,7 +447,6 @@ C:\Users\25683\Desktop\appdev-finalproject\Tivi\Tivi\bin\Debug\Syncfusion.SpellC
 C:\Users\25683\Desktop\appdev-finalproject\Tivi\Tivi\bin\Debug\Syncfusion.Tools.Base.xml
 C:\Users\25683\Desktop\appdev-finalproject\Tivi\Tivi\bin\Debug\Syncfusion.Tools.Windows.xml
 C:\Users\25683\Desktop\appdev-finalproject\Tivi\Tivi\obj\Debug\Tivi.BudgetingForm.resources
-C:\Users\25683\Desktop\appdev-finalproject\Tivi\Tivi\obj\Debug\Tivi.SchedulerEventForm.resources
 C:\Users\25683\Desktop\appdev-finalproject\Tivi\Tivi\obj\Debug\Tivi.StopWatchForm.resources
 C:\Users\Chilka\Desktop\Projects\appdev-finalproject\Tivi\Tivi\bin\Debug\CompletionCalculator.dll
 C:\Users\Chilka\Desktop\Projects\appdev-finalproject\Tivi\Tivi\bin\Debug\Scheduler.dll
@@ -588,3 +585,7 @@ D:\School (2019-2023)\Fall 2021\Application Development\appdev-finalproject\Tivi
 D:\School (2019-2023)\Fall 2021\Application Development\appdev-finalproject\Tivi\Tivi\obj\Debug\Tivi.csproj.AssemblyReference.cache
 D:\School (2019-2023)\Fall 2021\Application Development\appdev-finalproject\Tivi\Tivi\obj\Debug\Tivi.csproj.SuggestedBindingRedirects.cache
 D:\School (2019-2023)\Fall 2021\Application Development\appdev-finalproject\Tivi\Tivi\obj\Debug\Tivi.Notepad.resources
+C:\Users\25683\Desktop\appdev-finalproject\Tivi\Tivi\obj\Debug\Tivi.CalculatorForm.resources
+C:\Users\25683\Desktop\appdev-finalproject\Tivi\Tivi\obj\Debug\Tivi.CalculatorUserControl.resources
+C:\Users\25683\Desktop\appdev-finalproject\Tivi\Tivi\obj\Debug\Tivi.CountdownForm.resources
+C:\Users\25683\Desktop\appdev-finalproject\Tivi\Tivi\obj\Debug\Tivi.Notepad.resources
