@@ -29,8 +29,13 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+
             this.btn_start = new System.Windows.Forms.Button();
             this.btn_stop = new System.Windows.Forms.Button();
+
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(StopWatchForm));
+
+
             this.stopWatchTimer = new System.Windows.Forms.Timer(this.components);
             this.returnToMainMenuButton = new System.Windows.Forms.Button();
             this.btn_capture = new System.Windows.Forms.Button();
@@ -38,9 +43,7 @@
             this.listBox1 = new System.Windows.Forms.ListBox();
             this.lbl_time = new System.Windows.Forms.Label();
             this.SuspendLayout();
-            // 
-            // btn_start
-            // 
+
             this.btn_start.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_start.Font = new System.Drawing.Font("Candara", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_start.Location = new System.Drawing.Point(42, 486);
@@ -50,9 +53,8 @@
             this.btn_start.Text = "START";
             this.btn_start.UseVisualStyleBackColor = true;
             this.btn_start.Click += new System.EventHandler(this.btn_start_Click);
-            // 
-            // btn_stop
-            // 
+
+       
             this.btn_stop.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_stop.Font = new System.Drawing.Font("Candara", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_stop.Location = new System.Drawing.Point(435, 486);
@@ -62,17 +64,26 @@
             this.btn_stop.Text = "STOP";
             this.btn_stop.UseVisualStyleBackColor = true;
             this.btn_stop.Click += new System.EventHandler(this.btn_stop_Click);
-            // 
+
             // stopWatchTimer
             // 
             this.stopWatchTimer.Tick += new System.EventHandler(this.stopWatchTimer_Tick);
             // 
+
             // returnToMainMenuButton
             // 
             this.returnToMainMenuButton.Font = new System.Drawing.Font("Candara", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.returnToMainMenuButton.Location = new System.Drawing.Point(42, 561);
+
+        
+            // 
+            // returnToMainMenuButton
+            // 
+            this.returnToMainMenuButton.Location = new System.Drawing.Point(345, 246);
+            this.returnToMainMenuButton.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+
             this.returnToMainMenuButton.Name = "returnToMainMenuButton";
-            this.returnToMainMenuButton.Size = new System.Drawing.Size(202, 46);
+            this.returnToMainMenuButton.Size = new System.Drawing.Size(269, 53);
             this.returnToMainMenuButton.TabIndex = 10;
             this.returnToMainMenuButton.Text = "Back To Main Menu";
             this.returnToMainMenuButton.UseVisualStyleBackColor = true;
@@ -125,8 +136,9 @@
             // 
             // StopWatchForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+
             this.ClientSize = new System.Drawing.Size(772, 639);
             this.Controls.Add(this.lbl_time);
             this.Controls.Add(this.listBox1);
@@ -135,6 +147,13 @@
             this.Controls.Add(this.returnToMainMenuButton);
             this.Controls.Add(this.btn_stop);
             this.Controls.Add(this.btn_start);
+
+            this.ClientSize = new System.Drawing.Size(1005, 313);
+            this.Controls.Add(this.returnToMainMenuButton);
+    
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+
             this.Name = "StopWatchForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Stopwatch";

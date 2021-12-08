@@ -34,6 +34,12 @@ or Public Domain Certification
     License: Copyright-Only Dedication* (based on United States law)
 or Public Domain Certification
 
+    timer.png
+    Source: https://iconscout.com/icon/timer-297
+    Creator: Icon Mafia
+    Usage: icon
+    License: CC0 1.0 Universal (CC0 1.0) Public Domain Dedication
+
 
 
 # References
