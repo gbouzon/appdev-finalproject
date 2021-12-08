@@ -33,37 +33,49 @@ namespace Tivi
         private void calendarButton_Click(object sender, EventArgs e)
         {
             CalendarForm form = new CalendarForm(this.user);
-            form.Show();
+            this.Hide();
+            form.ShowDialog();
+            this.Close();
         }
 
         private void toDoListButton_Click(object sender, EventArgs e)
         {
             ToDoListForm form = new ToDoListForm(this.user);
-            form.Show();
+            this.Hide();
+            form.ShowDialog();
+            this.Close();
         }
 
         private void schedulerButton_Click(object sender, EventArgs e)
         {
             SchedulerForm form = new SchedulerForm(this.user);
-            form.Show();
+            this.Hide();
+            form.ShowDialog();
+            this.Close();
         }
 
         private void budgetingButton_Click(object sender, EventArgs e)
         {
             BudgetingForm form = new BudgetingForm(this.user);
-            form.Show();
+            this.Hide();
+            form.ShowDialog();
+            this.Close();
         }
 
         private void timerButton_Click(object sender, EventArgs e)
         {
             CountdownForm form = new CountdownForm();
-            form.Show();
+            this.Hide();
+            form.ShowDialog();
+            this.Close();
         }
 
         private void stopWatchButton_Click(object sender, EventArgs e)
         {
             StopWatchForm form = new StopWatchForm();
-            form.Show();
+            this.Hide();
+            form.ShowDialog();
+            this.Close();
         }
 
         private void calculatorButton_Click(object sender, EventArgs e)

@@ -41,7 +41,11 @@ namespace Tivi
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.dateLabel = new System.Windows.Forms.Label();
+<<<<<<< HEAD
             this.returnToMainMenu = new System.Windows.Forms.Button();
+=======
+            this.menuButton = new System.Windows.Forms.Button();
+>>>>>>> c0fbaa0a687e5100b8638d60ca80c4a3422d7ed5
             this.SuspendLayout();
             // 
             // dayContainer
@@ -187,6 +191,7 @@ namespace Tivi
             this.dateLabel.Text = "MONTH YEAR";
             this.dateLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+<<<<<<< HEAD
             // returnToMainMenu
             // 
             this.returnToMainMenu.Location = new System.Drawing.Point(48, 756);
@@ -195,13 +200,28 @@ namespace Tivi
             this.returnToMainMenu.TabIndex = 29;
             this.returnToMainMenu.Text = "Back To Main Menu";
             this.returnToMainMenu.UseVisualStyleBackColor = true;
+=======
+            // menuButton
+            // 
+            this.menuButton.Location = new System.Drawing.Point(55, 761);
+            this.menuButton.Name = "menuButton";
+            this.menuButton.Size = new System.Drawing.Size(88, 39);
+            this.menuButton.TabIndex = 12;
+            this.menuButton.Text = "Main Menu";
+            this.menuButton.UseVisualStyleBackColor = true;
+            this.menuButton.Click += new System.EventHandler(this.menuButton_Click);
+>>>>>>> c0fbaa0a687e5100b8638d60ca80c4a3422d7ed5
             // 
             // CalendarForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1061, 812);
+<<<<<<< HEAD
             this.Controls.Add(this.returnToMainMenu);
+=======
+            this.Controls.Add(this.menuButton);
+>>>>>>> c0fbaa0a687e5100b8638d60ca80c4a3422d7ed5
             this.Controls.Add(this.dateLabel);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
@@ -240,6 +260,10 @@ namespace Tivi
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label dateLabel;
+<<<<<<< HEAD
         private System.Windows.Forms.Button returnToMainMenu;
+=======
+        private System.Windows.Forms.Button menuButton;
+>>>>>>> c0fbaa0a687e5100b8638d60ca80c4a3422d7ed5
     }
 }

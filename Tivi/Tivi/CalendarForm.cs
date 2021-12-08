@@ -88,6 +88,14 @@ namespace Tivi
             DisplayDays(year, month);
         }
 
+        private void menuButton_Click(object sender, EventArgs e)
+        {
+            OldUserForm form = new OldUserForm(this.user);
+            this.Hide();
+            form.ShowDialog();
+            this.Close();
+        }
+
         private void previousButton_Click(object sender, EventArgs e)
         {
             //if it's january then we go back to the previous year and reset month to december
