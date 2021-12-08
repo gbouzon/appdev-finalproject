@@ -49,8 +49,10 @@ namespace Tivi
 
         private void UserControlDays_MouseEnter(object sender, EventArgs e)
         {
-            this.BackColor = Color.Green; //change this to user's favorite color later
-            this.eventRichTextBox.BackColor = Color.Green; //including richtextbox
+            //this.BackColor = Color.Green; //change this to user's favorite color later
+            //this.eventRichTextBox.BackColor = Color.Green; //including richtextbox
+            this.BackColor = ColorTranslator.FromHtml(user.Colour);
+            this.eventRichTextBox.BackColor = ColorTranslator.FromHtml(user.Colour);
         }
 
         private void UserControlDays_MouseLeave(object sender, EventArgs e)

@@ -24,6 +24,7 @@ namespace Tivi
         {
             InitializeComponent();
             this.user = user;
+            this.BackColor = ColorTranslator.FromHtml(user.Colour);
             // Sets the error label to blank on startup
             costErrorLabel.Text = "";
             nameErrorLabel.Text = "";
@@ -265,7 +266,10 @@ namespace Tivi
 
         private void returnToMainMenu_Click(object sender, EventArgs e)
         {
-
+            OldUserForm form = new OldUserForm(this.user);
+            this.Hide();
+            form.ShowDialog();
+            this.Close();
         }
 
         private void costErrorLabel_Click(object sender, EventArgs e)

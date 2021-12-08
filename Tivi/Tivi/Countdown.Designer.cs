@@ -151,6 +151,7 @@
             this.Controls.Add(this.minutesComboBox);
             this.Controls.Add(this.secondsComboBox);
             this.Name = "CountdownForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Countdown";
             this.Load += new System.EventHandler(this.CountdownForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pomodoroPictureBox)).EndInit();

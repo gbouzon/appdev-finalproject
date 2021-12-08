@@ -185,7 +185,8 @@
             this.Controls.Add(this.minutesLabel);
             this.Controls.Add(this.secondsLabel);
             this.Name = "StopWatchForm";
-            this.Text = "StopWatchForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Stopwatch";
             this.ResumeLayout(false);
             this.PerformLayout();
 

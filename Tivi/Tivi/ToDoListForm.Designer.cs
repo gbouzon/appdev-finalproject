@@ -72,7 +72,7 @@ namespace Tivi
             // 
             this.textBox.Font = new System.Drawing.Font("SimSun", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.textBox.Location = new System.Drawing.Point(11, 238);
-            this.textBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBox.Margin = new System.Windows.Forms.Padding(2);
             this.textBox.Name = "textBox";
             this.textBox.Size = new System.Drawing.Size(334, 24);
             this.textBox.TabIndex = 2;
@@ -82,7 +82,7 @@ namespace Tivi
             this.checkedListBox.Font = new System.Drawing.Font("SimSun", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.checkedListBox.FormattingEnabled = true;
             this.checkedListBox.Location = new System.Drawing.Point(10, 303);
-            this.checkedListBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.checkedListBox.Margin = new System.Windows.Forms.Padding(2);
             this.checkedListBox.Name = "checkedListBox";
             this.checkedListBox.Size = new System.Drawing.Size(531, 251);
             this.checkedListBox.TabIndex = 3;
@@ -93,7 +93,7 @@ namespace Tivi
             this.addButton.Font = new System.Drawing.Font("Ink Free", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.addButton.ForeColor = System.Drawing.Color.White;
             this.addButton.Location = new System.Drawing.Point(391, 218);
-            this.addButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.addButton.Margin = new System.Windows.Forms.Padding(2);
             this.addButton.Name = "addButton";
             this.addButton.Size = new System.Drawing.Size(119, 66);
             this.addButton.TabIndex = 4;
@@ -107,7 +107,7 @@ namespace Tivi
             this.clearCheckedButton.Font = new System.Drawing.Font("Ink Free", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.clearCheckedButton.ForeColor = System.Drawing.Color.White;
             this.clearCheckedButton.Location = new System.Drawing.Point(318, 641);
-            this.clearCheckedButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.clearCheckedButton.Margin = new System.Windows.Forms.Padding(2);
             this.clearCheckedButton.Name = "clearCheckedButton";
             this.clearCheckedButton.Size = new System.Drawing.Size(223, 49);
             this.clearCheckedButton.TabIndex = 6;
@@ -121,7 +121,7 @@ namespace Tivi
             this.clearAllButton.Font = new System.Drawing.Font("Ink Free", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.clearAllButton.ForeColor = System.Drawing.Color.White;
             this.clearAllButton.Location = new System.Drawing.Point(322, 580);
-            this.clearAllButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.clearAllButton.Margin = new System.Windows.Forms.Padding(2);
             this.clearAllButton.Name = "clearAllButton";
             this.clearAllButton.Size = new System.Drawing.Size(219, 49);
             this.clearAllButton.TabIndex = 7;
@@ -156,7 +156,7 @@ namespace Tivi
             this.dateTimePicker.CustomFormat = "";
             this.dateTimePicker.Font = new System.Drawing.Font("SimSun", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.dateTimePicker.Location = new System.Drawing.Point(9, 140);
-            this.dateTimePicker.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dateTimePicker.Margin = new System.Windows.Forms.Padding(2);
             this.dateTimePicker.Name = "dateTimePicker";
             this.dateTimePicker.Size = new System.Drawing.Size(336, 23);
             this.dateTimePicker.TabIndex = 11;
@@ -197,7 +197,7 @@ namespace Tivi
             this.MaximumSize = new System.Drawing.Size(570, 775);
             this.Name = "ToDoListForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Tivi";
+            this.Text = "To Do List";
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -394,6 +394,7 @@
             this.Controls.Add(this.returnToMainMenu);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "BudgetingForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Budgeting";
             this.Load += new System.EventHandler(this.BudgetingForm_Load);
             this.panel4.ResumeLayout(false);

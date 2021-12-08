@@ -78,5 +78,13 @@ namespace Tivi
             form.ShowDialog();
             //this.Close(); -> no way to go back for now
         }
+
+        private void returnToMainMenuButton_Click(object sender, EventArgs e)
+        {
+            WelcomeForm form = new WelcomeForm();
+            this.Hide();
+            form.ShowDialog();
+            this.Close();
+        }
     }
 }

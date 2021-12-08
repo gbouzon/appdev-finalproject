@@ -71,7 +71,7 @@ namespace Tivi
             user = new User(emailTextBox.Text, fnameTextBox.Text, lnameTextBox.Text, colour);
 
             //test
-            MessageBox.Show($"email: {user.Email}, first name: {user.FirstName}, last name: {user.LastName}, colour: {user.Colour}");
+            //MessageBox.Show($"email: {user.Email}, first name: {user.FirstName}, last name: {user.LastName}, colour: {user.Colour}");
 
             //adding user to database
             MySqlConnection connection = new MySqlConnection(connectionString);
@@ -86,12 +86,15 @@ namespace Tivi
             command.Parameters.AddWithValue("colour", user.Colour);
             command.ExecuteNonQuery();
 
-            MessageBox.Show("Saved", "Save Event", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            //MessageBox.Show("Saved", "Save Event", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
             command.Dispose();
             connection.Close();
 
             //close form
+            OldUserForm form = new OldUserForm(user);
+            this.Hide();
+            form.ShowDialog();
             this.Close();
         }
 

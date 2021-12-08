@@ -329,6 +329,9 @@
     <EmbeddedResource Include="EventPromptForm.resx">
       <DependentUpon>EventPromptForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Notepad.resx">
+      <DependentUpon>Notepad.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="OldUserForm.resx">
       <DependentUpon>OldUserForm.cs</DependentUpon>
     </EmbeddedResource>

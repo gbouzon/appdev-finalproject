@@ -37,6 +37,7 @@
             this.stopWatchButton = new System.Windows.Forms.Button();
             this.budgetingButton = new System.Windows.Forms.Button();
             this.noteButton = new System.Windows.Forms.Button();
+            this.returnToMainMenuButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // welcomeLabel
@@ -137,11 +138,25 @@
             this.noteButton.UseVisualStyleBackColor = false;
             this.noteButton.Click += new System.EventHandler(this.noteButton_Click);
             // 
+            // returnToMainMenuButton
+            // 
+            this.returnToMainMenuButton.BackColor = System.Drawing.SystemColors.AppWorkspace;
+            this.returnToMainMenuButton.Font = new System.Drawing.Font("Consolas", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.returnToMainMenuButton.Location = new System.Drawing.Point(216, 478);
+            this.returnToMainMenuButton.Margin = new System.Windows.Forms.Padding(2);
+            this.returnToMainMenuButton.Name = "returnToMainMenuButton";
+            this.returnToMainMenuButton.Size = new System.Drawing.Size(213, 89);
+            this.returnToMainMenuButton.TabIndex = 10;
+            this.returnToMainMenuButton.Text = "Back";
+            this.returnToMainMenuButton.UseVisualStyleBackColor = false;
+            this.returnToMainMenuButton.Click += new System.EventHandler(this.returnToMainMenuButton_Click);
+            // 
             // OldUserForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(657, 511);
+            this.ClientSize = new System.Drawing.Size(657, 587);
+            this.Controls.Add(this.returnToMainMenuButton);
             this.Controls.Add(this.noteButton);
             this.Controls.Add(this.budgetingButton);
             this.Controls.Add(this.stopWatchButton);
@@ -171,5 +186,6 @@
         private System.Windows.Forms.Button stopWatchButton;
         private System.Windows.Forms.Button budgetingButton;
         private System.Windows.Forms.Button noteButton;
+        private System.Windows.Forms.Button returnToMainMenuButton;
     }
 }
