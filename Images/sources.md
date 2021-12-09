@@ -40,6 +40,11 @@ or Public Domain Certification
     Usage: icon
     License: CC0 1.0 Universal (CC0 1.0) Public Domain Dedication
 
+    budget.png
+    Source: https://thenounproject.com/icon/budget-1326902/
+    Creator: Vectors Market
+    Usage: icon
+    License: Attribution 3.0 Unported (CC BY 3.0)
 
 
 # References

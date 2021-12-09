@@ -139,8 +139,8 @@ namespace Tivi
                     foreach (object item in itemsChecked)
                     { //pls find a better way of doing this laters thank
                         //just want to say giu is a dumbass :/
-                        MessageBox.Show(System.Text.RegularExpressions.Regex.Replace(item.ToString(), @"\s+", ""));
-                        MessageBox.Show(description);
+                        //MessageBox.Show(System.Text.RegularExpressions.Regex.Replace(item.ToString(), @"\s+", ""));
+                        //MessageBox.Show(description);
                         if (System.Text.RegularExpressions.Regex.Replace(description, @"\s+", "").Equals(System.Text.RegularExpressions.Regex.Replace(item.ToString(), @"\s+", "")))
                             DeleteFromDatabase(reader["task_id"].ToString());
                     }
