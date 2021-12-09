@@ -48,7 +48,7 @@ namespace Tivi
             this.titleLable.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.titleLable.BackColor = System.Drawing.SystemColors.Control;
-            this.titleLable.Font = new System.Drawing.Font("Ink Free", 22F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.titleLable.Font = new System.Drawing.Font("Candara", 21.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.titleLable.ForeColor = System.Drawing.Color.Black;
             this.titleLable.Location = new System.Drawing.Point(2, 8);
             this.titleLable.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
@@ -60,7 +60,7 @@ namespace Tivi
             // 
             // label1
             // 
-            this.label1.Font = new System.Drawing.Font("Ink Free", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Candara", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(6, 198);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
@@ -90,7 +90,7 @@ namespace Tivi
             // addButton
             // 
             this.addButton.BackColor = System.Drawing.SystemColors.Control;
-            this.addButton.Font = new System.Drawing.Font("Ink Free", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.addButton.Font = new System.Drawing.Font("Candara", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.addButton.ForeColor = System.Drawing.Color.Black;
             this.addButton.Location = new System.Drawing.Point(391, 218);
             this.addButton.Margin = new System.Windows.Forms.Padding(2);
@@ -104,7 +104,7 @@ namespace Tivi
             // clearCheckedButton
             // 
             this.clearCheckedButton.BackColor = System.Drawing.SystemColors.Control;
-            this.clearCheckedButton.Font = new System.Drawing.Font("Ink Free", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.clearCheckedButton.Font = new System.Drawing.Font("Candara", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.clearCheckedButton.ForeColor = System.Drawing.Color.Black;
             this.clearCheckedButton.Location = new System.Drawing.Point(318, 641);
             this.clearCheckedButton.Margin = new System.Windows.Forms.Padding(2);
@@ -118,12 +118,12 @@ namespace Tivi
             // clearAllButton
             // 
             this.clearAllButton.BackColor = System.Drawing.SystemColors.Control;
-            this.clearAllButton.Font = new System.Drawing.Font("Ink Free", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.clearAllButton.Font = new System.Drawing.Font("Candara", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.clearAllButton.ForeColor = System.Drawing.Color.Black;
-            this.clearAllButton.Location = new System.Drawing.Point(322, 580);
+            this.clearAllButton.Location = new System.Drawing.Point(318, 580);
             this.clearAllButton.Margin = new System.Windows.Forms.Padding(2);
             this.clearAllButton.Name = "clearAllButton";
-            this.clearAllButton.Size = new System.Drawing.Size(219, 49);
+            this.clearAllButton.Size = new System.Drawing.Size(223, 49);
             this.clearAllButton.TabIndex = 7;
             this.clearAllButton.Text = "CLEAR ALL";
             this.clearAllButton.UseVisualStyleBackColor = false;
@@ -131,8 +131,8 @@ namespace Tivi
             // 
             // label2
             // 
-            this.label2.Font = new System.Drawing.Font("Ink Free", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(7, 580);
+            this.label2.Font = new System.Drawing.Font("Candara", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(14, 562);
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(300, 42);
@@ -141,7 +141,7 @@ namespace Tivi
             // 
             // label3
             // 
-            this.label3.Font = new System.Drawing.Font("Ink Free", 14F, System.Drawing.FontStyle.Bold);
+            this.label3.Font = new System.Drawing.Font("Candara", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.label3.Location = new System.Drawing.Point(4, 94);
             this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
@@ -164,14 +164,14 @@ namespace Tivi
             // menuButton
             // 
             this.menuButton.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.menuButton.Font = new System.Drawing.Font("Ink Free", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.menuButton.Font = new System.Drawing.Font("Candara", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.menuButton.ForeColor = System.Drawing.Color.Black;
             this.menuButton.Location = new System.Drawing.Point(11, 624);
             this.menuButton.Margin = new System.Windows.Forms.Padding(2);
             this.menuButton.Name = "menuButton";
             this.menuButton.Size = new System.Drawing.Size(215, 60);
             this.menuButton.TabIndex = 12;
-            this.menuButton.Text = "Back To Main Menu";
+            this.menuButton.Text = "BACK TO MAIN  MENU";
             this.menuButton.UseVisualStyleBackColor = false;
             this.menuButton.Click += new System.EventHandler(this.menuButton_Click);
             // 
