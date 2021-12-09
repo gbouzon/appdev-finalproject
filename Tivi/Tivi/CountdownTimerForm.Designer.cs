@@ -45,53 +45,48 @@
             // 
             // secondsComboBox
             // 
-            this.secondsComboBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.secondsComboBox.Font = new System.Drawing.Font("Candara", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.secondsComboBox.FormattingEnabled = true;
-            this.secondsComboBox.Location = new System.Drawing.Point(424, 88);
-            this.secondsComboBox.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.secondsComboBox.Location = new System.Drawing.Point(318, 76);
             this.secondsComboBox.Name = "secondsComboBox";
-            this.secondsComboBox.Size = new System.Drawing.Size(161, 38);
+            this.secondsComboBox.Size = new System.Drawing.Size(122, 34);
             this.secondsComboBox.TabIndex = 0;
             // 
             // minutesComboBox
             // 
-            this.minutesComboBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.minutesComboBox.Font = new System.Drawing.Font("Candara", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.minutesComboBox.FormattingEnabled = true;
-            this.minutesComboBox.Location = new System.Drawing.Point(160, 88);
-            this.minutesComboBox.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.minutesComboBox.Location = new System.Drawing.Point(120, 76);
             this.minutesComboBox.Name = "minutesComboBox";
-            this.minutesComboBox.Size = new System.Drawing.Size(159, 38);
+            this.minutesComboBox.Size = new System.Drawing.Size(120, 34);
             this.minutesComboBox.TabIndex = 1;
             // 
             // minutesLabel
             // 
             this.minutesLabel.AutoSize = true;
-            this.minutesLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.minutesLabel.Location = new System.Drawing.Point(151, 21);
-            this.minutesLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.minutesLabel.Font = new System.Drawing.Font("Candara", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.minutesLabel.Location = new System.Drawing.Point(113, 18);
             this.minutesLabel.Name = "minutesLabel";
-            this.minutesLabel.Size = new System.Drawing.Size(170, 46);
+            this.minutesLabel.Size = new System.Drawing.Size(137, 39);
             this.minutesLabel.TabIndex = 2;
             this.minutesLabel.Text = "Minutes:";
             // 
             // secondsLabel
             // 
             this.secondsLabel.AutoSize = true;
-            this.secondsLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.secondsLabel.Location = new System.Drawing.Point(415, 21);
-            this.secondsLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.secondsLabel.Font = new System.Drawing.Font("Candara", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.secondsLabel.Location = new System.Drawing.Point(311, 18);
             this.secondsLabel.Name = "secondsLabel";
-            this.secondsLabel.Size = new System.Drawing.Size(188, 46);
+            this.secondsLabel.Size = new System.Drawing.Size(139, 39);
             this.secondsLabel.TabIndex = 3;
             this.secondsLabel.Text = "Seconds:";
             // 
             // startButton
             // 
             this.startButton.Font = new System.Drawing.Font("Candara", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.startButton.Location = new System.Drawing.Point(147, 270);
-            this.startButton.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.startButton.Location = new System.Drawing.Point(110, 234);
             this.startButton.Name = "startButton";
-            this.startButton.Size = new System.Drawing.Size(173, 66);
+            this.startButton.Size = new System.Drawing.Size(130, 57);
             this.startButton.TabIndex = 4;
             this.startButton.Text = "START";
             this.startButton.UseVisualStyleBackColor = true;
@@ -100,10 +95,9 @@
             // stopButton
             // 
             this.stopButton.Font = new System.Drawing.Font("Candara", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.stopButton.Location = new System.Drawing.Point(424, 270);
-            this.stopButton.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.stopButton.Location = new System.Drawing.Point(318, 234);
             this.stopButton.Name = "stopButton";
-            this.stopButton.Size = new System.Drawing.Size(173, 66);
+            this.stopButton.Size = new System.Drawing.Size(130, 57);
             this.stopButton.TabIndex = 5;
             this.stopButton.Text = "STOP";
             this.stopButton.UseVisualStyleBackColor = true;
@@ -111,11 +105,10 @@
             // 
             // bigLabel
             // 
-            this.bigLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 60F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bigLabel.Location = new System.Drawing.Point(209, 147);
-            this.bigLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.bigLabel.Font = new System.Drawing.Font("Candara", 60F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bigLabel.Location = new System.Drawing.Point(157, 127);
             this.bigLabel.Name = "bigLabel";
-            this.bigLabel.Size = new System.Drawing.Size(331, 120);
+            this.bigLabel.Size = new System.Drawing.Size(248, 104);
             this.bigLabel.TabIndex = 6;
             this.bigLabel.Text = "00:00";
             // 
@@ -127,8 +120,7 @@
             // pomodoroPictureBox
             // 
             this.pomodoroPictureBox.Image = global::Tivi.Properties.Resources.pomodorotechnique;
-            this.pomodoroPictureBox.Location = new System.Drawing.Point(36, 350);
-            this.pomodoroPictureBox.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.pomodoroPictureBox.Location = new System.Drawing.Point(27, 303);
             this.pomodoroPictureBox.Name = "pomodoroPictureBox";
             this.pomodoroPictureBox.Size = new System.Drawing.Size(500, 300);
             this.pomodoroPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -137,20 +129,21 @@
             // 
             // returnToMainMenu
             // 
-            this.returnToMainMenu.Location = new System.Drawing.Point(267, 719);
-            this.returnToMainMenu.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.returnToMainMenu.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.returnToMainMenu.Font = new System.Drawing.Font("Candara", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.returnToMainMenu.Location = new System.Drawing.Point(158, 629);
             this.returnToMainMenu.Name = "returnToMainMenu";
-            this.returnToMainMenu.Size = new System.Drawing.Size(184, 53);
+            this.returnToMainMenu.Size = new System.Drawing.Size(206, 82);
             this.returnToMainMenu.TabIndex = 8;
             this.returnToMainMenu.Text = "Back To Main Menu";
-            this.returnToMainMenu.UseVisualStyleBackColor = true;
+            this.returnToMainMenu.UseVisualStyleBackColor = false;
             this.returnToMainMenu.Click += new System.EventHandler(this.returnToMainMenu_Click);
             // 
             // CountdownForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(736, 786);
+            this.ClientSize = new System.Drawing.Size(552, 723);
             this.Controls.Add(this.returnToMainMenu);
             this.Controls.Add(this.pomodoroPictureBox);
             this.Controls.Add(this.bigLabel);
@@ -161,7 +154,8 @@
             this.Controls.Add(this.minutesComboBox);
             this.Controls.Add(this.secondsComboBox);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.MaximumSize = new System.Drawing.Size(568, 762);
+            this.MinimumSize = new System.Drawing.Size(568, 762);
             this.Name = "CountdownForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Countdown";

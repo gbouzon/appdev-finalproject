@@ -248,11 +248,11 @@
     <Compile Include="CalendarForm.Designer.cs">
       <DependentUpon>CalendarForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Countdown.cs">
+    <Compile Include="CountdownTimerForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Countdown.Designer.cs">
-      <DependentUpon>Countdown.cs</DependentUpon>
+    <Compile Include="CountdownTimerForm.Designer.cs">
+      <DependentUpon>CountdownTimerForm.cs</DependentUpon>
     </Compile>
     <Compile Include="EventPromptForm.cs">
       <SubType>Form</SubType>
@@ -323,8 +323,8 @@
     <EmbeddedResource Include="CalendarForm.resx">
       <DependentUpon>CalendarForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Countdown.resx">
-      <DependentUpon>Countdown.cs</DependentUpon>
+    <EmbeddedResource Include="CountdownTimerForm.resx">
+      <DependentUpon>CountdownTimerForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="EventPromptForm.resx">
       <DependentUpon>EventPromptForm.cs</DependentUpon>

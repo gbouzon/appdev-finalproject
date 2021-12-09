@@ -39,47 +39,51 @@ namespace Tivi
             // 
             this.appName.AutoSize = true;
             this.appName.BackColor = System.Drawing.Color.Transparent;
-            this.appName.Font = new System.Drawing.Font("Century", 86.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.appName.ForeColor = System.Drawing.Color.White;
-            this.appName.Location = new System.Drawing.Point(207, 107);
+            this.appName.Font = new System.Drawing.Font("Candara", 159.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.appName.ForeColor = System.Drawing.Color.SaddleBrown;
+            this.appName.Location = new System.Drawing.Point(97, 31);
+            this.appName.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.appName.Name = "appName";
-            this.appName.Size = new System.Drawing.Size(395, 173);
+            this.appName.Size = new System.Drawing.Size(461, 260);
             this.appName.TabIndex = 5;
             this.appName.Text = "TIVI";
             // 
             // emailLabel
             // 
             this.emailLabel.AutoSize = true;
-            this.emailLabel.Font = new System.Drawing.Font("Consolas", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.emailLabel.Location = new System.Drawing.Point(107, 382);
+            this.emailLabel.BackColor = System.Drawing.Color.Wheat;
+            this.emailLabel.Font = new System.Drawing.Font("Candara", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.emailLabel.ForeColor = System.Drawing.Color.Sienna;
+            this.emailLabel.Location = new System.Drawing.Point(25, 352);
+            this.emailLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.emailLabel.Name = "emailLabel";
-            this.emailLabel.Size = new System.Drawing.Size(139, 43);
+            this.emailLabel.Size = new System.Drawing.Size(89, 36);
             this.emailLabel.TabIndex = 4;
             this.emailLabel.Text = "email:";
             // 
             // emailTextBox
             // 
-            this.emailTextBox.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.emailTextBox.BackColor = System.Drawing.Color.Wheat;
             this.emailTextBox.Font = new System.Drawing.Font("Consolas", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.emailTextBox.Location = new System.Drawing.Point(272, 381);
-            this.emailTextBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.emailTextBox.Location = new System.Drawing.Point(118, 352);
+            this.emailTextBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.emailTextBox.Name = "emailTextBox";
-            this.emailTextBox.Size = new System.Drawing.Size(403, 47);
+            this.emailTextBox.Size = new System.Drawing.Size(480, 39);
             this.emailTextBox.TabIndex = 3;
             this.emailTextBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.emailTextBox_KeyPress);
             // 
             // WelcomeForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::Tivi.Properties.Resources.first_page_bg;
-            this.ClientSize = new System.Drawing.Size(823, 499);
+            this.ClientSize = new System.Drawing.Size(619, 439);
             this.Controls.Add(this.appName);
             this.Controls.Add(this.emailLabel);
             this.Controls.Add(this.emailTextBox);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.MaximumSize = new System.Drawing.Size(841, 546);
+            this.MaximumSize = new System.Drawing.Size(635, 478);
+            this.MinimumSize = new System.Drawing.Size(635, 478);
             this.Name = "WelcomeForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Welcome";

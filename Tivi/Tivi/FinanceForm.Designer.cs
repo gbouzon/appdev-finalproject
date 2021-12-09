@@ -71,12 +71,14 @@
             // 
             // returnToMainMenu
             // 
+            this.returnToMainMenu.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.returnToMainMenu.Font = new System.Drawing.Font("Candara", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.returnToMainMenu.Location = new System.Drawing.Point(50, 825);
             this.returnToMainMenu.Name = "returnToMainMenu";
-            this.returnToMainMenu.Size = new System.Drawing.Size(138, 46);
+            this.returnToMainMenu.Size = new System.Drawing.Size(273, 79);
             this.returnToMainMenu.TabIndex = 28;
             this.returnToMainMenu.Text = "Back To Main Menu";
-            this.returnToMainMenu.UseVisualStyleBackColor = true;
+            this.returnToMainMenu.UseVisualStyleBackColor = false;
             this.returnToMainMenu.Click += new System.EventHandler(this.returnToMainMenu_Click);
             // 
             // panel4
@@ -87,7 +89,7 @@
             this.panel4.Controls.Add(this.generateReportButton);
             this.panel4.Location = new System.Drawing.Point(50, 12);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(531, 197);
+            this.panel4.Size = new System.Drawing.Size(674, 197);
             this.panel4.TabIndex = 32;
             // 
             // panel3
@@ -99,15 +101,16 @@
             this.panel3.Controls.Add(this.costTextBox);
             this.panel3.Location = new System.Drawing.Point(3, 3);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(521, 121);
+            this.panel3.Size = new System.Drawing.Size(661, 138);
             this.panel3.TabIndex = 27;
             // 
             // nameLabel
             // 
             this.nameLabel.AutoSize = true;
+            this.nameLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.nameLabel.Location = new System.Drawing.Point(16, 18);
             this.nameLabel.Name = "nameLabel";
-            this.nameLabel.Size = new System.Drawing.Size(79, 13);
+            this.nameLabel.Size = new System.Drawing.Size(133, 20);
             this.nameLabel.TabIndex = 14;
             this.nameLabel.Text = "Enter the name";
             // 
@@ -121,15 +124,16 @@
             this.choicePanel.Controls.Add(this.billsButton);
             this.choicePanel.Location = new System.Drawing.Point(3, 84);
             this.choicePanel.Name = "choicePanel";
-            this.choicePanel.Size = new System.Drawing.Size(515, 37);
+            this.choicePanel.Size = new System.Drawing.Size(655, 37);
             this.choicePanel.TabIndex = 16;
             // 
             // miscellanousButton
             // 
             this.miscellanousButton.AutoSize = true;
-            this.miscellanousButton.Location = new System.Drawing.Point(420, 13);
+            this.miscellanousButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.miscellanousButton.Location = new System.Drawing.Point(519, 10);
             this.miscellanousButton.Name = "miscellanousButton";
-            this.miscellanousButton.Size = new System.Drawing.Size(92, 17);
+            this.miscellanousButton.Size = new System.Drawing.Size(125, 20);
             this.miscellanousButton.TabIndex = 11;
             this.miscellanousButton.TabStop = true;
             this.miscellanousButton.Text = "Miscellaneous";
@@ -138,10 +142,11 @@
             // investmentButton
             // 
             this.investmentButton.AutoSize = true;
-            this.investmentButton.Location = new System.Drawing.Point(212, 13);
+            this.investmentButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.investmentButton.Location = new System.Drawing.Point(280, 10);
             this.investmentButton.Name = "investmentButton";
             this.investmentButton.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.investmentButton.Size = new System.Drawing.Size(82, 17);
+            this.investmentButton.Size = new System.Drawing.Size(107, 20);
             this.investmentButton.TabIndex = 10;
             this.investmentButton.TabStop = true;
             this.investmentButton.Text = "Investments";
@@ -150,9 +155,10 @@
             // entertainmentButton
             // 
             this.entertainmentButton.AutoSize = true;
-            this.entertainmentButton.Location = new System.Drawing.Point(315, 13);
+            this.entertainmentButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.entertainmentButton.Location = new System.Drawing.Point(393, 10);
             this.entertainmentButton.Name = "entertainmentButton";
-            this.entertainmentButton.Size = new System.Drawing.Size(90, 17);
+            this.entertainmentButton.Size = new System.Drawing.Size(119, 20);
             this.entertainmentButton.TabIndex = 9;
             this.entertainmentButton.TabStop = true;
             this.entertainmentButton.Text = "Entertainment";
@@ -161,9 +167,10 @@
             // autoButton
             // 
             this.autoButton.AutoSize = true;
-            this.autoButton.Location = new System.Drawing.Point(116, 13);
+            this.autoButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.autoButton.Location = new System.Drawing.Point(139, 10);
             this.autoButton.Name = "autoButton";
-            this.autoButton.Size = new System.Drawing.Size(93, 17);
+            this.autoButton.Size = new System.Drawing.Size(126, 20);
             this.autoButton.TabIndex = 8;
             this.autoButton.TabStop = true;
             this.autoButton.Text = "Transportation";
@@ -172,9 +179,10 @@
             // foodButton
             // 
             this.foodButton.AutoSize = true;
-            this.foodButton.Location = new System.Drawing.Point(61, 13);
+            this.foodButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.foodButton.Location = new System.Drawing.Point(69, 10);
             this.foodButton.Name = "foodButton";
-            this.foodButton.Size = new System.Drawing.Size(49, 17);
+            this.foodButton.Size = new System.Drawing.Size(61, 20);
             this.foodButton.TabIndex = 7;
             this.foodButton.TabStop = true;
             this.foodButton.Text = "Food";
@@ -183,9 +191,10 @@
             // billsButton
             // 
             this.billsButton.AutoSize = true;
-            this.billsButton.Location = new System.Drawing.Point(8, 13);
+            this.billsButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.billsButton.Location = new System.Drawing.Point(8, 10);
             this.billsButton.Name = "billsButton";
-            this.billsButton.Size = new System.Drawing.Size(43, 17);
+            this.billsButton.Size = new System.Drawing.Size(55, 20);
             this.billsButton.TabIndex = 6;
             this.billsButton.TabStop = true;
             this.billsButton.Text = "Bills";
@@ -194,31 +203,35 @@
             // costLabel
             // 
             this.costLabel.AutoSize = true;
+            this.costLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.costLabel.Location = new System.Drawing.Point(16, 52);
             this.costLabel.Name = "costLabel";
-            this.costLabel.Size = new System.Drawing.Size(73, 13);
+            this.costLabel.Size = new System.Drawing.Size(123, 20);
             this.costLabel.TabIndex = 15;
             this.costLabel.Text = "Enter the cost";
             // 
             // nameTextBox
             // 
-            this.nameTextBox.Location = new System.Drawing.Point(111, 18);
+            this.nameTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.nameTextBox.Location = new System.Drawing.Point(155, 18);
             this.nameTextBox.Name = "nameTextBox";
-            this.nameTextBox.Size = new System.Drawing.Size(297, 20);
+            this.nameTextBox.Size = new System.Drawing.Size(360, 26);
             this.nameTextBox.TabIndex = 19;
             // 
             // costTextBox
             // 
-            this.costTextBox.Location = new System.Drawing.Point(111, 49);
+            this.costTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.costTextBox.Location = new System.Drawing.Point(155, 49);
             this.costTextBox.Name = "costTextBox";
-            this.costTextBox.Size = new System.Drawing.Size(297, 20);
+            this.costTextBox.Size = new System.Drawing.Size(360, 26);
             this.costTextBox.TabIndex = 20;
             // 
             // addDataButton
             // 
-            this.addDataButton.Location = new System.Drawing.Point(286, 157);
+            this.addDataButton.Font = new System.Drawing.Font("Candara", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.addDataButton.Location = new System.Drawing.Point(333, 147);
             this.addDataButton.Name = "addDataButton";
-            this.addDataButton.Size = new System.Drawing.Size(99, 23);
+            this.addDataButton.Size = new System.Drawing.Size(132, 33);
             this.addDataButton.TabIndex = 17;
             this.addDataButton.Text = "Add Data";
             this.addDataButton.UseVisualStyleBackColor = true;
@@ -226,9 +239,10 @@
             // 
             // generateReportButton
             // 
-            this.generateReportButton.Location = new System.Drawing.Point(126, 157);
+            this.generateReportButton.Font = new System.Drawing.Font("Candara", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.generateReportButton.Location = new System.Drawing.Point(176, 147);
             this.generateReportButton.Name = "generateReportButton";
-            this.generateReportButton.Size = new System.Drawing.Size(113, 23);
+            this.generateReportButton.Size = new System.Drawing.Size(139, 33);
             this.generateReportButton.TabIndex = 18;
             this.generateReportButton.Text = "Generate Report";
             this.generateReportButton.UseVisualStyleBackColor = true;
@@ -241,7 +255,7 @@
             this.pieChart.ChartAreas.Add(chartArea1);
             legend1.Name = "Legend1";
             this.pieChart.Legends.Add(legend1);
-            this.pieChart.Location = new System.Drawing.Point(587, 34);
+            this.pieChart.Location = new System.Drawing.Point(758, 17);
             this.pieChart.Name = "pieChart";
             series1.ChartArea = "ChartArea1";
             series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Pie;
@@ -264,59 +278,65 @@
             this.panel1.Controls.Add(this.billsTotalLbl);
             this.panel1.Location = new System.Drawing.Point(50, 374);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(526, 422);
+            this.panel1.Size = new System.Drawing.Size(674, 422);
             this.panel1.TabIndex = 31;
             // 
             // miscTotalLbl
             // 
             this.miscTotalLbl.AutoSize = true;
+            this.miscTotalLbl.Font = new System.Drawing.Font("Candara", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.miscTotalLbl.Location = new System.Drawing.Point(9, 362);
             this.miscTotalLbl.Name = "miscTotalLbl";
-            this.miscTotalLbl.Size = new System.Drawing.Size(80, 13);
+            this.miscTotalLbl.Size = new System.Drawing.Size(149, 26);
             this.miscTotalLbl.TabIndex = 5;
             this.miscTotalLbl.Text = "Miscellaneous :";
             // 
             // investmentTotalLbl
             // 
             this.investmentTotalLbl.AutoSize = true;
-            this.investmentTotalLbl.Location = new System.Drawing.Point(9, 287);
+            this.investmentTotalLbl.Font = new System.Drawing.Font("Candara", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.investmentTotalLbl.Location = new System.Drawing.Point(9, 296);
             this.investmentTotalLbl.Name = "investmentTotalLbl";
-            this.investmentTotalLbl.Size = new System.Drawing.Size(70, 13);
+            this.investmentTotalLbl.Size = new System.Drawing.Size(135, 26);
             this.investmentTotalLbl.TabIndex = 4;
             this.investmentTotalLbl.Text = "Investments :";
             // 
             // entertainmentTotalLbl
             // 
             this.entertainmentTotalLbl.AutoSize = true;
-            this.entertainmentTotalLbl.Location = new System.Drawing.Point(9, 214);
+            this.entertainmentTotalLbl.Font = new System.Drawing.Font("Candara", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.entertainmentTotalLbl.Location = new System.Drawing.Point(9, 226);
             this.entertainmentTotalLbl.Name = "entertainmentTotalLbl";
-            this.entertainmentTotalLbl.Size = new System.Drawing.Size(81, 13);
+            this.entertainmentTotalLbl.Size = new System.Drawing.Size(160, 26);
             this.entertainmentTotalLbl.TabIndex = 3;
             this.entertainmentTotalLbl.Text = "Entertainment : ";
             // 
             // autoTotalLbl
             // 
             this.autoTotalLbl.AutoSize = true;
-            this.autoTotalLbl.Location = new System.Drawing.Point(9, 144);
+            this.autoTotalLbl.Font = new System.Drawing.Font("Candara", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.autoTotalLbl.Location = new System.Drawing.Point(9, 153);
             this.autoTotalLbl.Name = "autoTotalLbl";
-            this.autoTotalLbl.Size = new System.Drawing.Size(81, 13);
+            this.autoTotalLbl.Size = new System.Drawing.Size(158, 26);
             this.autoTotalLbl.TabIndex = 2;
             this.autoTotalLbl.Text = "Transportation :";
             // 
             // foodTotalLbl
             // 
             this.foodTotalLbl.AutoSize = true;
-            this.foodTotalLbl.Location = new System.Drawing.Point(11, 79);
+            this.foodTotalLbl.Font = new System.Drawing.Font("Candara", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.foodTotalLbl.Location = new System.Drawing.Point(11, 90);
             this.foodTotalLbl.Name = "foodTotalLbl";
-            this.foodTotalLbl.Size = new System.Drawing.Size(40, 13);
+            this.foodTotalLbl.Size = new System.Drawing.Size(73, 26);
             this.foodTotalLbl.TabIndex = 1;
             this.foodTotalLbl.Text = "Food : ";
             // 
             // billsTotalLbl
             // 
+            this.billsTotalLbl.Font = new System.Drawing.Font("Candara", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.billsTotalLbl.Location = new System.Drawing.Point(11, 28);
             this.billsTotalLbl.Name = "billsTotalLbl";
-            this.billsTotalLbl.Size = new System.Drawing.Size(50, 20);
+            this.billsTotalLbl.Size = new System.Drawing.Size(73, 26);
             this.billsTotalLbl.TabIndex = 0;
             this.billsTotalLbl.Text = "Bills :";
             // 
@@ -324,7 +344,8 @@
             // 
             this.outputBox.Cursor = System.Windows.Forms.Cursors.No;
             this.outputBox.Enabled = false;
-            this.outputBox.Location = new System.Drawing.Point(587, 421);
+            this.outputBox.Font = new System.Drawing.Font("Candara", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.outputBox.Location = new System.Drawing.Point(758, 421);
             this.outputBox.Multiline = true;
             this.outputBox.Name = "outputBox";
             this.outputBox.ReadOnly = true;
@@ -339,12 +360,13 @@
             this.panel2.Controls.Add(this.costErrorLabel);
             this.panel2.Location = new System.Drawing.Point(50, 215);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(531, 153);
+            this.panel2.Size = new System.Drawing.Size(674, 153);
             this.panel2.TabIndex = 34;
             // 
             // radioButtonErrorLabel
             // 
             this.radioButtonErrorLabel.BackColor = System.Drawing.SystemColors.Control;
+            this.radioButtonErrorLabel.Font = new System.Drawing.Font("Candara Light", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioButtonErrorLabel.ForeColor = System.Drawing.Color.Crimson;
             this.radioButtonErrorLabel.Location = new System.Drawing.Point(165, 56);
             this.radioButtonErrorLabel.Name = "radioButtonErrorLabel";
@@ -354,6 +376,7 @@
             // nameErrorLabel
             // 
             this.nameErrorLabel.BackColor = System.Drawing.SystemColors.Control;
+            this.nameErrorLabel.Font = new System.Drawing.Font("Candara Light", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.nameErrorLabel.ForeColor = System.Drawing.Color.Crimson;
             this.nameErrorLabel.Location = new System.Drawing.Point(165, 101);
             this.nameErrorLabel.Name = "nameErrorLabel";
@@ -363,6 +386,7 @@
             // costErrorLabel
             // 
             this.costErrorLabel.BackColor = System.Drawing.SystemColors.Control;
+            this.costErrorLabel.Font = new System.Drawing.Font("Candara Light", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.costErrorLabel.ForeColor = System.Drawing.Color.Crimson;
             this.costErrorLabel.Location = new System.Drawing.Point(165, 11);
             this.costErrorLabel.Name = "costErrorLabel";
@@ -373,7 +397,7 @@
             // 
             this.calculatorUserControl1.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.calculatorUserControl1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.calculatorUserControl1.Location = new System.Drawing.Point(1123, 227);
+            this.calculatorUserControl1.Location = new System.Drawing.Point(1297, 152);
             this.calculatorUserControl1.Name = "calculatorUserControl1";
             this.calculatorUserControl1.Size = new System.Drawing.Size(341, 412);
             this.calculatorUserControl1.TabIndex = 33;
@@ -382,7 +406,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1534, 916);
+            this.ClientSize = new System.Drawing.Size(1693, 916);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.calculatorUserControl1);
             this.Controls.Add(this.panel4);

@@ -54,11 +54,11 @@ namespace Tivi
             // emailLabel
             // 
             this.emailLabel.AutoSize = true;
-            this.emailLabel.Font = new System.Drawing.Font("Consolas", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.emailLabel.Location = new System.Drawing.Point(18, 227);
+            this.emailLabel.Font = new System.Drawing.Font("Candara", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.emailLabel.Location = new System.Drawing.Point(44, 227);
             this.emailLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.emailLabel.Name = "emailLabel";
-            this.emailLabel.Size = new System.Drawing.Size(111, 34);
+            this.emailLabel.Size = new System.Drawing.Size(89, 36);
             this.emailLabel.TabIndex = 6;
             this.emailLabel.Text = "email:";
             // 
@@ -67,7 +67,7 @@ namespace Tivi
             this.emailTextBox.BackColor = System.Drawing.SystemColors.ControlLight;
             this.emailTextBox.Font = new System.Drawing.Font("Consolas", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.emailTextBox.Location = new System.Drawing.Point(223, 227);
-            this.emailTextBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.emailTextBox.Margin = new System.Windows.Forms.Padding(2);
             this.emailTextBox.Name = "emailTextBox";
             this.emailTextBox.ReadOnly = true;
             this.emailTextBox.Size = new System.Drawing.Size(367, 39);
@@ -76,11 +76,11 @@ namespace Tivi
             // fnameLabel
             // 
             this.fnameLabel.AutoSize = true;
-            this.fnameLabel.Font = new System.Drawing.Font("Consolas", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.fnameLabel.Location = new System.Drawing.Point(18, 110);
+            this.fnameLabel.Font = new System.Drawing.Font("Candara", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.fnameLabel.Location = new System.Drawing.Point(44, 110);
             this.fnameLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.fnameLabel.Name = "fnameLabel";
-            this.fnameLabel.Size = new System.Drawing.Size(191, 34);
+            this.fnameLabel.Size = new System.Drawing.Size(148, 36);
             this.fnameLabel.TabIndex = 8;
             this.fnameLabel.Text = "first name:";
             // 
@@ -89,7 +89,7 @@ namespace Tivi
             this.fnameTextBox.BackColor = System.Drawing.SystemColors.ControlLight;
             this.fnameTextBox.Font = new System.Drawing.Font("Consolas", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.fnameTextBox.Location = new System.Drawing.Point(223, 110);
-            this.fnameTextBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.fnameTextBox.Margin = new System.Windows.Forms.Padding(2);
             this.fnameTextBox.Name = "fnameTextBox";
             this.fnameTextBox.Size = new System.Drawing.Size(367, 39);
             this.fnameTextBox.TabIndex = 7;
@@ -97,11 +97,11 @@ namespace Tivi
             // lastNameLabel
             // 
             this.lastNameLabel.AutoSize = true;
-            this.lastNameLabel.Font = new System.Drawing.Font("Consolas", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lastNameLabel.Location = new System.Drawing.Point(18, 167);
+            this.lastNameLabel.Font = new System.Drawing.Font("Candara", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lastNameLabel.Location = new System.Drawing.Point(44, 167);
             this.lastNameLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lastNameLabel.Name = "lastNameLabel";
-            this.lastNameLabel.Size = new System.Drawing.Size(175, 34);
+            this.lastNameLabel.Size = new System.Drawing.Size(141, 36);
             this.lastNameLabel.TabIndex = 10;
             this.lastNameLabel.Text = "last name:";
             // 
@@ -110,7 +110,7 @@ namespace Tivi
             this.lnameTextBox.BackColor = System.Drawing.SystemColors.ControlLight;
             this.lnameTextBox.Font = new System.Drawing.Font("Consolas", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lnameTextBox.Location = new System.Drawing.Point(223, 167);
-            this.lnameTextBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.lnameTextBox.Margin = new System.Windows.Forms.Padding(2);
             this.lnameTextBox.Name = "lnameTextBox";
             this.lnameTextBox.Size = new System.Drawing.Size(367, 39);
             this.lnameTextBox.TabIndex = 9;
@@ -118,21 +118,21 @@ namespace Tivi
             // colourLabel
             // 
             this.colourLabel.AutoSize = true;
-            this.colourLabel.Font = new System.Drawing.Font("Consolas", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.colourLabel.Location = new System.Drawing.Point(18, 290);
+            this.colourLabel.Font = new System.Drawing.Font("Candara", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.colourLabel.Location = new System.Drawing.Point(44, 288);
             this.colourLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.colourLabel.Name = "colourLabel";
-            this.colourLabel.Size = new System.Drawing.Size(255, 34);
+            this.colourLabel.Size = new System.Drawing.Size(184, 36);
             this.colourLabel.TabIndex = 11;
             this.colourLabel.Text = "pick a colour :";
             // 
             // createButton
             // 
-            this.createButton.Font = new System.Drawing.Font("Consolas", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.createButton.Location = new System.Drawing.Point(142, 469);
-            this.createButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.createButton.Font = new System.Drawing.Font("Candara", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.createButton.Location = new System.Drawing.Point(112, 457);
+            this.createButton.Margin = new System.Windows.Forms.Padding(2);
             this.createButton.Name = "createButton";
-            this.createButton.Size = new System.Drawing.Size(131, 75);
+            this.createButton.Size = new System.Drawing.Size(186, 103);
             this.createButton.TabIndex = 12;
             this.createButton.Text = "Create Account";
             this.createButton.UseVisualStyleBackColor = true;
@@ -140,11 +140,11 @@ namespace Tivi
             // 
             // cancelButton
             // 
-            this.cancelButton.Font = new System.Drawing.Font("Consolas", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cancelButton.Location = new System.Drawing.Point(404, 469);
-            this.cancelButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cancelButton.Font = new System.Drawing.Font("Candara", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cancelButton.Location = new System.Drawing.Point(374, 457);
+            this.cancelButton.Margin = new System.Windows.Forms.Padding(2);
             this.cancelButton.Name = "cancelButton";
-            this.cancelButton.Size = new System.Drawing.Size(131, 75);
+            this.cancelButton.Size = new System.Drawing.Size(186, 103);
             this.cancelButton.TabIndex = 13;
             this.cancelButton.Text = "Cancel";
             this.cancelButton.UseVisualStyleBackColor = true;
@@ -153,11 +153,11 @@ namespace Tivi
             // signUpLabel
             // 
             this.signUpLabel.AutoSize = true;
-            this.signUpLabel.Font = new System.Drawing.Font("Consolas", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.signUpLabel.Font = new System.Drawing.Font("Candara", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.signUpLabel.Location = new System.Drawing.Point(210, 9);
             this.signUpLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.signUpLabel.Name = "signUpLabel";
-            this.signUpLabel.Size = new System.Drawing.Size(277, 75);
+            this.signUpLabel.Size = new System.Drawing.Size(244, 78);
             this.signUpLabel.TabIndex = 14;
             this.signUpLabel.Text = "Sign Up";
             // 
@@ -165,7 +165,7 @@ namespace Tivi
             // 
             this.redButton.BackColor = System.Drawing.Color.IndianRed;
             this.redButton.Location = new System.Drawing.Point(11, 23);
-            this.redButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.redButton.Margin = new System.Windows.Forms.Padding(2);
             this.redButton.Name = "redButton";
             this.redButton.Size = new System.Drawing.Size(41, 36);
             this.redButton.TabIndex = 15;
@@ -176,7 +176,7 @@ namespace Tivi
             // 
             this.greenButton.BackColor = System.Drawing.Color.MediumSeaGreen;
             this.greenButton.Location = new System.Drawing.Point(86, 23);
-            this.greenButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.greenButton.Margin = new System.Windows.Forms.Padding(2);
             this.greenButton.Name = "greenButton";
             this.greenButton.Size = new System.Drawing.Size(41, 36);
             this.greenButton.TabIndex = 16;
@@ -187,7 +187,7 @@ namespace Tivi
             // 
             this.blueButton.BackColor = System.Drawing.Color.CornflowerBlue;
             this.blueButton.Location = new System.Drawing.Point(159, 23);
-            this.blueButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.blueButton.Margin = new System.Windows.Forms.Padding(2);
             this.blueButton.Name = "blueButton";
             this.blueButton.Size = new System.Drawing.Size(41, 36);
             this.blueButton.TabIndex = 17;
@@ -198,7 +198,7 @@ namespace Tivi
             // 
             this.orangeButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.orangeButton.Location = new System.Drawing.Point(233, 23);
-            this.orangeButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.orangeButton.Margin = new System.Windows.Forms.Padding(2);
             this.orangeButton.Name = "orangeButton";
             this.orangeButton.Size = new System.Drawing.Size(41, 36);
             this.orangeButton.TabIndex = 19;
@@ -209,7 +209,7 @@ namespace Tivi
             // 
             this.purpleButton.BackColor = System.Drawing.Color.MediumPurple;
             this.purpleButton.Location = new System.Drawing.Point(311, 23);
-            this.purpleButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.purpleButton.Margin = new System.Windows.Forms.Padding(2);
             this.purpleButton.Name = "purpleButton";
             this.purpleButton.Size = new System.Drawing.Size(41, 36);
             this.purpleButton.TabIndex = 20;
@@ -228,7 +228,7 @@ namespace Tivi
             this.colourPanel.Controls.Add(this.orangeButton);
             this.colourPanel.Controls.Add(this.greenButton);
             this.colourPanel.Location = new System.Drawing.Point(80, 345);
-            this.colourPanel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.colourPanel.Margin = new System.Windows.Forms.Padding(2);
             this.colourPanel.Name = "colourPanel";
             this.colourPanel.Size = new System.Drawing.Size(510, 84);
             this.colourPanel.TabIndex = 21;
@@ -237,7 +237,7 @@ namespace Tivi
             // 
             this.yellowButton.BackColor = System.Drawing.Color.Goldenrod;
             this.yellowButton.Location = new System.Drawing.Point(457, 23);
-            this.yellowButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.yellowButton.Margin = new System.Windows.Forms.Padding(2);
             this.yellowButton.Name = "yellowButton";
             this.yellowButton.Size = new System.Drawing.Size(41, 36);
             this.yellowButton.TabIndex = 22;
@@ -248,7 +248,7 @@ namespace Tivi
             // 
             this.pinkButton.BackColor = System.Drawing.Color.HotPink;
             this.pinkButton.Location = new System.Drawing.Point(385, 23);
-            this.pinkButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pinkButton.Margin = new System.Windows.Forms.Padding(2);
             this.pinkButton.Name = "pinkButton";
             this.pinkButton.Size = new System.Drawing.Size(41, 36);
             this.pinkButton.TabIndex = 21;
@@ -259,7 +259,7 @@ namespace Tivi
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(669, 576);
+            this.ClientSize = new System.Drawing.Size(670, 583);
             this.Controls.Add(this.colourPanel);
             this.Controls.Add(this.signUpLabel);
             this.Controls.Add(this.cancelButton);
@@ -273,6 +273,7 @@ namespace Tivi
             this.Controls.Add(this.emailTextBox);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximumSize = new System.Drawing.Size(686, 622);
+            this.MinimumSize = new System.Drawing.Size(685, 622);
             this.Name = "NewUserForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Sign Up!";

@@ -46,7 +46,10 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(343, 414);
             this.Controls.Add(this.calculatorUserControl1);
+            this.MaximumSize = new System.Drawing.Size(359, 453);
+            this.MinimumSize = new System.Drawing.Size(359, 453);
             this.Name = "CalculatorForm";
+            this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Show;
             this.Text = "Calculator";
             this.ResumeLayout(false);
 

@@ -61,6 +61,7 @@
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel1.Controls.Add(this.displayTextBox, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel2, 0, 1);
+            this.tableLayoutPanel1.Font = new System.Drawing.Font("Candara", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tableLayoutPanel1.Location = new System.Drawing.Point(33, 25);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 2;
@@ -72,6 +73,7 @@
             // displayTextBox
             // 
             this.displayTextBox.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.displayTextBox.Font = new System.Drawing.Font("Candara", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.displayTextBox.Location = new System.Drawing.Point(3, 3);
             this.displayTextBox.Multiline = true;
             this.displayTextBox.Name = "displayTextBox";
@@ -107,6 +109,7 @@
             this.tableLayoutPanel2.Controls.Add(this.copyButton, 0, 0);
             this.tableLayoutPanel2.Controls.Add(this.addButton, 3, 3);
             this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel2.Font = new System.Drawing.Font("Candara", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tableLayoutPanel2.Location = new System.Drawing.Point(3, 72);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 5;
@@ -121,6 +124,7 @@
             // equalButton
             // 
             this.equalButton.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.equalButton.Font = new System.Drawing.Font("Candara", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.equalButton.Location = new System.Drawing.Point(201, 219);
             this.equalButton.Name = "equalButton";
             this.equalButton.Size = new System.Drawing.Size(61, 51);
@@ -132,6 +136,7 @@
             // button19
             // 
             this.button19.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.button19.Font = new System.Drawing.Font("Candara", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button19.Location = new System.Drawing.Point(135, 219);
             this.button19.Name = "button19";
             this.button19.Size = new System.Drawing.Size(60, 51);
@@ -141,6 +146,7 @@
             // zeroButton
             // 
             this.zeroButton.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.zeroButton.Font = new System.Drawing.Font("Candara", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.zeroButton.Location = new System.Drawing.Point(69, 219);
             this.zeroButton.Name = "zeroButton";
             this.zeroButton.Size = new System.Drawing.Size(60, 51);
@@ -152,6 +158,7 @@
             // button17
             // 
             this.button17.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.button17.Font = new System.Drawing.Font("Candara", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button17.Location = new System.Drawing.Point(3, 219);
             this.button17.Name = "button17";
             this.button17.Size = new System.Drawing.Size(60, 51);
@@ -161,6 +168,7 @@
             // threeButton
             // 
             this.threeButton.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.threeButton.Font = new System.Drawing.Font("Candara", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.threeButton.Location = new System.Drawing.Point(135, 165);
             this.threeButton.Name = "threeButton";
             this.threeButton.Size = new System.Drawing.Size(60, 48);
@@ -172,6 +180,7 @@
             // twoButton
             // 
             this.twoButton.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.twoButton.Font = new System.Drawing.Font("Candara", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.twoButton.Location = new System.Drawing.Point(69, 165);
             this.twoButton.Name = "twoButton";
             this.twoButton.Size = new System.Drawing.Size(60, 48);
@@ -183,6 +192,7 @@
             // oneButton
             // 
             this.oneButton.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.oneButton.Font = new System.Drawing.Font("Candara", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.oneButton.Location = new System.Drawing.Point(3, 165);
             this.oneButton.Name = "oneButton";
             this.oneButton.Size = new System.Drawing.Size(60, 48);
@@ -194,6 +204,7 @@
             // subtractButton
             // 
             this.subtractButton.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.subtractButton.Font = new System.Drawing.Font("Candara", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.subtractButton.Location = new System.Drawing.Point(201, 111);
             this.subtractButton.Name = "subtractButton";
             this.subtractButton.Size = new System.Drawing.Size(61, 48);
@@ -205,6 +216,7 @@
             // sixButton
             // 
             this.sixButton.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.sixButton.Font = new System.Drawing.Font("Candara", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.sixButton.Location = new System.Drawing.Point(135, 111);
             this.sixButton.Name = "sixButton";
             this.sixButton.Size = new System.Drawing.Size(60, 48);
@@ -216,6 +228,7 @@
             // fiveButton
             // 
             this.fiveButton.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.fiveButton.Font = new System.Drawing.Font("Candara", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.fiveButton.Location = new System.Drawing.Point(69, 111);
             this.fiveButton.Name = "fiveButton";
             this.fiveButton.Size = new System.Drawing.Size(60, 48);
@@ -227,6 +240,7 @@
             // fourButton
             // 
             this.fourButton.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.fourButton.Font = new System.Drawing.Font("Candara", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.fourButton.Location = new System.Drawing.Point(3, 111);
             this.fourButton.Name = "fourButton";
             this.fourButton.Size = new System.Drawing.Size(60, 48);
@@ -238,6 +252,7 @@
             // multiplyButton
             // 
             this.multiplyButton.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.multiplyButton.Font = new System.Drawing.Font("Candara", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.multiplyButton.Location = new System.Drawing.Point(201, 57);
             this.multiplyButton.Name = "multiplyButton";
             this.multiplyButton.Size = new System.Drawing.Size(61, 48);
@@ -249,6 +264,7 @@
             // nineButton
             // 
             this.nineButton.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.nineButton.Font = new System.Drawing.Font("Candara", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.nineButton.Location = new System.Drawing.Point(135, 57);
             this.nineButton.Name = "nineButton";
             this.nineButton.Size = new System.Drawing.Size(60, 48);
@@ -260,6 +276,7 @@
             // eightButton
             // 
             this.eightButton.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.eightButton.Font = new System.Drawing.Font("Candara", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.eightButton.Location = new System.Drawing.Point(69, 57);
             this.eightButton.Name = "eightButton";
             this.eightButton.Size = new System.Drawing.Size(60, 48);
@@ -271,6 +288,7 @@
             // sevenButton
             // 
             this.sevenButton.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.sevenButton.Font = new System.Drawing.Font("Candara", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.sevenButton.Location = new System.Drawing.Point(3, 57);
             this.sevenButton.Name = "sevenButton";
             this.sevenButton.Size = new System.Drawing.Size(60, 48);
@@ -282,6 +300,7 @@
             // divideButton
             // 
             this.divideButton.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.divideButton.Font = new System.Drawing.Font("Candara", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.divideButton.Location = new System.Drawing.Point(201, 3);
             this.divideButton.Name = "divideButton";
             this.divideButton.Size = new System.Drawing.Size(61, 48);
@@ -293,6 +312,7 @@
             // clearButon
             // 
             this.clearButon.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.clearButon.Font = new System.Drawing.Font("Candara", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.clearButon.Location = new System.Drawing.Point(135, 3);
             this.clearButon.Name = "clearButon";
             this.clearButon.Size = new System.Drawing.Size(60, 48);
@@ -304,6 +324,7 @@
             // resetButton
             // 
             this.resetButton.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.resetButton.Font = new System.Drawing.Font("Candara", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.resetButton.Location = new System.Drawing.Point(69, 3);
             this.resetButton.Name = "resetButton";
             this.resetButton.Size = new System.Drawing.Size(60, 48);
@@ -315,6 +336,7 @@
             // copyButton
             // 
             this.copyButton.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.copyButton.Font = new System.Drawing.Font("Candara", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.copyButton.Location = new System.Drawing.Point(3, 3);
             this.copyButton.Name = "copyButton";
             this.copyButton.Size = new System.Drawing.Size(60, 48);
@@ -326,6 +348,7 @@
             // addButton
             // 
             this.addButton.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.addButton.Font = new System.Drawing.Font("Candara", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.addButton.Location = new System.Drawing.Point(201, 165);
             this.addButton.Name = "addButton";
             this.addButton.Size = new System.Drawing.Size(61, 48);

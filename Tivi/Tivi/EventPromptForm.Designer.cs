@@ -44,26 +44,29 @@ namespace Tivi
             // eventTextBox
             // 
             this.eventTextBox.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.eventTextBox.Location = new System.Drawing.Point(21, 115);
+            this.eventTextBox.Location = new System.Drawing.Point(16, 100);
+            this.eventTextBox.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.eventTextBox.Name = "eventTextBox";
-            this.eventTextBox.Size = new System.Drawing.Size(294, 32);
+            this.eventTextBox.Size = new System.Drawing.Size(222, 27);
             this.eventTextBox.TabIndex = 0;
             // 
             // dateTextBox
             // 
             this.dateTextBox.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateTextBox.Location = new System.Drawing.Point(21, 49);
+            this.dateTextBox.Location = new System.Drawing.Point(16, 42);
+            this.dateTextBox.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.dateTextBox.Name = "dateTextBox";
-            this.dateTextBox.Size = new System.Drawing.Size(294, 32);
+            this.dateTextBox.Size = new System.Drawing.Size(222, 27);
             this.dateTextBox.TabIndex = 1;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(29, 27);
+            this.label1.Location = new System.Drawing.Point(22, 23);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(45, 20);
+            this.label1.Size = new System.Drawing.Size(38, 17);
             this.label1.TabIndex = 2;
             this.label1.Text = "Date";
             // 
@@ -71,9 +74,10 @@ namespace Tivi
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(29, 94);
+            this.label2.Location = new System.Drawing.Point(22, 81);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(51, 20);
+            this.label2.Size = new System.Drawing.Size(44, 17);
             this.label2.TabIndex = 3;
             this.label2.Text = "Event";
             // 
@@ -82,9 +86,11 @@ namespace Tivi
             this.eventGroupBox.Controls.Add(this.taskRadioButton);
             this.eventGroupBox.Controls.Add(this.eventRadioButton);
             this.eventGroupBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.eventGroupBox.Location = new System.Drawing.Point(62, 162);
+            this.eventGroupBox.Location = new System.Drawing.Point(46, 140);
+            this.eventGroupBox.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.eventGroupBox.Name = "eventGroupBox";
-            this.eventGroupBox.Size = new System.Drawing.Size(210, 59);
+            this.eventGroupBox.Padding = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.eventGroupBox.Size = new System.Drawing.Size(158, 51);
             this.eventGroupBox.TabIndex = 4;
             this.eventGroupBox.TabStop = false;
             this.eventGroupBox.Text = "Type";
@@ -92,9 +98,10 @@ namespace Tivi
             // taskRadioButton
             // 
             this.taskRadioButton.AutoSize = true;
-            this.taskRadioButton.Location = new System.Drawing.Point(118, 24);
+            this.taskRadioButton.Location = new System.Drawing.Point(88, 21);
+            this.taskRadioButton.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.taskRadioButton.Name = "taskRadioButton";
-            this.taskRadioButton.Size = new System.Drawing.Size(66, 24);
+            this.taskRadioButton.Size = new System.Drawing.Size(57, 21);
             this.taskRadioButton.TabIndex = 1;
             this.taskRadioButton.TabStop = true;
             this.taskRadioButton.Text = "Task";
@@ -103,9 +110,10 @@ namespace Tivi
             // eventRadioButton
             // 
             this.eventRadioButton.AutoSize = true;
-            this.eventRadioButton.Location = new System.Drawing.Point(3, 22);
+            this.eventRadioButton.Location = new System.Drawing.Point(2, 19);
+            this.eventRadioButton.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.eventRadioButton.Name = "eventRadioButton";
-            this.eventRadioButton.Size = new System.Drawing.Size(72, 24);
+            this.eventRadioButton.Size = new System.Drawing.Size(62, 21);
             this.eventRadioButton.TabIndex = 0;
             this.eventRadioButton.TabStop = true;
             this.eventRadioButton.Text = "Event";
@@ -113,9 +121,10 @@ namespace Tivi
             // 
             // saveButton
             // 
-            this.saveButton.Location = new System.Drawing.Point(124, 237);
+            this.saveButton.Location = new System.Drawing.Point(93, 205);
+            this.saveButton.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.saveButton.Name = "saveButton";
-            this.saveButton.Size = new System.Drawing.Size(83, 29);
+            this.saveButton.Size = new System.Drawing.Size(62, 25);
             this.saveButton.TabIndex = 5;
             this.saveButton.Text = "Save";
             this.saveButton.UseVisualStyleBackColor = true;
@@ -123,9 +132,9 @@ namespace Tivi
             // 
             // EventPromptForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(338, 278);
+            this.ClientSize = new System.Drawing.Size(254, 241);
             this.Controls.Add(this.saveButton);
             this.Controls.Add(this.eventGroupBox);
             this.Controls.Add(this.label2);
@@ -133,6 +142,9 @@ namespace Tivi
             this.Controls.Add(this.dateTextBox);
             this.Controls.Add(this.eventTextBox);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.MaximumSize = new System.Drawing.Size(270, 280);
+            this.MinimumSize = new System.Drawing.Size(270, 280);
             this.Name = "EventPromptForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Add an Event";
