@@ -35,8 +35,8 @@ namespace Tivi
                 this.minutesComboBox.Items.Add(i.ToString());
                 this.secondsComboBox.Items.Add(i.ToString());
             }
-            this.minutesComboBox.SelectedIndex = 59;
-            this.secondsComboBox.SelectedIndex = 59;
+            this.minutesComboBox.SelectedIndex = 25;
+            this.secondsComboBox.SelectedIndex = 25;
 
 
         }
@@ -70,12 +70,14 @@ namespace Tivi
                 totalSeconds--;
                 int minutes = totalSeconds / 60;
                 int seconds = totalSeconds - (minutes * 60);
-                this.bigLabel.Text = minutes.ToString() + ":" + seconds.ToString(); 
+                this.bigLabel.Text = minutes.ToString("D2") + ":" + seconds.ToString("D2"); 
             }
             else 
             {
                 this.countdownTimer.Stop();
+                System.Media.SystemSounds.Hand.Play();
                 MessageBox.Show("Time's up!");
+
             }
 
         }
