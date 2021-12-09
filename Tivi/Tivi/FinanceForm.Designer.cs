@@ -365,7 +365,7 @@
             // 
             // radioButtonErrorLabel
             // 
-            this.radioButtonErrorLabel.BackColor = System.Drawing.SystemColors.Control;
+            this.radioButtonErrorLabel.BackColor = System.Drawing.Color.Transparent;
             this.radioButtonErrorLabel.Font = new System.Drawing.Font("Candara Light", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioButtonErrorLabel.ForeColor = System.Drawing.Color.Crimson;
             this.radioButtonErrorLabel.Location = new System.Drawing.Point(165, 56);
@@ -375,7 +375,7 @@
             // 
             // nameErrorLabel
             // 
-            this.nameErrorLabel.BackColor = System.Drawing.SystemColors.Control;
+            this.nameErrorLabel.BackColor = System.Drawing.Color.Transparent;
             this.nameErrorLabel.Font = new System.Drawing.Font("Candara Light", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.nameErrorLabel.ForeColor = System.Drawing.Color.Crimson;
             this.nameErrorLabel.Location = new System.Drawing.Point(165, 101);
@@ -385,7 +385,7 @@
             // 
             // costErrorLabel
             // 
-            this.costErrorLabel.BackColor = System.Drawing.SystemColors.Control;
+            this.costErrorLabel.BackColor = System.Drawing.Color.Transparent;
             this.costErrorLabel.Font = new System.Drawing.Font("Candara Light", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.costErrorLabel.ForeColor = System.Drawing.Color.Crimson;
             this.costErrorLabel.Location = new System.Drawing.Point(165, 11);

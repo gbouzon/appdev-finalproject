@@ -224,8 +224,8 @@ namespace Tivi
 
                 if (autoCost != 0)
                 {
-                    pieChart.Series["s1"].Points.AddXY("Auto", Convert.ToString(autoCost));
-                    foodTotalLbl.Text = String.Format("Auto: ${0:0.00} ({1:0.00}%)", autoCost, (autoCost / sumOfAll) * 100);
+                    pieChart.Series["s1"].Points.AddXY("Transportation", Convert.ToString(autoCost));
+                    autoTotalLbl.Text = String.Format("Transportation: ${0:0.00} ({1:0.00}%)", autoCost, (autoCost / sumOfAll) * 100);
                 }
 
                 if (entertainmentCost != 0)
