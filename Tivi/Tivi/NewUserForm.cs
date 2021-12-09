@@ -68,34 +68,42 @@ namespace Tivi
 
         private void createButton_Click(object sender, EventArgs e)
         {
-            user = new User(emailTextBox.Text, fnameTextBox.Text, lnameTextBox.Text, colour);
+            if(fnameTextBox.Text == "" || lnameTextBox.Text == "" )
+            {
+                MessageBox.Show("Please complete the information!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            else
+            {
+                user = new User(emailTextBox.Text, fnameTextBox.Text, lnameTextBox.Text, colour);
 
-            //test
-            //MessageBox.Show($"email: {user.Email}, first name: {user.FirstName}, last name: {user.LastName}, colour: {user.Colour}");
+                //test
+                //MessageBox.Show($"email: {user.Email}, first name: {user.FirstName}, last name: {user.LastName}, colour: {user.Colour}");
 
-            //adding user to database
-            MySqlConnection connection = new MySqlConnection(connectionString);
-            String insertStatement = "INSERT INTO user(email, first_name, last_name, colour) values(?, ?, ?, ?)";
-            connection.Open();
-            MySqlCommand command = connection.CreateCommand();
-            command.CommandText = insertStatement;
+                //adding user to database
+                MySqlConnection connection = new MySqlConnection(connectionString);
+                String insertStatement = "INSERT INTO user(email, first_name, last_name, colour) values(?, ?, ?, ?)";
+                connection.Open();
+                MySqlCommand command = connection.CreateCommand();
+                command.CommandText = insertStatement;
 
-            command.Parameters.AddWithValue("email", user.Email);
-            command.Parameters.AddWithValue("first_name", user.FirstName);
-            command.Parameters.AddWithValue("last_name", user.LastName);
-            command.Parameters.AddWithValue("colour", user.Colour);
-            command.ExecuteNonQuery();
+                command.Parameters.AddWithValue("email", user.Email);
+                command.Parameters.AddWithValue("first_name", user.FirstName);
+                command.Parameters.AddWithValue("last_name", user.LastName);
+                command.Parameters.AddWithValue("colour", user.Colour);
+                command.ExecuteNonQuery();
 
-            //MessageBox.Show("Saved", "Save Event", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                //MessageBox.Show("Saved", "Save Event", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
-            command.Dispose();
-            connection.Close();
+                command.Dispose();
+                connection.Close();
 
-            //close form
-            OldUserForm form = new OldUserForm(user);
-            this.Hide();
-            form.ShowDialog();
-            this.Close();
+                //close form
+                OldUserForm form = new OldUserForm(user);
+                this.Hide();
+                form.ShowDialog();
+                this.Close();
+            }
+           
         }
 
         private void cancelButton_Click(object sender, EventArgs e)
