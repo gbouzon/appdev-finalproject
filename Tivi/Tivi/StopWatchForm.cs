@@ -19,8 +19,8 @@ namespace Tivi
         public StopWatchForm(User user)
         {
             InitializeComponent();
-            this.user = user;
-            this.BackColor = ColorTranslator.FromHtml(user.Colour);
+            this.user = new User(user);
+            this.BackColor = (user.Colour.ToString() != "") ? ColorTranslator.FromHtml(user.Colour) : Color.White; //just in case
         }
 
         private void stopWatchTimer_Tick(object sender, EventArgs e)

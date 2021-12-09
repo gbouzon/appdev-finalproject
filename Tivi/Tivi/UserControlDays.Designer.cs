@@ -32,7 +32,6 @@ namespace Tivi
             this.components = new System.ComponentModel.Container();
             this.daysLabel = new System.Windows.Forms.Label();
             this.eventRichTextBox = new System.Windows.Forms.RichTextBox();
-            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.SuspendLayout();
             // 
             // daysLabel
@@ -52,19 +51,16 @@ namespace Tivi
             this.eventRichTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.eventRichTextBox.Cursor = System.Windows.Forms.Cursors.Default;
             this.eventRichTextBox.Location = new System.Drawing.Point(32, 30);
-            this.eventRichTextBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.eventRichTextBox.Margin = new System.Windows.Forms.Padding(2);
             this.eventRichTextBox.Name = "eventRichTextBox";
             this.eventRichTextBox.ReadOnly = true;
             this.eventRichTextBox.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.None;
             this.eventRichTextBox.Size = new System.Drawing.Size(84, 54);
             this.eventRichTextBox.TabIndex = 1;
             this.eventRichTextBox.Text = "";
+            this.eventRichTextBox.MouseClick += new System.Windows.Forms.MouseEventHandler(this.eventRichTextBox_MouseClick);
             this.eventRichTextBox.MouseEnter += new System.EventHandler(this.UserControlDays_MouseEnter);
             this.eventRichTextBox.MouseLeave += new System.EventHandler(this.UserControlDays_MouseLeave);
-            // 
-            // timer1
-            // 
-            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
             // UserControlDays
             // 
@@ -73,7 +69,7 @@ namespace Tivi
             this.BackColor = System.Drawing.Color.White;
             this.Controls.Add(this.eventRichTextBox);
             this.Controls.Add(this.daysLabel);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "UserControlDays";
             this.Size = new System.Drawing.Size(131, 98);
             this.Load += new System.EventHandler(this.UserControlDays_Load);
@@ -89,6 +85,5 @@ namespace Tivi
 
         private System.Windows.Forms.Label daysLabel;
         private System.Windows.Forms.RichTextBox eventRichTextBox;
-        private System.Windows.Forms.Timer timer1;
     }
 }

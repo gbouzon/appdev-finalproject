@@ -18,7 +18,6 @@ namespace Tivi
         //from phpmyadmin
         String connectionString = "datasource=127.0.0.1;port=3306;username=root;password=;database=tivi;";
 
-        private Color userColour; //set this using user object later
         public static string static_day;
 
         public UserControlDays()
@@ -29,7 +28,7 @@ namespace Tivi
         public UserControlDays(User user)
         {
             InitializeComponent();
-            this.user = user; //deep copy, fix copy constructor
+            this.user = new User(user);
         }
 
         private void UserControlDays_Load(object sender, EventArgs e)
@@ -49,10 +48,8 @@ namespace Tivi
 
         private void UserControlDays_MouseEnter(object sender, EventArgs e)
         {
-            //this.BackColor = Color.Green; //change this to user's favorite color later
-            //this.eventRichTextBox.BackColor = Color.Green; //including richtextbox
-            this.BackColor = ColorTranslator.FromHtml(user.Colour);
-            this.eventRichTextBox.BackColor = ColorTranslator.FromHtml(user.Colour);
+            this.BackColor = (user.Colour.ToString() != "") ? ColorTranslator.FromHtml(user.Colour) : Color.White; //just in case
+            this.eventRichTextBox.BackColor = (user.Colour.ToString() != "") ? ColorTranslator.FromHtml(user.Colour) : Color.White; //just in case
         }
 
         private void UserControlDays_MouseLeave(object sender, EventArgs e)
@@ -63,8 +60,7 @@ namespace Tivi
 
         private void UserControlDays_Click(object sender, EventArgs e)
         {
-            timer1.Start();
-            static_day = daysLabel.Text;
+            static_day = this.daysLabel.Text;
             EventPromptForm eventForm = new EventPromptForm(this.user);
             eventForm.ShowDialog();
         }
@@ -110,7 +106,6 @@ namespace Tivi
                         this.Controls.Add(box);
                     }
                 }
-
             }
 
             reader.Dispose();
@@ -118,10 +113,11 @@ namespace Tivi
             connection.Close();
         }
 
-        private void timer1_Tick(object sender, EventArgs e)
+        private void eventRichTextBox_MouseClick(object sender, MouseEventArgs e)
         {
-            string dateStr = CalendarForm.static_year + "-" + CalendarForm.static_month + "-" + static_day;
-            DisplayEvent(dateStr);
+            static_day = this.daysLabel.Text;
+            EventPromptForm eventForm = new EventPromptForm(this.user);
+            eventForm.ShowDialog();
         }
     }
 }

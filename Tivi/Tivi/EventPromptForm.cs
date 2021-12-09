@@ -26,7 +26,7 @@ namespace Tivi
         public EventPromptForm(User user)
         {
             InitializeComponent();
-            this.user = user; //deep copy later, fix copy constructor first
+            this.user = new User(user); //deep copy later, fix copy constructor first
         }
 
         private void EventPromptForm_Load(object sender, EventArgs e)
@@ -36,7 +36,7 @@ namespace Tivi
 
         private void saveButton_Click(object sender, EventArgs e)
         {
-            if(eventTextBox.Text == "")
+            if (eventTextBox.Text == "")
             {
                 MessageBox.Show("Please Input Some Text!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
@@ -59,6 +59,9 @@ namespace Tivi
 
                 command.Dispose();
                 connection.Close();
+                CalendarForm form = new CalendarForm(this.user);
+                this.Hide();
+                form.ShowDialog();
                 this.Close();
             }
             

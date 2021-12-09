@@ -20,7 +20,7 @@ namespace Tivi
         //(rx.IsMatch(input)) -> RETURNS TRUE IF MATCH FOUND
 
         //default constructor
-        public User() : this("user@tivi.com", "noFName", "noLName", "Green") { }
+        public User() : this("user@tivi.com", "noFName", "noLName", "White") { }
 
         //parameterized constructor
         public User(string email, string firstName, string lastName, string colour)
@@ -80,7 +80,7 @@ namespace Tivi
             }
             set
             {
-                colour = (value != null && value != string.Empty) ? value : "Green";
+                colour = (value != null && value != string.Empty) ? value : "White";
             }
         }
     }
