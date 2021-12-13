@@ -58,6 +58,7 @@ namespace Tivi
             // 
             // notepadMenuStrip
             // 
+            this.notepadMenuStrip.BackColor = System.Drawing.Color.PeachPuff;
             this.notepadMenuStrip.Font = new System.Drawing.Font("Candara", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.notepadMenuStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.fileToolStripMenuItem,
