@@ -23,7 +23,7 @@ namespace Tivi
         public FinanceForm(User user)
         {
             InitializeComponent();
-            this.user = user;
+            this.user = new User(user);
             this.BackColor = ColorTranslator.FromHtml(user.Colour);
             // Sets the error label to blank on startup
             costErrorLabel.Text = "";
@@ -291,6 +291,5 @@ namespace Tivi
         {
             return currentDateTime;
         }
-        
     }
 }

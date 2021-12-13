@@ -103,7 +103,6 @@ namespace Tivi
                 form.ShowDialog();
                 this.Close();
             }
-           
         }
 
         private void cancelButton_Click(object sender, EventArgs e)

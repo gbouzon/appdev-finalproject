@@ -26,7 +26,7 @@ namespace Tivi
         public EventPromptForm(User user)
         {
             InitializeComponent();
-            this.user = new User(user); //deep copy later, fix copy constructor first
+            this.user = new User(user);
         }
 
         private void EventPromptForm_Load(object sender, EventArgs e)
@@ -64,7 +64,6 @@ namespace Tivi
                 form.ShowDialog();
                 this.Close();
             }
-            
         }
     }
 }

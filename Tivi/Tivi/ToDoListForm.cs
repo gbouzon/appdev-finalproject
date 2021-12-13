@@ -25,7 +25,7 @@ namespace Tivi
         public ToDoListForm(User user)
         {
             InitializeComponent();
-            this.user = user;
+            this.user = new User(user);
             this.BackColor = ColorTranslator.FromHtml(user.Colour);
             LoadTasks();
         }

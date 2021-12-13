@@ -17,7 +17,7 @@ namespace Tivi
     {
         //from phpmyadmin
         String connectionString = "datasource=127.0.0.1;port=3306;username=root;password=;database=tivi;";
-        static User user; //test for now
+        static User user; 
 
         public WelcomeForm()
         {

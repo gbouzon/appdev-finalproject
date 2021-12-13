@@ -69,22 +69,8 @@ INSERT INTO `event` (`event_id`, `description`, `date`, `type`, `user_email`) VA
 (40, 'event', '2021-12-14', 'Event', 'amylee@gmail.com'),
 (41, 'task', '2021-12-15', 'Task', 'amylee@gmail.com'),
 (42, 'testing previous bug', '2021-12-21', 'Task', 'ga@bouzon.com.br'),
-(43, 'test', '2021-12-23', 'Task', 'ga@bouzon.com.br'),
-(44, 'test', '2021-12-24', 'Event', 'ga@bouzon.com.br'),
-(45, 'test', '2021-12-15', 'Event', 'ga@bouzon.com.br'),
 (46, 'bug', '2021-12-20', 'Event', 'ga@bouzon.com.br'),
 (47, 'another bug yay', '2021-12-28', 'Event', 'ga@bouzon.com.br'),
-(48, 'k im done', '2021-12-13', 'Event', 'ga@bouzon.com.br'),
-(49, 'am doneeee', '2021-12-27', 'Event', 'ga@bouzon.com.br'),
-(50, 'wtf', '2021-12-08', 'Event', 'ga@bouzon.com.br'),
-(51, 'hells nah fam', '2021-12-13', 'Task', 'ga@bouzon.com.br'),
-(52, 'ugh', '2021-12-08', 'Event', 'ga@bouzon.com.br'),
-(53, 'okay but can I die now', '2021-12-15', 'Event', 'ga@bouzon.com.br'),
-(54, 'k imma kms', '2021-12-19', 'Event', 'ga@bouzon.com.br'),
-(55, 'aaaaaaaaaaaaaaaa', '2021-12-10', 'Event', 'ga@bouzon.com.br'),
-(56, 'fuck my life', '2021-12-09', 'Event', 'ga@bouzon.com.br'),
-(57, 'ewrwerew', '2021-12-16', 'Event', 'ga@bouzon.com.br'),
-(58, 'k but nothing works anyways', '2021-12-14', 'Event', 'ga@bouzon.com.br');
 
 -- --------------------------------------------------------
 
