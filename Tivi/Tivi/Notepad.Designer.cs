@@ -215,6 +215,7 @@ namespace Tivi
             this.notepadRichTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.notepadRichTextBox.BackColor = System.Drawing.Color.Ivory;
             this.notepadRichTextBox.Location = new System.Drawing.Point(12, 34);
             this.notepadRichTextBox.Name = "notepadRichTextBox";
             this.notepadRichTextBox.Size = new System.Drawing.Size(1322, 668);
