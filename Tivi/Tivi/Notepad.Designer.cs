@@ -251,7 +251,7 @@ namespace Tivi
             this.MinimumSize = new System.Drawing.Size(1367, 862);
             this.Name = "Notepad";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Notepad";
+            this.Text = "MyNotepad";
             this.notepadMenuStrip.ResumeLayout(false);
             this.notepadMenuStrip.PerformLayout();
             this.ResumeLayout(false);
