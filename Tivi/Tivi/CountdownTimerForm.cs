@@ -36,8 +36,7 @@ namespace Tivi
                 this.secondsComboBox.Items.Add(i.ToString());
             }
             this.minutesComboBox.SelectedIndex = 25;
-            this.secondsComboBox.SelectedIndex = 25;
-
+            this.secondsComboBox.SelectedIndex = 00;
 
         }
 

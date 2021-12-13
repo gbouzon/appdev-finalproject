@@ -73,10 +73,10 @@ namespace Tivi
 
         private void noteButton_Click(object sender, EventArgs e)
         {
-            Notepad form = new Notepad(); //not yet implemented nor designed
-            //this.Hide();
+            Notepad form = new Notepad(this.user); 
+            this.Hide();
             form.ShowDialog();
-            //this.Close(); -> no way to go back for now
+            this.Close(); 
         }
 
         private void returnToMainMenuButton_Click(object sender, EventArgs e)
